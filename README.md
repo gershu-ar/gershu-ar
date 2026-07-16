@@ -8,8 +8,9 @@ Thanks for stopping by!
 - 🧠 [The Dual-Brain Architecture: System Prompts vs. `AGENTS.md`](https://github.com/gershu-ar/gershu-ar/blob/main/articles/spvsagents.md) 🧠
 
 ### 🖹 Gists
-- `main.py`: [ComfyUI portable - Use Chrome/any custom browser (and not Windows' default) modification](https://gist.github.com/gershu-ar/2faa16e7da2158a7b061b99ab46f908d)<br>
-Note: gets **permanentely updated** to keep pace of the **lastest release** of [Comfy](https://github.com/Comfy-Org/ComfyUI).
+#### Comfy portable
+- `main.py`: [Use Chrome/any custom browser (and not Windows' default) modification](https://gist.github.com/gershu-ar/2faa16e7da2158a7b061b99ab46f908d)<br>
+Note: **permanently updated** to keep pace of the **lastest release** of [Comfy](https://github.com/Comfy-Org/ComfyUI).
 
 ### 🧰 Toolbox
 - [Comfy](https://github.com/stars/gershu-ar/lists/comfy)
