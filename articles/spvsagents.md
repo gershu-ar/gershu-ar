@@ -43,4 +43,5 @@ System Prompts are carried in every single message turnaround in a chat, eating 
 By establishing "Plan and Ask" in your System Prompt and tying technical checks (like "run tests before applying changes") to your `AGENTS.md`, you prevent the AI from going "rogue." The system prompt stops the AI from executing autonomously, and the agents.md ensures that when it is allowed to execute, it does so perfectly.
 
 More informations about `agents.md`:<br>
-https://agents.md/
+- https://github.com/agentsmd/agents.md
+- https://AGENTS.md/
