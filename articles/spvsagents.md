@@ -1,6 +1,6 @@
 #### 🧠 The Dual-Brain Architecture: System Prompts vs. `AGENTS.md` 🧠<BR>16/JUL/2026
 
-When coding with AI-powered development environments (like Cursor, Windsurf, or Google's Studio AI), it is easy to treat all instructions as one giant block of text. However, as projects grow, mixing conversational behavior with strict coding guidelines causes attention dilution (or cognitive overload) in LLMs.
+When coding with AI-powered development environments (like Google's Studio AI -my fav enviroment-, Cursor, Windsurf, etc), it is easy to treat all instructions as one giant block of text. However, as projects grow, mixing conversational behavior with strict coding guidelines causes attention dilution (or cognitive overload) in LLMs.
 
 To keep AI agents focused, efficient, and well-behaved, we split their instructions into two distinct, modular layers:
 1) The System Prompt (the conversational layer)
@@ -8,7 +8,7 @@ To keep AI agents focused, efficient, and well-behaved, we split their instructi
 
 ----
 
-**The System Prompt**: The "Social" Brain
+**The System Prompt**: The "Social" Brain<br>
 The System Prompt dictates how the AI interacts with you. It sits at the top of the chat session, establishing the relationship, communication style, and workflow boundaries.
 - Primary Target: Human-to-AI collaboration.
 - Scope: Conversational manners, approval workflows, step-by-step thinking, and persona.
@@ -19,7 +19,7 @@ Example Rules in a System Prompt
 - The Tone: "Be concise and polite. Do not write introductory or concluding fluff; jump straight to the answer."
 
 ----
-**`AGENTS.md`**: The "Operational" Brain
+**`AGENTS.md`**: The "Operational" Brain<br>
 The `AGENTS.md` file (placed at the root of your code repository) dictates how the AI interacts with the code. It is a machine-readable manual that the AI editor automatically injects into its active context when it reads or writes files.
 - Primary Target: AI-to-Codebase interaction.
 - Scope: Programming style, architectural boundaries, dependency rules, and terminal commands.
