@@ -4,6 +4,7 @@ Thanks for stopping by!
 ----
 
 ### 🖹 Articles
+#### Prompt Engineering
 - 🧠 [The Dual-Brain Architecture: System Prompts vs. `AGENTS.md`](https://github.com/gershu-ar/gershu-ar/blob/main/articles/spvsagents.md) 🧠
 
 ### 🖹 Gists
