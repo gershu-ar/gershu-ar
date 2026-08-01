@@ -9,7 +9,7 @@
 ## 📜 Gists
 #### Comfy portable
 - `main.py`: [Use Chrome/any custom browser (and not Windows' default) modification](https://gist.github.com/gershu-ar/2faa16e7da2158a7b061b99ab46f908d) |  [Gist explained](https://github.com/Comfy-Org/ComfyUI/issues/11709)<br>
-Note: **permanently updated** to keep pace of the **lastest release** of [Comfy](https://github.com/Comfy-Org/ComfyUI).
+Note: **permanently updated** to keep pace of the [latest production release](https://github.com/Comfy-Org/ComfyUI/releases) of [Comfy](https://github.com/Comfy-Org/ComfyUI).
 
 
 ## 🧰 Toolbox
