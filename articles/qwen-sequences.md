@@ -1,8 +1,11 @@
 # Qwen/Krea 2 on ComfyUI
 ### The Totally Unrequested Prompting Tips - Rated R for language
 #### For the purist prompter
+
+[![](https://github.com/gershu-ar/gershu-ar/blob/1a76545fc4263706b4555df94f6163861354c7b3/articles/img/cover_qwen_krea2.jpg)](https://github.com/gershu-ar/gershu-ar/blob/1a76545fc4263706b4555df94f6163861354c7b3/articles/img/cover_qwen_krea2.jpg)
+
 ------------
-**THE BIG OLD ~~ASS~~ INDEX**
+## THE BIG OLD ~~ASS~~ INDEX
 1. [The 101](#the-101)<br>
 2. [Bootcamp](#bootcamp)<br>
 2.1. [QWEN vs SDXL](#qwen-vs-sdxl)<br>
@@ -29,7 +32,7 @@ Disclaimer: Yes, there are probably a ton of errors in this article.  Suggestion
 Prompt → Qwen (encode) → Krea 2 (denoise) → VAE (decode)<br>
 Congratulations, you're all set for BOOTCAMP.
 
-👆 [Back to index](#for-the-purist-prompter)
+👆 [Back to index](#the-big-old-ass-index)
 
 ## Bootcamp
 #### **QWEN VS SDXL**
@@ -39,7 +42,7 @@ If you're coming from SDXL you will notice that Qwen/Krea 2 is a whole new ball 
 
 These tips are not noticeable on small prompts but the richer the prompt gets, the more characters are part of it, that's when word precision becomes a must.
 
-👆 [Back to index](#for-the-purist-prompter)
+👆 [Back to index](#the-big-old-ass-index)
 
 #### **PROMPTING ON QWEN**
 ##### Structure, structure, structure
@@ -100,7 +103,7 @@ Ugly, unfit, ... like using relaxed. There's no universal explanation for what r
 
 Oh, Qwen, you cheeky, adorable bastard.
 
-👆 [Back to index](#for-the-purist-prompter)
+👆 [Back to index](#the-big-old-ass-index)
 
 ##### One -or a few- word to rule them all
 So, to recap: "Woman standing with a bath robe" will produce a woman with an open bath robe showing the underneath nude body. Why is she nude? Because the default statistical prior of a robe is not to be closed/buttoned. 
@@ -114,7 +117,7 @@ Beware: a single misplaced word can ruin your entire scene.
 
 "Wearing summer clothes" might give you somebody on a bathing suit, but chances are you will get a naked person. Why? Because "summer clothes" is not an item, is a group of items, a generic term Qwen does not properly understand. Maybe if there's a "beach" or a "summer" word on the rest of the prompt you might get somebody wearing a bathing short because there is context but avoid it: describe the bathing suit: "Bikini top and bikini bottom" are not the same as just "Bikini". "Bikini" alone refers to the bottom, not to a bikini set (bottom and top).
 
-👆 [Back to index](#for-the-purist-prompter)
+👆 [Back to index](#the-big-old-ass-index)
 
 #### REMEMBER
 
@@ -126,7 +129,7 @@ using...
 ...won't get you anywhere, there's no embed weighing on Qwen. Every word is as important as the rest. What matters in Qwen is the entire context. Thus, a single word has Qwen-sequences and it can ruin everything.
 
 
-👆 [Back to index](#for-the-purist-prompter)
+👆 [Back to index](#the-big-old-ass-index)
 
 #### EVERY GREAT LIE HAS A LOT OF DETAIL
 
@@ -142,7 +145,7 @@ If your character is about to jump off a plane, add to the context: "The charact
 
 Keep in mind the software you're using and the cache's circuit/purges. Instant results might not be visible from one render to the other: it might take 5/6 renders to start seeing results and a settled prompt into the cache (at least on ComfyUI). The more renders you run, the more you will see how the produced render takes the exact shape as you prompted it.
 
-👆 [Back to index](#for-the-purist-prompter)
+👆 [Back to index](#the-big-old-ass-index)
 
 ##### MARK TWAIN YOURSELF THRU QWEN
 One thing Qwen and Krea 2 are EXCELLENT at is text. Wildly good at. In between getting proper text while working with SDXL and winning the lottery, winning the lottery always has more chances.
@@ -162,7 +165,7 @@ The face and the shirt, yeah. I can smell it from here, amigo. Dog knows.
 
 Again: being drunk is super general, not everybody looks or behaves the same when drunk. In this case, Qwen/Krea 2 did their best to represent the scenario. Man looks more sad than drunk, but if I were to add "Red face, glassy eyes, sloppy grin, vacant stare" the result would surely differ. Dog, on the other hand, strangely looks like its smiling, doesn't it?
 
-👆 [Back to index](#for-the-purist-prompter)
+👆 [Back to index](#the-big-old-ass-index)
 
 ##### NSWF VS SFW
 
@@ -185,7 +188,7 @@ Same goes for the negative prompting (below). Go for the detail about the clothi
 
 Detail -if coherent- is what Qwen feeds about.
 
-👆 [Back to index](#for-the-purist-prompter)
+👆 [Back to index](#the-big-old-ass-index)
 
 ##### MELTING FACES, WATER DROPLETS AND ARTIFACTS
 Are you getting renders with faces melting like wax? Or excesive, unsolicited water droplets like the characters are sweating as a fake witness would do?
@@ -198,7 +201,7 @@ Check your prompt for terms that activate specular highlights, or reinforce the 
 
 Let the prompt undo what the prompt has done I always say 😁
 
-👆 [Back to index](#for-the-purist-prompter)
+👆 [Back to index](#the-big-old-ass-index)
 
 ##### DON'T BE SO NEGATIVE: TRY TO SEE THE LIGHT
 
@@ -218,19 +221,19 @@ I won't go deeper into lighting cause it's extremely complicated to prompt prope
 
 So -> Be aware some Krea 2 models are much better at handling lighting than others.
 
-👆 [Back to index](#for-the-purist-prompter)
+👆 [Back to index](#the-big-old-ass-index)
 
 #### CUT!
 [The camera section requires an article on its own, really hard to master and context dependent if you're looking for specific shots, but I will be adding some general prompting tips for simple camera setups later on - Pending]
 
-👆 [Back to index](#for-the-purist-prompter)
+👆 [Back to index](#the-big-old-ass-index)
 
 ##### *NUTSHELLING* IT
 
 Brain surgery with a jackhammer<br>
 SDXL felt like that. Krea 2 is closer to Star Wars: ahead of its time and to succeed just make sure the two proton torpedoes go into the 2 meters wide thermal exhaust port located in the station’s meridian trench. Remember: detail.
 
-👆 [Back to index](#for-the-purist-prompter)
+👆 [Back to index](#the-big-old-ass-index)
 
 #### FOOT NOTES
 **"But my workflow is smart"**<br>
@@ -243,7 +246,7 @@ Yeah, I don't use them.
 **Updates**<br>
 On it. Will be adding tips.
 
-👆 [Back to index](#for-the-purist-prompter)
+👆 [Back to index](#the-big-old-ass-index)
 
 End of guide.
 (C) gershu.ar
