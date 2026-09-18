@@ -26,7 +26,7 @@ Generated using Krea 2 NSFW model [Sick Ollie](https://civitai.red/models/267661
 ------------
 Disclaimer: Yes, there are probably a ton of errors in this article.  Suggestions are always welcome, drop me a line!
 - **Want to improve this article?** Fork this repo, edit the file, and submit a **Pull Request**.
-- **Want to leave a comment or feedback?** Start a conversation in [Discussions](../../discussions).
+- **Want to leave a comment or feedback?** Start a conversation in [Discussions](https://github.com/gershu-ar/gershu-ar/discussions "Discussions").
 ------------
 
 <br>
