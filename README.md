@@ -2,8 +2,8 @@
 
 ## 🖹 Articles
 #### Prompt Engineering
-- **GENERAL IA** } [The Dual-Brain Architecture 🧠🧠: System Prompts vs. `AGENTS.md`](https://github.com/gershu-ar/gershu-ar/blob/ecb643952e41cd09b485308476f81801d7bcec56/articles/spvsagents.md)
-- **COMFYUI** } [Qwen/Krea 2 on ComfyUI: The Totally Unrequested Prompting Tips](https://github.com/gershu-ar/gershu-ar/blob/ecb643952e41cd09b485308476f81801d7bcec56/articles/qwen-sequences.md "Qwen/Krea 2 on ComfyUI: The Totally Unrequested Prompting Tips")
+- **GENERAL IA** } [The Dual-Brain Architecture 🧠🧠: System Prompts vs. `AGENTS.md`](https://github.com/gershu-ar/gershu-ar/blob/main/articles/spvsagents.md)
+- **COMFYUI** } [Qwen/Krea 2 on ComfyUI: The Totally Unrequested Prompting Tips](https://github.com/gershu-ar/gershu-ar/blob/main/articles/qwen-sequences.md")
 
 ## 🧰 Toolbox
 - [Comfy](https://github.com/stars/gershu-ar/lists/comfy)
