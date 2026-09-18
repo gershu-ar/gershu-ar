@@ -108,7 +108,7 @@ Oh, Qwen, you cheeky, adorable bastard.
 
 👆 [Back to index](#the-big-old-ass-index)
 <br><br>
-##### One -or a few- word to rule them all
+#### One -or a few- word to rule them all
 So, to recap: "Woman standing with a bath robe" will produce a woman with an open bath robe showing the underneath nude body. Why is she nude? Because the default statistical prior of a robe is not to be closed/buttoned. 
 
 "Long pants are seen over the floor" will render a pair of perfectly positioned pants. Why? Because that's the default statistical prior of the pants: straight, perfectly in order, shape and position for the camera, as if presented for sale or in a drawer. The perfect image of pants vs the image of realistic pants.
@@ -181,7 +181,7 @@ Again: being drunk is super general, not everybody looks or behaves the same whe
 
 👆 [Back to index](#the-big-old-ass-index)
 <br><br>
-##### NSWF VS SFW
+#### NSWF VS SFW
 
 You need to render a character wearing a shirt. But even as you prompt the word "shirt" like a lunatic, the character appears time and time again with the shirt up, exposing chest. Why? Models learn the human body as a base structure, and clothing is learned as an additional layer. When context is ambiguous, the model may fall back to the underlying anatomical prior. The base model, the layer is essentially a nude body.
 
@@ -204,7 +204,7 @@ Detail -if coherent- is what Qwen feeds about.
 
 👆 [Back to index](#the-big-old-ass-index)
 <br><br>
-##### MELTING FACES, WATER DROPLETS AND ARTIFACTS
+#### MELTING FACES, WATER DROPLETS AND ARTIFACTS
 Are you getting renders with faces melting like wax? Or excesive, unsolicited water droplets like the characters are sweating as a fake witness would do?
 
 This isn’t caused by INT8, FP8, or the VAE. The water droplets/melted skin artifacts come from the checkpoint’s own wet‑skin prior, which is common in models trained on glamour or NSFW datasets.
@@ -217,7 +217,7 @@ Let the prompt undo what the prompt has done I always say 😁
 
 👆 [Back to index](#the-big-old-ass-index)
 <br><br>
-##### DON'T BE SO NEGATIVE: TRY TO SEE THE LIGHT
+#### DON'T BE SO NEGATIVE: TRY TO SEE THE LIGHT
 
 In ComfyUI's official Krea 2 t2i template the negative is automatically created based on the positive by a stranger process my brain was unable to decode and/or I simply don't care to find about. I didn't like this, so I separated the negative (clip text) to have full control. Do not overuse the negative but use it. Start with a base negative like:
 
@@ -242,7 +242,7 @@ So -> Be aware some Krea 2 models are much better at handling lighting than othe
 
 👆 [Back to index](#the-big-old-ass-index)
 <br><br>
-##### *NUTSHELLING* IT
+#### *NUTSHELLING* IT
 
 Brain surgery with a jackhammer<br>
 SDXL felt like that. Krea 2 is closer to Star Wars: ahead of its time and to succeed just make sure the two proton torpedoes go into the 2 meters wide thermal exhaust port located in the station’s meridian trench. Remember: detail.
