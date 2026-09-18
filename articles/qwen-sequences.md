@@ -255,9 +255,12 @@ My opinion: If I'm to direct the orquestra remove middle management from it. I w
 Yeah, I don't use them. 
 
 **Updates**<br>
-On it. Will be adding tips.
+On it. Will be adding tips and try to improve format.  I find markdown very unfriendly but hey, life is imperfect.
+
+**Thanks to**<br>
+GitHub for being weirdly awesome and not banning me after so many repetitive edits.  To all the people behind ComfyUI, model creators and coders that make the true miracle.
 
 👆 [Back to index](#the-big-old-ass-index)
 <br><br>
-End of guide.
+End of guide.<br>
 (C) gershu.ar
