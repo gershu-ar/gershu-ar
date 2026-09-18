@@ -4,6 +4,8 @@
 
 [![](https://github.com/gershu-ar/gershu-ar/blob/1a76545fc4263706b4555df94f6163861354c7b3/articles/img/cover_qwen_krea2.jpg)](https://github.com/gershu-ar/gershu-ar/blob/1a76545fc4263706b4555df94f6163861354c7b3/articles/img/cover_qwen_krea2.jpg)
 
+Generated using Krea 2 NSFW model [Sick Ollie](https://civitai.red/models/2676616/sick-ollie "Sick Ollie") (+18 years old) on [ComfyUI](https://github.com/comfy-org/ComfyUI "ComfyUI") portable v0.36.0.
+
 ------------
 ## THE BIG OLD ~~ASS~~ INDEX
 1. [The 101](#the-101)<br>
@@ -23,7 +25,8 @@
 
 ------------
 Disclaimer: Yes, there are probably a ton of errors in this article.  Suggestions are always welcome, drop me a line!
-
+- **Want to improve this article?** Fork this repo, edit the file, and submit a **Pull Request**.
+- **Want to leave a comment or feedback?** Start a conversation in [Discussions](../../discussions).
 ------------
 
 <br>
