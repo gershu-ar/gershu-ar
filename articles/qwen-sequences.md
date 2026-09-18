@@ -215,7 +215,7 @@ Since prompting is everything, go for something like ***fully** wearing a XXX*. 
 
 Same goes for the negative prompting (below). Go for the detail about the clothing, the room, the face, the body, the light, camera, everything.
 
-**Detail** -if coherent-** is what Qwen feeds about**.
+**Detail** -if coherent- **is what Qwen and Krea 2 feed about**.
 
 👆 [Back to index](#the-big-old-ass-index)
 <br><br>
@@ -261,15 +261,14 @@ I won't go deeper into lighting cause it's extremely complicated to prompt prope
 <br><br>
 #### *NUTSHELLING* IT
 
-Brain surgery with a jackhammer<br>
-SDXL felt like that. Krea 2 is closer to Star Wars: ahead of its time and to succeed just make sure the two proton torpedoes go into the 2 meters wide thermal exhaust port located in the station’s meridian trench. Remember: detail.
+Doing brain surgery with a jackhammer: SDXL felt like that.
+Qwen/Krea 2 are closer to Star Wars: ahead of its time and to succeed just make sure the two proton torpedoes go into the two meters wide thermal exhaust port located in the station’s meridian trench. Remember: **detail**.
 <br><br>
 👆 [Back to index](#the-big-old-ass-index)
 
 ### FOOT NOTES
 
-
-**What Krea 2 models are good?**<br>
+**What Krea 2 models work as they should?**<br>
 Haven't tested that many, but these ones I found to be superb realistic models - in no order of preference:
 - [Moody Krea 2 Mix](https://civitai.red/models/2731187/weekend-3days-blue-buzz-purchase-3buzz-moody-krea-2-mix-uncensored?modelVersionId=3209007)
 - [CyberRealistic](https://civitai.red/models/2831028/cyberrealistic-krea-2)
