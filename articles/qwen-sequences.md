@@ -33,7 +33,7 @@ Prompt → Qwen (encode) → Krea 2 (denoise) → VAE (decode)<br>
 Congratulations, you're all set for BOOTCAMP.
 
 👆 [Back to index](#the-big-old-ass-index)
-
+<br><br>
 ## Bootcamp
 #### **QWEN VS SDXL**
 Qwen does not fill in the empty spaces. If you have not described it, it will not be there. No prompt, no tokenization, no embed. As for SDXL's CLIP ViT-L it was created to be light, tolerant, and to guess, not to follow orders.
@@ -43,7 +43,7 @@ If you're coming from SDXL you will notice that Qwen/Krea 2 is a whole new ball 
 These tips are not noticeable on small prompts but the richer the prompt gets, the more characters are part of it, that's when word precision becomes a must.
 
 👆 [Back to index](#the-big-old-ass-index)
-
+<br><br>
 #### **PROMPTING ON QWEN**
 ##### Structure, structure, structure
 
@@ -104,7 +104,7 @@ Ugly, unfit, ... like using relaxed. There's no universal explanation for what r
 Oh, Qwen, you cheeky, adorable bastard.
 
 👆 [Back to index](#the-big-old-ass-index)
-
+<br><br>
 ##### One -or a few- word to rule them all
 So, to recap: "Woman standing with a bath robe" will produce a woman with an open bath robe showing the underneath nude body. Why is she nude? Because the default statistical prior of a robe is not to be closed/buttoned. 
 
@@ -118,7 +118,7 @@ Beware: a single misplaced word can ruin your entire scene.
 "Wearing summer clothes" might give you somebody on a bathing suit, but chances are you will get a naked person. Why? Because "summer clothes" is not an item, is a group of items, a generic term Qwen does not properly understand. Maybe if there's a "beach" or a "summer" word on the rest of the prompt you might get somebody wearing a bathing short because there is context but avoid it: describe the bathing suit: "Bikini top and bikini bottom" are not the same as just "Bikini". "Bikini" alone refers to the bottom, not to a bikini set (bottom and top).
 
 👆 [Back to index](#the-big-old-ass-index)
-
+<br><br>
 #### REMEMBER
 
 This is not SDXL:
@@ -128,9 +128,20 @@ using...
 
 ...won't get you anywhere, there's no embed weighing on Qwen. Every word is as important as the rest. What matters in Qwen is the entire context. Thus, a single word has Qwen-sequences and it can ruin everything.
 
+Same goes for LoRAs or whatever embeddings you used or want to use:
+
+`<LORA:XXX bla bla>`
+
+Don't.  There is not even..
+
+`// Hey, this is a comment`
+
+... on Qwen.  SDXL used to ignore `// COMMENT`, Qwen will give it some interpretation based on context and create an embedding confusing the model.  
+
+
 
 👆 [Back to index](#the-big-old-ass-index)
-
+<br><br>
 #### EVERY GREAT LIE HAS A LOT OF DETAIL
 
 You prompt for "Pants".
@@ -146,7 +157,7 @@ If your character is about to jump off a plane, add to the context: "The charact
 Keep in mind the software you're using and the cache's circuit/purges. Instant results might not be visible from one render to the other: it might take 5/6 renders to start seeing results and a settled prompt into the cache (at least on ComfyUI). The more renders you run, the more you will see how the produced render takes the exact shape as you prompted it.
 
 👆 [Back to index](#the-big-old-ass-index)
-
+<br><br>
 ##### MARK TWAIN YOURSELF THRU QWEN
 One thing Qwen and Krea 2 are EXCELLENT at is text. Wildly good at. In between getting proper text while working with SDXL and winning the lottery, winning the lottery always has more chances.
 
@@ -157,7 +168,7 @@ Two simple modifications to action from the example:
 Output:
 [![](https://github.com/gershu-ar/gershu-ar/blob/f38b44276cb19ce55d3e168fa9f2667890301ddc/articles/img/0bc8527e11b8cbf13a8c445e639a1d9e.png)](https://github.com/gershu-ar/gershu-ar/blob/f38b44276cb19ce55d3e168fa9f2667890301ddc/articles/img/0bc8527e11b8cbf13a8c445e639a1d9e.png)
 
-Action: Man is holding a professionally designed sign that reads "I love dogs and I'm a drunk".  Dog is standing next to Man staring at Man.  Dog has a small sign hanging from the beck that reads: "This cat is crazy".
+`Action: Man is holding a professionally designed sign that reads "I love dogs and I'm a drunk".  Dog is standing next to Man staring at Man.  Dog has a small sign hanging from the beck that reads: "This cat is crazy".`
 
 Produces exactly that. The more you describe the medium (paper, sign, wall advertising, graph, etc.) the more realistic it will be:
 
@@ -166,7 +177,7 @@ The face and the shirt, yeah. I can smell it from here, amigo. Dog knows.
 Again: being drunk is super general, not everybody looks or behaves the same when drunk. In this case, Qwen/Krea 2 did their best to represent the scenario. Man looks more sad than drunk, but if I were to add "Red face, glassy eyes, sloppy grin, vacant stare" the result would surely differ. Dog, on the other hand, strangely looks like its smiling, doesn't it?
 
 👆 [Back to index](#the-big-old-ass-index)
-
+<br><br>
 ##### NSWF VS SFW
 
 You need to render a character wearing a shirt. But even as you prompt the word "shirt" like a lunatic, the character appears time and time again with the shirt up, exposing chest. Why? Models learn the human body as a base structure, and clothing is learned as an additional layer. When context is ambiguous, the model may fall back to the underlying anatomical prior. The base model, the layer is essentially a nude body.
@@ -189,7 +200,7 @@ Same goes for the negative prompting (below). Go for the detail about the clothi
 Detail -if coherent- is what Qwen feeds about.
 
 👆 [Back to index](#the-big-old-ass-index)
-
+<br><br>
 ##### MELTING FACES, WATER DROPLETS AND ARTIFACTS
 Are you getting renders with faces melting like wax? Or excesive, unsolicited water droplets like the characters are sweating as a fake witness would do?
 
@@ -202,7 +213,7 @@ Check your prompt for terms that activate specular highlights, or reinforce the 
 Let the prompt undo what the prompt has done I always say 😁
 
 👆 [Back to index](#the-big-old-ass-index)
-
+<br><br>
 ##### DON'T BE SO NEGATIVE: TRY TO SEE THE LIGHT
 
 In ComfyUI's official Krea 2 t2i template the negative is automatically created based on the positive by a stranger process my brain was unable to decode and/or I simply don't care to find about. I didn't like this, so I separated the negative (clip text) to have full control. Do not overuse the negative but use it. Start with a base negative like:
@@ -222,17 +233,17 @@ I won't go deeper into lighting cause it's extremely complicated to prompt prope
 So -> Be aware some Krea 2 models are much better at handling lighting than others.
 
 👆 [Back to index](#the-big-old-ass-index)
-
+<br><br>
 #### CUT!
 [The camera section requires an article on its own, really hard to master and context dependent if you're looking for specific shots, but I will be adding some general prompting tips for simple camera setups later on - Pending]
 
 👆 [Back to index](#the-big-old-ass-index)
-
+<br><br>
 ##### *NUTSHELLING* IT
 
 Brain surgery with a jackhammer<br>
 SDXL felt like that. Krea 2 is closer to Star Wars: ahead of its time and to succeed just make sure the two proton torpedoes go into the 2 meters wide thermal exhaust port located in the station’s meridian trench. Remember: detail.
-
+<br><br>
 👆 [Back to index](#the-big-old-ass-index)
 
 #### FOOT NOTES
@@ -247,6 +258,6 @@ Yeah, I don't use them.
 On it. Will be adding tips.
 
 👆 [Back to index](#the-big-old-ass-index)
-
+<br><br>
 End of guide.
 (C) gershu.ar
