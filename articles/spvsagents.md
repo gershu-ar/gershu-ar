@@ -45,3 +45,8 @@ By establishing "Plan and Ask" in your System Prompt and tying technical checks 
 More informations about `agents.md`:<br>
 - https://github.com/agentsmd/agents.md
 - https://AGENTS.md/
+<br><br>
+------------
+- **Want to improve this article?** Fork this repo, edit the file, and submit a **Pull Request**.
+- **Want to leave a comment or feedback?** Start a conversation in [Discussions](https://github.com/gershu-ar/gershu-ar/discussions "Discussions").
+------------
