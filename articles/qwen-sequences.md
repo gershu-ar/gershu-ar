@@ -40,6 +40,8 @@ If you're coming from SDXL you will notice that Qwen/Krea 2 is a whole new ball 
 
 These tips are not noticeable on small prompts but the richer the prompt gets, the more characters are part of it, that's when word precision becomes a must.
 
+[👆 Back to index](#for-the-purist-prompter)
+
 #### **PROMPTING ON QWEN**
 ##### Structure, structure, structure
 
@@ -111,7 +113,7 @@ Beware: a single misplaced word can ruin your entire scene.
 
 "Wearing summer clothes" might give you somebody on a bathing suit, but chances are you will get a naked person. Why? Because "summer clothes" is not an item, is a group of items, a generic term Qwen does not properly understand. Maybe if there's a "beach" or a "summer" word on the rest of the prompt you might get somebody wearing a bathing short because there is context but avoid it: describe the bathing suit: "Bikini top and bikini bottom" are not the same as just "Bikini". "Bikini" alone refers to the bottom, not to a bikini set (bottom and top).
 
-
+[👆 Back to index](#for-the-purist-prompter)
 
 #### REMEMBER
 
@@ -123,7 +125,7 @@ using...
 ...won't get you anywhere, there's no embed weighing on Qwen. Every word is as important as the rest. What matters in Qwen is the entire context. Thus, a single word has Qwen-sequences and it can ruin everything.
 
 
-
+[👆 Back to index](#for-the-purist-prompter)
 
 #### EVERY GREAT LIE HAS A LOT OF DETAIL
 
@@ -138,6 +140,8 @@ Details allow the repeating results effortlessly and provide the base for any re
 If your character is about to jump off a plane, add to the context: "The character is jumping off a plane for the first time in his life". Besides jumping off a plane, a sense of wonder, fear, curiosity will be added to the character's posture and even face expression if you haven't done so by prompting. Qwen won't be filling a blank but adapting to the situation.
 
 Keep in mind the software you're using and the cache's circuit/purges. Instant results might not be visible from one render to the other: it might take 5/6 renders to start seeing results and a settled prompt into the cache (at least on ComfyUI). The more renders you run, the more you will see how the produced render takes the exact shape as you prompted it.
+
+[👆 Back to index](#for-the-purist-prompter)
 
 ##### MARK TWAIN YOURSELF THRU QWEN
 One thing Qwen and Krea 2 are EXCELLENT at is text. Wildly good at. In between getting proper text while working with SDXL and winning the lottery, winning the lottery always has more chances.
@@ -156,6 +160,8 @@ Produces exactly that. The more you describe the medium (paper, sign, wall adver
 The face and the shirt, yeah. I can smell it from here, amigo. Dog knows.
 
 Again: being drunk is super general, not everybody looks or behaves the same when drunk. In this case, Qwen/Krea 2 did their best to represent the scenario. Man looks more sad than drunk, but if I were to add "Red face, glassy eyes, sloppy grin, vacant stare" the result would surely differ. Dog, on the other hand, strangely looks like its smiling, doesn't it?
+
+[👆 Back to index](#for-the-purist-prompter)
 
 ##### NSWF VS SFW
 
@@ -178,6 +184,8 @@ Same goes for the negative prompting (below). Go for the detail about the clothi
 
 Detail -if coherent- is what Qwen feeds about.
 
+[👆 Back to index](#for-the-purist-prompter)
+
 ##### MELTING FACES, WATER DROPLETS AND ARTIFACTS
 Are you getting renders with faces melting like wax? Or excesive, unsolicited water droplets like the characters are sweating as a fake witness would do?
 
@@ -189,6 +197,7 @@ Check your prompt for terms that activate specular highlights, or reinforce the 
 
 Let the prompt undo what the prompt has done I always say 😁
 
+[👆 Back to index](#for-the-purist-prompter)
 
 ##### DON'T BE SO NEGATIVE: TRY TO SEE THE LIGHT
 
@@ -208,17 +217,19 @@ I won't go deeper into lighting cause it's extremely complicated to prompt prope
 
 So -> Be aware some Krea 2 models are much better at handling lighting than others.
 
+[👆 Back to index](#for-the-purist-prompter)
+
 #### CUT!
 [The camera section requires an article on its own, really hard to master and context dependent if you're looking for specific shots, but I will be adding some general prompting tips for simple camera setups later on - Pending]
 
-
+[👆 Back to index](#for-the-purist-prompter)
 
 ##### *NUTSHELLING* IT
 
 Brain surgery with a jackhammer<br>
 SDXL felt like that. Krea 2 is closer to Star Wars: ahead of its time and to succeed just make sure the two proton torpedoes go into the 2 meters wide thermal exhaust port located in the station’s meridian trench. Remember: detail.
 
-
+[👆 Back to index](#for-the-purist-prompter)
 
 #### FOOT NOTES
 **"But my workflow is smart"**<br>
@@ -229,7 +240,6 @@ My opinion: If I'm to direct the orquestra remove middle management from it. I w
 Yeah, I don't use them. 
 
 **Updates**<br>
-On it. Will be adding tips from time to time.
+On it. Will be adding tips.
 
-[bootcamp]: # "BOOTCAMP"
-[1]: the-101 "The 101"
+[👆 Back to index](#for-the-purist-prompter)
