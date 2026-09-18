@@ -187,10 +187,9 @@ So, if we implement two simple modifications to *action* from the example:
 
     Action: Man is holding a professionally designed sign that reads "I love dogs and I'm a drunk".  Dog is standing next to Man staring at Man.  Dog has a small sign hanging from the beck that reads: "This cat is crazy".
 
-Output:
-[![](https://github.com/gershu-ar/gershu-ar/blob/f38b44276cb19ce55d3e168fa9f2667890301ddc/articles/img/0bc8527e11b8cbf13a8c445e639a1d9e.png)](https://github.com/gershu-ar/gershu-ar/blob/f38b44276cb19ce55d3e168fa9f2667890301ddc/articles/img/0bc8527e11b8cbf13a8c445e639a1d9e.png)
-
 **Produces exactly that**. The more you describe the medium (paper, sign, wall advertising, graph, etc.) the more realistic it will be:
+
+[![](https://github.com/gershu-ar/gershu-ar/blob/f38b44276cb19ce55d3e168fa9f2667890301ddc/articles/img/0bc8527e11b8cbf13a8c445e639a1d9e.png)](https://github.com/gershu-ar/gershu-ar/blob/f38b44276cb19ce55d3e168fa9f2667890301ddc/articles/img/0bc8527e11b8cbf13a8c445e639a1d9e.png)
 
 Again: *being drunk* is super general, not everybody looks or behaves the same when drunk. In this case, Qwen/Krea 2 did their best to represent the scenario. If I were to add "Red face, glassy eyes, sloppy grin, vacant stare" the result would surely differ. Dog, on the other hand, strangely looks like its smiling, doesn't it?
 
@@ -244,7 +243,7 @@ A generalist negative prompt to get realistic, amateur looking renders, although
 
 As with the nudes, this is also related on how models are trained: **the base pictures use maximum efficiency studio lightning to get 100% out the photographed character**. **It's only natural wanting to go back to the source material**, those inputs on which that model was trained on (this is why most models share the same faces/look-a-likes too).
 
-As for the **lighting** issue itself, it's quite the **nightmare** if you want to work with nuances on dark/low light/moody scenarios. **Daylight scenarios are easy, low-ISO's are a challenge. **
+As for the **lighting** issue itself, it's quite the **nightmare** if you want to work with nuances on dark/low light/moody scenarios. **Daylight scenarios are fairly easy, low-ISO's are a true challenge.**
 
 I won't go deeper into lighting cause it's extremely complicated to prompt properly -for me at least- on the account other factors are taken into consideration by the models when receiving the embed; lighting embeds alone cannot always succeed. Prompting a camera angle can turn a useless lighting prompt into a masterpiece over a frame: models in general are very uncompliant to lighting on every shape, color and flavor.
 
