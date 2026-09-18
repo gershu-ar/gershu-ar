@@ -1,21 +1,39 @@
 # Qwen/Krea 2 on ComfyUI
-### The Totally Unrequested Prompting Tips
+### The Totally Unrequested Prompting Tips - Rated R for language
 #### For the purist prompter
+------------
+**THE BIG OLD ~~ASS~~ INDEX**
+1. [The 101](#the-101)<br>
+2. [Bootcamp](#bootcamp)<br>
+2.1. [QWEN vs SDXL](#qwen-vs-sdxl)<br>
+2.2. [Prompting on Qwen](#prompting-on-qwen)<br>
+2.2.1 [Structure, structure, structure](#structure-structure-structure)<br>
+2.2.2. [One -or a few- word to rule them all](#one--or-a-few--word-to-rule-them-all)<br>
+2.3 [Remember](#remember)<br>
+2.4. [Every great lie has a lot of detail](#every-great-lie-has-a-lot-of-detail)<br>
+2.5. [Mark Twain yourself thru Qwen](#mark-twain-yourself-thru-qwen)<br>
+2.6. [Melting faces, water droplets and artifacts](#melting-faces-water-droplets-and-artifacts)<br>
+2.7. [Don'T be so Negative: try to see the Light](#dont-be-so-negative-try-to-see-the-light)<br>
+2.8. [Cut!](#cut)<br>
+2.9. [*Nutshelling* it](#nutshelling-it)<br>
+2.10. [Foot notes](#foot-notes)
 
-----
-`Disclaimer: Yes, there are probably a ton of errors in this article.  Suggestions are always welcome, drop me a line!`
+------------
+Disclaimer: Yes, there are probably a ton of errors in this article.  Suggestions are always welcome, drop me a line!
 
+------------
 
-## THE 101
+<br>
+
+## The 101
 Prompt → Qwen (encode) → Krea 2 (denoise) → VAE (decode)<br>
 Congratulations, you're all set for BOOTCAMP.
 
+<br>
+<br>
 
-
-## BOOTCAMP
-
+## Bootcamp
 #### **QWEN VS SDXL**
-
 Qwen does not fill in the empty spaces. If you have not described it, it will not be there. No prompt, no tokenization, no embed. As for SDXL's CLIP ViT-L it was created to be light, tolerant, and to guess, not to follow orders.
 
 If you're coming from SDXL you will notice that Qwen/Krea 2 is a whole new ball game in prompting. Takes a few days but the results are exponentially better, Krea 2 has a lot of potential.
@@ -167,7 +185,7 @@ This isn’t caused by INT8, FP8, or the VAE. The water droplets/melted skin art
 
 Qwen isn’t misinterpreting embeddings — it simply triggers that prior when the prompt includes ambiguous wording or lighting conditions the model statistically associates with moisture.
 
-Check your prompt for terms that activate specular highlights, or reinforce the opposite: matte skin, dry skin, no water droplets, studio lighting. "Wet vagina", "semen" or even "saliva" can surely trigger it, even if they're perfectly prompted and situated into the scene context.
+Check your prompt for terms that activate specular highlights, or reinforce the opposite: matte skin, dry skin, no water droplets, studio lighting. "Wet <female sexual organ>", "semen" or even "saliva" can surely trigger it, even if they're perfectly prompted and situated into the scene context.
 
 Let the prompt undo what the prompt has done I always say 😁
 
@@ -212,3 +230,6 @@ Yeah, I don't use them.
 
 **Updates**<br>
 On it. Will be adding tips from time to time.
+
+[bootcamp]: # "BOOTCAMP"
+[1]: the-101 "The 101"
