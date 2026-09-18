@@ -15,3 +15,8 @@
   A crawler in `Go` with an UI built on `.NET` that maps DNG, JPG, and MP4 files from DJI drones into a single portable HTML map, extracting telemetry for precise pin location with heading line and cones of view (POV).
 - [gFirebaseDeployer](https://github.com/gershu-ar/gFirebaseDeployer)<br>
   A lightweight, bilingual GUI for Firebase deploys — because you deserve better than command lines
+
+## 💬 Thoughts or suggestions?
+
+- **Want to improve an article?** Fork the repo, edit the file, and submit a **Pull Request**.
+- **Want to leave a comment or feedback?** Start a conversation in [Discussions](../../discussions).
