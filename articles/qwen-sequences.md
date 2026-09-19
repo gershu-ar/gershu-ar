@@ -1,15 +1,19 @@
-# Qwen/Krea 2 on ComfyUI
-### The Totally Unrequested Prompting Tips
-### Working with NSWF and SWF models
-#### FOR THE PURIST PROMPTER
-##### Rated R for strong language
+# 🎨 Qwen / Krea 2 on ComfyUI
+### *The Totally Unrequested Prompting Guide*
+---
+**Working with NSFW & SFW models**  
+*For the Purist Prompter*  
+
+This guide was 97% human-written by a non-English language native, with 3% assistance from *Google Gemini 3.6-flash*—mostly for Markdown formatting.
+
+🔞 `RATED R` — *Contains strong language*
 
 [![](https://github.com/gershu-ar/gershu-ar/blob/1a76545fc4263706b4555df94f6163861354c7b3/articles/img/cover_qwen_krea2.jpg)](https://github.com/gershu-ar/gershu-ar/blob/1a76545fc4263706b4555df94f6163861354c7b3/articles/img/cover_qwen_krea2.jpg)
 
 Hastily generated using Krea 2 NSFW model [Sick Ollie](https://civitai.red/models/2676616/sick-ollie "Sick Ollie") on [ComfyUI](https://github.com/comfy-org/ComfyUI "ComfyUI") portable v0.36.0
 
 ------------
-## THE BIG OLD ~~ASS~~ INDEX
+## THE BIG OLD INDEX
 1. [The 101](#the-101)<br>
 2. [Bootcamp](#bootcamp)<br>
 2.1. [QWEN/Krea 2 vs SDXL](#qwenkrea-2-vs-sdxl)<br>
@@ -27,7 +31,7 @@ Hastily generated using Krea 2 NSFW model [Sick Ollie](https://civitai.red/model
 8. [Foot notes / Q&A / Recommended models](#foot-notes--qa--recommended-models)
 
 ------------
-Disclaimer: Yes, there are probably a ton of errors in this article.  Suggestions are always welcome, drop me a line!
+Disclaimer: There are probably a ton of errors in this article.  Suggestions are always welcome, drop me a line!
 - **Want to improve this article?** Fork this repo, edit the file, and submit a **Pull Request**.
 - **Want to leave a comment or feedback?** Start a conversation in [Discussions](https://github.com/gershu-ar/gershu-ar/discussions "Discussions").
 ------------
@@ -41,6 +45,29 @@ Congratulations, you're all set for BOOTCAMP.
 👆 [Back to index](#the-big-old-ass-index)
 <br><br>
 ## Bootcamp
+
+Welcome! 
+
+My **tool of choice** was, is and I think it will always be [ComfyUI portable](https://github.com/Comfy-Org/ComfyUI/) (v0.36.0 as of SEP/2026) using a Qwen3-VL-4B FP8 Scaled *Text Encoder* and the Qwen *Image VAE*.
+
+On rendered examples I have used several models (Gonzalomo mostly, at the end I share links), running on local setup with a RTX 3090 (24 GB VRAM) so I could go for `bf16` quantization but  `int8` simply **flies** on Ampere, leaving a massive overhead of free VRAM for the Text Encoder -namely, Qwen- and whatever else I require.  Output quality is perfect for the task I require.
+
+> `bf16`, `int8`, `nf4`... at the very end this guide the quantization appropiate model for your GPU is presented.
+
+For your convenience [you can find here](https://github.com/gershu-ar/gershu-ar/blob/main/articles/workflows/Purist%20Krea%202.json "you can get here") a **simple**,** purist Qwen / Krea 2 ComfyUI workflow** in case you feel like testing prompts along.  The workflow has been *un-Qwened* (removed the LLM prompt enhancement and automatic negative creation) and *un-LoRAed* (no nodes for them), just two text boxes (positive and negative) and a few settings for model, CFG, steps and the-like.
+
+***NSFW .... wait...? Am I here to learn how to create porn?***
+
+| No  | Yes |
+| ------------ | ------------ |
+| Don't be confused: NSFW models render perfectly dressed scenarios and I consider them excellent at rendering dressed people precisely because clothing is not enforced by the model and I get to choose what and how clothing is being worn.  On SFW models there's the possibility of ruining certaing clothing or even a pose on the account of avoiding showing nudity or the posibility of nudity.  | If you want to, you can.  |
+
+**This guide is about Qwen / Krea 2 prompting engineering**, *not for determining the use you give to these tools*.  That, amigo, is entirely up to **you**.
+
+> Only one strong request: **Kindly keep children out and away its use**.  Do not use these tools to generate content of people under 18 years old in sexual or suggestive situations.  Neither allow people under 18 years old to access these tools.
+
+Enough introduction.  Let's start.
+
 #### **QWEN/KREA 2 vs SDXL**
 Qwen and Krea 2 do not fill in the empty spaces.  In Qwen no prompt, no tokenization, no embed.   If you have not described it, it will not be there.  Mostly.  Gaps will be completed to round up a context and provide a presentable product, but remove from your head the idea of the model doing what you don't want to.  Qwen and Krea 2 require rich prompts to properly generate specific rich renders and oh boy if they deliver!
 
