@@ -12,18 +12,19 @@ Hastily generated using Krea 2 NSFW model [Sick Ollie](https://civitai.red/model
 ## THE BIG OLD ~~ASS~~ INDEX
 1. [The 101](#the-101)<br>
 2. [Bootcamp](#bootcamp)<br>
-2.1. [QWEN/Krea 2 vs SDXL](#qwenkrea2-vs-sdxl)<br>
+2.1. [QWEN/Krea 2 vs SDXL](#qwenkrea-2-vs-sdxl)<br>
 2.2. [Prompting on Qwen](#prompting-on-qwen)<br>
-2.2.1 [Structure, structure, structure](#structure-structure-structure)<br>
+2.2.1. [Structure, structure, structure](#structure-structure-structure)<br>
 2.2.2. [One -or a few- word to rule them all](#one--or-a-few--word-to-rule-them-all)<br>
-2.3 [Remember](#remember)<br>
+2.3. [Remember](#remember)<br>
 2.4. [Every great lie has a lot of detail](#every-great-lie-has-a-lot-of-detail)<br>
 2.5. [Mark Twain yourself thru Qwen](#mark-twain-yourself-thru-qwen)<br>
-2.6. [Melting faces, water droplets and artifacts](#melting-faces-water-droplets-and-artifacts)<br>
-2.7. [Don'T be so Negative: try to see the Light](#dont-be-so-negative-try-to-see-the-light)<br>
-2.8. [Cut!](#cut)<br>
-2.9. [*Nutshelling* it](#nutshelling-it)<br>
-2.10. [Foot notes](#foot-notes)
+3. [NSWF vs SFW](#nswf-vs-sfw)<br>
+4. [Melting faces, water droplets and artifacts](#melting-faces-water-droplets-and-artifacts)<br>
+5. [Don'T be so Negative: try to see the Light](#dont-be-so-negative-try-to-see-the-light)<br>
+6. [Cut!](#cut)<br>
+7. [*Nutshelling* it](#nutshelling-it)<br>
+8. [Foot notes / Q&A / Recommended models](#foot-notes)
 
 ------------
 Disclaimer: Yes, there are probably a ton of errors in this article.  Suggestions are always welcome, drop me a line!
@@ -195,7 +196,7 @@ Again: *being drunk* is super general, not everybody looks or behaves the same w
 
 👆 [Back to index](#the-big-old-ass-index)
 <br><br>
-#### NSWF VS SFW
+### NSWF VS SFW
 
 You need to render a character wearing a shirt. But even as you prompt the word "shirt" like a lunatic, the character appears time and time again with the shirt up, exposing chest. Why? Models learn the human body as a base structure, and clothing is learned as an additional layer. **When context is ambiguous, the model may fall back to the underlying anatomical prior**. **The base model, the layer is essentially a nude body**.
 
@@ -218,7 +219,7 @@ Same goes for the negative prompting (below). Go for the detail about the clothi
 
 👆 [Back to index](#the-big-old-ass-index)
 <br><br>
-#### MELTING FACES, WATER DROPLETS AND ARTIFACTS
+### MELTING FACES, WATER DROPLETS AND ARTIFACTS
 Are you getting renders with faces melting like wax? Or excesive, unsolicited water droplets like the characters are sweating as a fake witness would do?
 
 **This isn’t caused by INT8, FP8, or the VAE.** The water droplets/melted skin artifacts come from the checkpoint’s own wet‑skin prior, which is common in **models trained on glamour or NSFW datasets**.
@@ -231,7 +232,7 @@ Qwen isn’t misinterpreting embeddings — it simply triggers that prior when t
 
 👆 [Back to index](#the-big-old-ass-index)
 <br><br>
-#### DON'T BE SO NEGATIVE: TRY TO SEE THE LIGHT
+### DON'T BE SO NEGATIVE: TRY TO SEE THE LIGHT
 
 In ComfyUI's official Krea 2 t2i template the negative is automatically created based on the positive by a stranger process my brain was unable to decode and/or I simply don't care to find about. I didn't like this, so I separated the negative (clip text) to have full control. Do not overuse the negative but use it. Start with a base negative like:
 
@@ -253,7 +254,7 @@ I won't go deeper into lighting cause it's extremely complicated to prompt prope
 
 👆 [Back to index](#the-big-old-ass-index)
 <br><br>
-#### CUT!
+### CUT!
 [The camera section requires an article on its own, really hard to master and context dependent if you're looking for specific shots, but I will be adding some general prompting tips for simple camera setups later on - Pending]
 
 👆 [Back to index](#the-big-old-ass-index)
@@ -274,6 +275,8 @@ Haven't tested that many, but these ones I found to be superb realistic models -
 - [GonzaLomo](https://civitai.red/models/2761943/gonzalomo-krea-2)
 - [FinePorn](https://civitai.red/models/2762538/fineporn-v4-int8-or-nvfp4-or-bf16-or-fp8)
 - [Sick Ollie](https://civitai.red/models/2676616/sick-ollie)
+
+> A word of warning: Unchecked (uncensored) NSFW models **are** able to produce **illegal content**, thus communities like CivitAI are overrun by the kind of people who look for that kind of tools.  **A lot of Jeffrey Epsteins on CivitAI**.  Dangers of IA are very real, specially in the wrong hands.  **Use extreme caution when providing data such as creating a profile and/or sharing socials or even your own work**, it can all be reverse searched and you can easily fall victim to a stalker.  Avoid creating serious profiles and use the websites just to procure models, don't engage.
 
 **"*What version should I download?*"**<br>
 Here's a simple Krea 2 quantization guide by popular GPU model:
