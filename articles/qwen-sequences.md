@@ -54,7 +54,7 @@ On rendered examples I have used several models (Gonzalomo mostly, at the end I 
 
 > `bf16`, `int8`, `nf4`... at the very end this guide the quantization appropiate model for your GPU is presented.
 
-For your convenience [you can find here](https://github.com/gershu-ar/gershu-ar/blob/main/articles/workflows/Purist%20Krea%202.json "you can get here") a **simple**,** purist Qwen / Krea 2 ComfyUI workflow** in case you feel like testing prompts along.  The workflow has been *un-Qwened* (removed the LLM prompt enhancement and automatic negative creation) and *un-LoRAed* (no nodes for them), just two text boxes (positive and negative) and a few settings for model, CFG, steps and the-like.
+For your convenience [you can find here](https://github.com/gershu-ar/gershu-ar/blob/main/articles/workflows/Purist%20Krea%202.json "you can get here") a **simple**, **purist Qwen / Krea 2 ComfyUI workflow** in case you feel like testing prompts along (hit on the three dots and select _Download_, then open in ComfyUI).  The workflow has been *un-Qwened* (removed the LLM prompt enhancement and automatic negative creation) and *un-LoRAed* (no nodes for them), just two text boxes (positive and negative) and a few settings for model, CFG, steps and the-like.
 
 ***NSFW .... wait...? Am I here to learn how to create porn?***
 
