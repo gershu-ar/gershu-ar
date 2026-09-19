@@ -56,6 +56,11 @@ On rendered examples I have used several models (Gonzalomo mostly, at the end I 
 
 For your convenience [you can find here](https://github.com/gershu-ar/gershu-ar/blob/main/articles/workflows/Purist%20Krea%202.json "you can get here") a **simple**, **purist Qwen / Krea 2 ComfyUI workflow** in case you feel like testing prompts along (hit on the three dots and select _Download_, then open in ComfyUI).  The workflow has been *un-Qwened* (removed the LLM prompt enhancement and automatic negative creation) and *un-LoRAed* (no nodes for them), just two text boxes (positive and negative) and a few settings for model, CFG, steps and the-like.
 
+<img width="1919" height="936" alt="image" src="https://github.com/user-attachments/assets/bda58961-f054-4ed6-9250-7c1878f444ab" />
+
+A Qwen / Krea 2 [purist ComfyUI workflow](https://github.com/gershu-ar/gershu-ar/blob/main/articles/workflows/Purist%20Krea%202.json) with generation preview, the rest of the nodes are comfortable set in a subgraph.
+<br><br>
+
 ***NSFW .... wait...? Am I here to learn how to create porn?***
 
 | No  | Yes |
@@ -90,7 +95,7 @@ Once you try Qwen and Krea 2 you will not go back to SDXL.  Guaranteed.
 
 Qwen interprets and generates embeddings in natural language.  The token limitation and fractionalization of SDXL is not present here: every word counts, every sentence has a meaning and *poetry* is not corny but what makes a fantastic output.
 
-A suggested prompting technique involves** separating the prompt in categories**, most specially for complex scenes:
+A suggested prompting technique involves **separating the prompt in categories**, specially for complex scenes with multiple characters:
 
     Subject details: Uniquely name and describe each character on the scene.
     
@@ -107,7 +112,7 @@ A suggested prompting technique involves** separating the prompt in categories**
     Textures: Skins, fabrics, liquids, etc.
 
 **EXAMPLE**<br>
-Setting up a simple a scene:
+Let's prompt for a simple scene:
 
     Subject details: A man, 45-years-old middle-aged, unfit, ugly. A dog, brown.
     
@@ -152,7 +157,7 @@ Oh, Qwen, you cheeky, adorable bastard.
 ##### One -or a few- word to rule them all
 So, to recap: "**Woman standing with a bath robe**" will produce a woman with an open bath robe showing the underneath nude body. **Why is she nude**? Because the **default statistical prior** of a robe is not to be closed/buttoned. 
 
-"**Long pants are seen over the floor**" will render a pair of perfectly positioned pants. **Why**? Because that's the** default statistical prior of the pants**: straight, perfectly in order, shape and position for the camera, as if presented for sale or in a drawer. *The perfect image of the pants* vs the image of realistic the pants.
+"**Long pants are seen over the floor**" will render a pair of perfectly positioned pants. **Why**? Because that's the **default statistical prior of the pants**: straight, perfectly in order, shape and position for the camera, as if presented for sale or in a drawer. *The perfect image of the pants* vs the image of realistic the pants.
 
 **Be detailed**. Qwen is expecting the *closed* for the bath robe and *messy* scenario for the pants for a realistic output.  For Qwen that distinction is everything and so is for you: the pants, or robe or whatever you're prompting, will maintain coherence in between renders.
 
@@ -265,7 +270,7 @@ In ComfyUI's official Krea 2 t2i template the negative is automatically created 
 
     avoid flash photography. avoid cold white lighting.  avoid studio lighting.
     
-**Yes**, **use "avoid" inside the negative clip**, it is not a double negation but a **reinforced semantic distance**.** A double negative creates a stronger semantic push away from the concept**, the same way "**fully** wearing" emphasizes the be wearing something.
+**Yes**, **use "avoid" inside the negative clip**, it is not a double negation but a **reinforced semantic distance**. **A double negative creates a stronger semantic push away from the concept**, the same way "**fully** wearing" emphasizes the be wearing something.
 
 A generalist negative prompt to get realistic, amateur looking renders, although diffusion models do not always make it easy when it comes to the lighting section. This happens on SDXL, Krea 2 and every other single encoder out there. LoRAs or no LoRAs (tried all options).
 
@@ -277,7 +282,7 @@ I won't go deeper into lighting cause it's extremely complicated to prompt prope
 
 **Be aware all Krea 2 models handle lighting differently**.  I always suggest trying several models until you find the one that fits the job as the main model while keeping the rest as secondary.  Sometimes a specific shot can only be achieved with a specific model.  You will get to know each model's cons and pros the more use you use them.
 
-**Run the same prompt thru different models and compare results yourself. ** **Most, if not all, Krea 2 models are excellent** since they mostly use the same training material, only they adapt lighting and other elements to produce a custom styled product determined by each modeler.  **They all look the same, but they are not.**
+**Run the same prompt thru different models and compare results yourself.** **Most, if not all, Krea 2 models are excellent** since they mostly use the same training material, only they adapt lighting and other elements to produce a custom styled product determined by each modeler.  **They all look the same, but they are not.**
 
 👆 [Back to index](#the-big-old-ass-index)
 <br><br>
