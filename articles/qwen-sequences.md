@@ -24,7 +24,7 @@ Hastily generated using Krea 2 NSFW model [Sick Ollie](https://civitai.red/model
 5. [Don'T be so Negative: try to see the Light](#dont-be-so-negative-try-to-see-the-light)<br>
 6. [Cut!](#cut)<br>
 7. [*Nutshelling* it](#nutshelling-it)<br>
-8. [Foot notes / Q&A / Recommended models](#foot-notes)
+8. [Foot notes / Q&A / Recommended models](#foot-notes--qa--recommended-models)
 
 ------------
 Disclaimer: Yes, there are probably a ton of errors in this article.  Suggestions are always welcome, drop me a line!
@@ -259,14 +259,14 @@ I won't go deeper into lighting cause it's extremely complicated to prompt prope
 
 👆 [Back to index](#the-big-old-ass-index)
 <br><br>
-#### *NUTSHELLING* IT
+### *NUTSHELLING* IT
 
 Doing brain surgery with a jackhammer: SDXL felt like that.
 Qwen/Krea 2 are closer to Star Wars: ahead of its time and to succeed just make sure the two proton torpedoes go into the two meters wide thermal exhaust port located in the station’s meridian trench. Remember: **detail**.
 <br><br>
 👆 [Back to index](#the-big-old-ass-index)
 
-### FOOT NOTES
+### FOOT NOTES / Q&A / RECOMMENDED MODELS
 
 **What Krea 2 models work as they should?**<br>
 Haven't tested that many, but these ones I found to be superb realistic models - in no order of preference:
