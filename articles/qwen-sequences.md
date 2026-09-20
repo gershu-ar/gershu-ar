@@ -46,19 +46,23 @@ Congratulations, you're all set for BOOTCAMP.
 <br><br>
 ## Bootcamp
 
-Welcome! 
+Welcome!
 
-My **tool of choice** was, is and I think it will always be [ComfyUI portable](https://github.com/Comfy-Org/ComfyUI/) (v0.36.0 as of SEP/2026) using a Qwen3-VL-4B FP8 Scaled *Text Encoder* and the Qwen *Image VAE*.
+My **tool of choice is** **[ComfyUI portable](https://github.com/Comfy-Org/ComfyUI/)** (v0.36.0 as of SEP/2026).
 
-On rendered examples I have used several models (Gonzalomo mostly, at the end I share links), running on local setup with a RTX 3090 (24 GB VRAM) so I could go for `bf16` quantization but  `int8` simply **flies** on Ampere, leaving a massive overhead of free VRAM for the Text Encoder -namely, Qwen- and whatever else I require.  Output quality is perfect for the task I require.
+[Utilized models](#foot-notes--qa--recommended-models "Used models") vary but the Qwen3-VL-4B FP8 Scaled *Text Encoder* and the Qwen *Image VAE* remained in place for all the examples generated in this guide.
 
-> `bf16`, `int8`, `nf4`... at the very end this guide the quantization appropiate model for your GPU is presented.
+Knowledge gathered and examples renderered on a local setup:  Windows 11 25H2, iCore Ultra 7 265K, 64 GB RAM (DDR5) with an NVIDIA RTX 3090 (24 GB VRAM, Studio Driver 616.92) as the powerhouse being able to handle `bf16` quantization but using  `int8` models because it simply **fliiiies** on Ampere architecture, leaving a massive overhead of free VRAM for the Text Encoder and whatever else I require.  Output quality is perfect for my needs and artifacts are neglegible to none.
 
-For your convenience [you can find here](https://github.com/gershu-ar/gershu-ar/blob/main/articles/workflows/Purist%20Krea%202.json "you can get here") a **simple**, **purist Qwen / Krea 2 ComfyUI workflow** in case you feel like testing prompts along (hit on the three dots and select _Download_, then open in ComfyUI).  The workflow has been *un-Qwened* (removed the LLM prompt enhancement and automatic negative creation) and *un-LoRAed* (no nodes for them), just two text boxes (positive and negative) and a few settings for model, CFG, steps and the-like.
+> `bf16`, `int8`, `nf4`... at the [very end](#foot-notes--qa--recommended-models "very end") of this guide the appropiate quantization model for your GPU is suggested.
+
+Also, for your convenience, [you can find here](https://github.com/gershu-ar/gershu-ar/blob/main/articles/workflows/Purist%20Krea%202.json "you can get here") a **simple**, **purist Qwen / Krea 2 ComfyUI workflow** in case you feel like testing prompts along.  Just hit on the three dots and select _Download_, then open in ComfyUI.  
+
+The workflow has been *de-automatizated* (removed the LLM prompt enhancement and automatic negative creation) and *un-LoRAed* (no nodes for them), just two text boxes (positive and negative) and a few settings for model, CFG, steps and the-like.  We're going [Amish](https://amishamerica.com/do-amish-use-technology/) on this one.
 
 <img width="1919" height="936" alt="image" src="https://github.com/user-attachments/assets/bda58961-f054-4ed6-9250-7c1878f444ab" />
 
-A Qwen / Krea 2 [purist ComfyUI workflow](https://github.com/gershu-ar/gershu-ar/blob/main/articles/workflows/Purist%20Krea%202.json) with generation preview, the rest of the nodes are comfortable set in a subgraph.
+*A Qwen / Krea 2 [purist ComfyUI workflow](https://github.com/gershu-ar/gershu-ar/blob/main/articles/workflows/Purist%20Krea%202.json) with generation preview, the rest of the nodes are comfortable set in a subgraph.*
 <br><br>
 
 ***NSFW .... wait...? Am I here to learn how to create porn?***
@@ -421,7 +425,8 @@ On it. Will be adding tips and try to improve format.  I find markdown very unfr
 
 **Thanks to**<br>
 GitHub for being weirdly awesome and not banning me after so many repetitive edits.  To all the people behind ComfyUI, model creators and coders that make the true miracle.
-
+<br><br>
+-- Gershu / gershu.ar<br><br>
 👆 [Back to index](#the-big-old-ass-index)
 <br><br>
 End of guide.<br>
