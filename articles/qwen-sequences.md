@@ -380,7 +380,7 @@ I won't go deeper into lighting cause it's extremely complicated to prompt prope
 ### CUT!
 Prompting for camera angles proves challening on any difussion model, also for the reason on how they have been trained, but **with precise prompting you can achieve practically any shot you can think of**.
 
-This section will be expanded eventually but for the the time being, some examples are provided for camera prompting that provide sufficient difference in betweem to play around.
+> This section will be expanded eventually; for the time being some examples are provided for simple camera prompting.
 
 Start with simple camera prompting, as natural as you can:
 
@@ -399,7 +399,7 @@ For the time being, explore with these six camera examples:
 
 **Full Body & Environmental**
 
-| Angle / Plane | (Prompt) |
+| Angle / Plane | Prompt |
 | :--- | :--- |
 | **High Angle Wide Shot** | `CAMERA: Shot from a high angle looking down at a steep downward tilt, wide environmental 24mm lens perspective, full-length shot capturing the subject's entire body from head to toe, wide framing with generous headroom and visible floor space.` |
 | **Low Angle Wide Shot** | `CAMERA: Extreme low-angle shot positioned inches above floor level looking upward, wide-angle 28mm camera focal length, environmental full-body framing showing the complete figure against the room's height.` |
@@ -407,7 +407,7 @@ For the time being, explore with these six camera examples:
 
 **Close-ups & Portraits**
 
-| Angle / Plane | (Prompt) |
+| Angle / Plane | Prompt |
 | :--- | :--- |
 | **Candid Smartphone Close-Up** | `CAMERA: Tight close-up portrait taken with a mobile phone main camera, shot slightly above eye level, intimate close framing focusing tightly on the face and shoulders, shallow depth of field with natural background separation.` |
 | **Over-the-Shoulder / Dutch Angle** | `CAMERA: Medium close-up shot over the shoulder, camera positioned at a subtle Dutch angle (tilted frame), 50mm portrait lens perspective, tight framing from the chest up.` |
