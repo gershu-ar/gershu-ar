@@ -201,7 +201,7 @@ And be descriptive about the color of the bikini too, Krea 2 will try to mantain
 <br><br>
 #### REMEMBER
 
-You're not in Kansas anymore: **This is not SDXL.**
+You're not in Kansas anymore, Dorothy: **This is NOT SDXL.**
 
 Using `(pants:1.5)` won't get you anywhere, there's no embed weighing on Qwen. Every word is as important as the rest, the weighing is done by Krea 2 once it receives the embeddings.  The more an embedding is repeated and playing a role on the context, the more it will comply to what is ask from it... as long as you don't over confuse it.
 
@@ -305,6 +305,8 @@ The fix was:
     EVENT NAME:
     Word "ENCHANTMENT" must be spelled exactly: E N C H A N T M E N T
 
+And voilá.  A proper beautiful full sized graphic in seconds.  The absolute terror of every graphic designer.
+
 As a side note, if I were to add "The" before "word"  ("*The word*..."), Qwen / Krea 2 would understand that I want "The" to be *announcing*/*presenting* the word **ENCHANTMENT**: that will render "The" above "**ENCHANTMENT**".  Go ahead and try both options, with and without "The" before "word" and you will notice it.
 
 Again: the wrong word, at the wrong place makes all the difference.
@@ -348,7 +350,7 @@ Qwen isn’t misinterpreting embeddings — it simply triggers that prior when t
 *Let the prompt undo what the prompt has done* I always say 😁
 
 A very personal note on the matter:<br>
-I have experienced this while working on prompts near/on water, even if there's a "pool in the background".  For a reason, characters appear with a wet skin.  Have even seen renders of wet skin get triggered by prompting the word "kissing", in the contextual understanding there's saliva involved in a kiss.  Not all models react the same, but I have seen this a generality in mostly all tested Krea 2 models.  Perhaps is the way the models are trained (they mostly all use the same base training models after all), so there's a chance this is an embedding being taken out of proportions that is just getting copied from model to model.
+I have experienced this while working on prompts near/on water, even if there's a "pool in the background".  For a reason, characters appear with a wet skin (not so much melting faces).  I have produced renders with visible clear wet skin that seem to get triggered by prompting the word "kissing", in the contextual understanding there's saliva involved in a kiss.  Not all models react the same, but I have seen this as a generality in all tested Krea 2 models.  Perhaps is the way the models are trained (they mostly all use the same base training models after all), so there's a chance this is an embedding being taken out of proportion or misunderstood that is just getting copied from model to model.  Maybe is Qwen creating the wrong embeddings under certain scenarios?
 
 
 👆 [Back to index](#the-big-old-ass-index)
@@ -376,8 +378,42 @@ I won't go deeper into lighting cause it's extremely complicated to prompt prope
 👆 [Back to index](#the-big-old-ass-index)
 <br><br>
 ### CUT!
-[The camera section requires an article on its own, really hard to master and context dependent if you're looking for specific shots, but I will be adding some general prompting tips for simple camera setups later on - Pending]
+Prompting for camera angles proves challening on any difussion model, also for the reason on how they have been trained, but **with precise prompting you can achieve practically any shot you can think of**.
 
+This section will be expanded eventually but for the the time being, some examples are provided for camera prompting that provide sufficient difference in betweem to play around.
+
+Start with simple camera prompting, as natural as you can:
+
+`CAMERA: Wide shot, full-body`,<br>
+`CAMERA: Low angle shot`,<br>
+`CAMERA: Cell phone amateur tilted shot, blurred background`<br>
+etc.
+
+You also can (and should) mention the subject's into the camera's prompt:
+
+A `tight focus on facial features` prompt is not the same as `tight focus on the hand of the female` if your're rendering a macro close-up.  If there're two people on the scene, the first prompt will focus on both (since facial features **apply to both**), not producing a true macro close-up, while the second will focus on the hand of the female: **specific character, specific body part**.
+
+Prompting for the render to stylize with specific lenses or filters does work and make wonders.  Examples will be added latter on, this guide is on-going.
+
+For the time being, explore with these six camera examples:
+
+**Full Body & Environmental**
+
+| Angle / Plane | (Prompt) |
+| :--- | :--- |
+| **High Angle Wide Shot** | `CAMERA: Shot from a high angle looking down at a steep downward tilt, wide environmental 24mm lens perspective, full-length shot capturing the subject's entire body from head to toe, wide framing with generous headroom and visible floor space.` |
+| **Low Angle Wide Shot** | `CAMERA: Extreme low-angle shot positioned inches above floor level looking upward, wide-angle 28mm camera focal length, environmental full-body framing showing the complete figure against the room's height.` |
+| **Distant Eye-Level Shot** | `CAMERA: Wide full-body shot taken from across the room at eye level, 35mm lens, subject is framed completely within the surrounding environment with ample distance between camera and subject.` |
+
+**Close-ups & Portraits**
+
+| Angle / Plane | (Prompt) |
+| :--- | :--- |
+| **Candid Smartphone Close-Up** | `CAMERA: Tight close-up portrait taken with a mobile phone main camera, shot slightly above eye level, intimate close framing focusing tightly on the face and shoulders, shallow depth of field with natural background separation.` |
+| **Over-the-Shoulder / Dutch Angle** | `CAMERA: Medium close-up shot over the shoulder, camera positioned at a subtle Dutch angle (tilted frame), 50mm portrait lens perspective, tight framing from the chest up.` |
+| **Extreme Detail Close-Up** | `CAMERA: Macro close-up shot, 85mm lens perspective, tight focus on facial features and eyes with the rest of the scene falling into a heavy blurred bokeh.` |
+
+It's suggested to use IA (Gemini, Copilot, ChatGPT, etc) to assist in creating prompts to render **very specific camera angles** views.<br><br>
 👆 [Back to index](#the-big-old-ass-index)
 <br><br>
 ### *NUTSHELLING* IT
