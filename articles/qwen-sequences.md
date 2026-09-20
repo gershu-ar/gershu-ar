@@ -74,17 +74,30 @@ A Qwen / Krea 2 [purist ComfyUI workflow](https://github.com/gershu-ar/gershu-ar
 Enough introduction.  Let's start.
 
 #### **QWEN/KREA 2 vs SDXL**
-Qwen and Krea 2 do not fill in the empty spaces.  In Qwen no prompt, no tokenization, no embed.   If you have not described it, it will not be there.  Mostly.  Gaps will be completed to round up a context and provide a presentable product, but remove from your head the idea of the model doing what you don't want to.  Qwen and Krea 2 require rich prompts to properly generate specific rich renders and oh boy if they deliver!
+Qwen and Krea 2 do not fill in the empty spaces.  In Qwen / Krea 2 no prompt, no tokenization, no embed.   If you have not described it, it will not be there.  *Mostly*.  Gaps will be completed to round up a context and provide a presentable product, but remove from your head the idea of the model doing what you don't want to.  Qwen and Krea 2 require rich prompts to properly generate specific rich renders and **oh boy if they deliver**!
 
-You can throw simple prompts and Qwen/Krea 2 will provide, just don't confuse it with specific shots, where light, angle, character description and such play a role, specially if you're under the idea of continuity in between frames (story telling, video generation).
+**You can throw simple prompts and Qwen/Krea 2 will provide**, just don't confuse it with **specific shots**, where light, angle, character description and such play a role, specially if you're under the idea of continuity in between frames (story telling, video generation).
 
 As for SDXL's CLIP **ViT-L** it was created to be **light**, **tolerant**, and to **guess**, not to follow strict orders.  SDXL does an amazing job at being casual, but you will pay the price in Qwen/Krea 2 if your mindset is along that pipeline.
 
 Extensive detailed prompts in SDXL require a lot of external nodes to position region, render faces properly, have body proportions as desired on that dreamed setting that randomly appeared without a true control.
 
-If you're coming from SDXL you will notice that **Qwen/Krea 2 is a whole new ball game in prompting**. Takes a few days but the results are exponentially better, **Krea 2 has a lot of potential**.
+Also, SDXL experiences something denominated *CLIP chunking* (aka *context window,* aka *token chunking*, aka *prompt truncation*, aka *token boundary effects*), with about 75 useful tokens per chunk:
 
-Once you try Qwen and Krea 2 you will not go back to SDXL.  Guaranteed.
+    Prompt Chunk 1
+    [0-75]
+    
+    Prompt Chunk 2
+    [76-150]
+    
+    Prompt Chunk 3
+    [151-225]
+
+This meant the prompt was cut into pieces and then fed to the model.  If the chunks did not make sense separately the model was unforgiving on the results, thus, the longer the prompt, the less sense the output made.
+
+Yes, mods/nodes exist to tackle the issue to different degrees, but they require installation, certain level of technical knowledge and of course dedicating time to it: just for a prompt to make sense.   The good news is **it does not happen on Qwen / Krea 2**.  As you will read time and time again in this guide, Qwen and Krea 2 are more worried about a general sense than *mistakes*.  Hence also the importance of using a clean prompt.  If you make sense, Qwen and Krea 2 will make sense.
+
+To sum up: If you're coming from SDXL you will notice that **Qwen/Krea 2 is a whole new ball game in prompting**. Takes a few days but the results are exponentially better, **Krea 2 has a lot of potential**.  You will not go back to SDXL.  Guaranteed.
 
 **Keep in mind these tips are not noticeable on small prompts but the richer the prompt gets, the more characters are part of it, that's when word precision becomes a must.**
 
@@ -93,9 +106,11 @@ Once you try Qwen and Krea 2 you will not go back to SDXL.  Guaranteed.
 #### **PROMPTING ON QWEN**
 ##### Structure, structure, structure
 
-Qwen interprets and generates embeddings in natural language.  The token limitation and fractionalization of SDXL is not present here: every word counts, every sentence has a meaning and *poetry* is not corny but what makes a fantastic output.
+Qwen interprets and generates embeddings in natural language.  The limitations of SDXL were obvious  is not present here: every word counts, every sentence has a meaning and *poetry* is not corny but what makes a fantastic output.
 
-A suggested prompting technique involves **separating the prompt in categories**, specially for complex scenes with multiple characters:
+A suggested prompting technique involves **separating the prompt in categories**, specially for complex scenes with multiple characters.
+
+Here's a crude explanation of a sample prompt:
 
     Subject details: Uniquely name and describe each character on the scene.
     
@@ -110,6 +125,10 @@ A suggested prompting technique involves **separating the prompt in categories**
     Lighting: Same as camera, the lighting prompting is hard to master (models force light by default and prompt needs to tackle it wisely).
     
     Textures: Skins, fabrics, liquids, etc.
+
+Make your prompts **modular**, so they're easy to modify and even easier to add and remove exceptional/eventual elements and do not worry about the order: Qwen creates embeds from text creating a context, **Krea 2 does not care the order of those embeddings**, as long as they all make sense.  In SDXL the prompt order was extremely important since it layered from the embeddings, in Qwen / Krea 2 what is important is the entire context, not the order you present it.
+
+
 
 **EXAMPLE**<br>
 Let's prompt for a simple scene:
@@ -146,7 +165,7 @@ After contextualizing the scene by creating the embeds, it filled the gaps and p
 
 As you see on the examples both renders look **almost the same**. Liberties are visible. Since I did not specify about sneakers' colors, they're different. Grey for the t-shirt?, yes, but different shades of grays. The leash just "orange" is not detailed enough, needs refinement. Pants are not the same.
 
-Also pay attention how it ignores *ugly* and *fit*. That dude does not stand out: his human face is what is expected to be. See, *Ugly* by itself has no meaning, it needs to be described:* long nose, deformed cheeks*, whatever. Same for the *unfit*. What is *unfit*? Unless you describe it, *unfit* is a shallow concept free of meaning. *Unfit* can refer to several things not just to a body type description.
+Also pay attention how it ignores *ugly* and *fit*. That dude does not stand out: his human face is what is expected to be. See, *Ugly* by itself has no meaning, it needs to be described: *long nose, deformed cheeks*, whatever. Same for the *unfit*. What is *unfit*? Unless you describe it, *unfit* is a shallow concept free of meaning. *Unfit* can refer to several things not just to a body type description.
 
 *Ugly*, *unfit*, ... like using *relaxed*. There's no universal explanation for what *relaxed* is supposed to be in any given situation unless there's a context to it.  If you want somebody with a natural pose and "relaxed", do so by exactly prompting it as such: "The person has a naturally distended body pose, being at ease, resting shoulders and arms, and a face expression of tranquility and calmness".
 
@@ -224,7 +243,62 @@ So, if we implement two simple modifications to *action* from the example:
 
 [![](https://github.com/gershu-ar/gershu-ar/blob/f38b44276cb19ce55d3e168fa9f2667890301ddc/articles/img/0bc8527e11b8cbf13a8c445e639a1d9e.png)](https://github.com/gershu-ar/gershu-ar/blob/f38b44276cb19ce55d3e168fa9f2667890301ddc/articles/img/0bc8527e11b8cbf13a8c445e639a1d9e.png)
 
-Again: *being drunk* is super general, not everybody looks or behaves the same when drunk. In this case, Qwen/Krea 2 did their best to represent the scenario. If I were to add "Red face, glassy eyes, sloppy grin, vacant stare" the result would surely differ. Dog, on the other hand, strangely looks like its smiling, doesn't it?
+The shown example is crude and hasty at best, but illustrates simply how **easily you can add text** to any level of customization and simplicity or complexity you require.
+
+As for handwritten text, keep in mind to get human-like results it requires heavy prompting: *the prior* to handwritten text are perfect handwritten characters, aligned, with clean strokes.  Human writting is not perfect, people usually don't write aligned on the paper, with characters varying in size, etc.  You can get realistically looking handwritting text if you prompt it correctly, just a heads up that is not an easy task. 
+
+Again that is also model dependant: some models understand better than others what you want to achieve.
+
+If you want more complex text or even **overlay graphics**, you can absolutely can by even creating them on the fly: Qwen / Krea 2 excel at it too, not as mathematicaly precise as Ideogram 3.0/4.0 and products, which has been designed to work with text in mind, but it certainly creates a commendable job with ease.
+
+> Remember: **there're no universal difussion models**.  Each model was trained for and is capable of something **different**.  Some excel at doing *this*, other's excel at doing *that*; read the model's card and the creators notes to understand what model you have and what it can and cannot do.  *Try them all!*, I say.  Then decide.
+
+One great feature about Qwen / Krea 2 is you can dedicate an entire prompt to the overlays/graphics or simply take advantage of the modular system and create an overlay graphic line without compromising the rest of your work.
+
+Appending a new module to the sample prompt:
+
+`GRAPHICS: there's a professional TV news lower-third overlay that reads "Cheddar cheese is the best cheese ever", with a graph title that reads "Dawgs, Virginia". The news company is "CNN".  The overlay graphic has a news station format and is positioned at the very bottom of the frame as a full-width banner spanning across the screen.`
+
+The ouput:
+
+<img width="1448" height="1088" alt="image" src="https://github.com/user-attachments/assets/333a64fd-9fee-44b8-8548-2922bb623d03" />
+
+Rendered using NSFW Gonzalomo model (links at the guide end)
+
+As you can see, Qwen / Krea 2 perfectly understood what I wanted and created the requested overlay graphics by word, **even using CNN's real life logo**.
+
+It *filled the gap* (overlay's extra graphics/text) with **gibberish** but that's **partially my fault**: I did not fully specify all details the model was expecting to render the idea properly: model was trained with specific overlay graphics and I did not met the requisites.  **Usually news overlays exhibit a lot of extra information and I was short on my prompting**.  That can be solved by enhancing the prompt and/or creating prompts for very specific overlay graphics with very detailed instructions.
+
+You can also generate full sized graphics easily:
+
+<img width="1024" height="1536" alt="image" src="https://github.com/user-attachments/assets/d64b3136-321b-484f-af32-4efe02bae1ed" />
+
+
+Rendered using NSWF Sick Ollie (links at the guide end)
+
+If you're a movie fan or 40+ you'll get the poster instantly.  Zero challenge in rendering it... except for the word *enchantment*, **all models struggled** with that word, and they all rendered it "Enachantenent".
+
+> The prompting for that image is too complex to be pasted here, but you can easily access it if you download and open the PNG file in your ComfyUI.  Workflow with prompting is embedded in the file.
+
+Since you can run into issues rendering long or complex words in Qwen / Krea 2, always keep in mind there's a way to fix it: no LoRAs, no pills, no diets but the *prompting finesse* way.
+
+In the shown example to make Qwen / Krea 2 render **enchantment** properly all I had to do is be **more specific**.
+
+The original prompt was:
+
+    EVENT NAME:
+    Word "ENCHANTMENT"
+
+The fix was:
+
+    EVENT NAME:
+    Word "ENCHANTMENT" must be spelled exactly: E N C H A N T M E N T
+
+As a side note, if I were to add "The" before "word"  ("*The word*..."), Qwen / Krea 2 would understand that I want "The" to be *announcing*/*presenting* the word **ENCHANTMENT**: that will render "The" above "**ENCHANTMENT**".  Go ahead and try both options, with and without "The" before "word" and you will notice it.
+
+Again: the wrong word, at the wrong place makes all the difference.
+
+
 
 👆 [Back to index](#the-big-old-ass-index)
 <br><br>
@@ -261,6 +335,10 @@ Qwen isn’t misinterpreting embeddings — it simply triggers that prior when t
 **Check your prompt for terms that activate specular highlights, or reinforce the opposite:** *matte skin*, *dry skin*, *no water droplets*, *studio lighting*. "Wet <female sexual organ>", "semen" or even "saliva" can surely trigger it, even if they're perfectly prompted and situated into the scene context.
 
 *Let the prompt undo what the prompt has done* I always say 😁
+
+A very personal note on the matter:<br>
+I have experienced this while working on prompts near/on water, even if there's a "pool in the background".  For a reason, characters appear with a wet skin.  Have even seen renders of wet skin get triggered by prompting the word "kissing", in the contextual understanding there's saliva involved in a kiss.  Not all models react the same, but I have seen this a generality in mostly all tested Krea 2 models.  Perhaps is the way the models are trained (they mostly all use the same base training models after all), so there's a chance this is an embedding being taken out of proportions that is just getting copied from model to model.
+
 
 👆 [Back to index](#the-big-old-ass-index)
 <br><br>
@@ -321,6 +399,10 @@ Here's a simple Krea 2 quantization guide by popular GPU model:
 | **NF4 / NVFP4** | ~7.1 GB | **6 GB - 8 GB** | RTX 2060 (6GB), RTX 3060 Ti (8GB), RTX 4060 (8GB), RX 6600 / 7600 | **Acceptable**. Minor loss in fine details and text rendering, but enables execution on entry-level GPUs. |
 
 > **Note:** Running Krea 2 also requires loading an additional Text Encoder (such as *Qwen3-VL-4B*) and the VAE. If you are using an **8 GB VRAM** card, it is recommended to generate at base resolutions like 1024x1024 or 1536x1536 before upscaling.
+
+
+**Comply with the law**<br>
+If you're working with/on commercial productions keep in mind software might be *free*, but the **models are not**; yes, free to download and use, not to sell.  **Each model has its own copyright associated to it** so, technically speaking, all renders you create cannot be commercialized *as is*.   Read each creator and model card before downloading to understand where credits and royalties should go to in case you are commercializing the outputs generated with those models.
 
 **"*But my workflow is smart*"**<br>
 Prompt enhancer, LLMs and the wonders of filtering the prompt by a light IA.
