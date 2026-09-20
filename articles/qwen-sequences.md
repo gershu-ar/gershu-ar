@@ -264,6 +264,7 @@ Appending a new module to the sample prompt:
 The ouput:
 
 <img width="1448" height="1088" alt="image" src="https://github.com/user-attachments/assets/333a64fd-9fee-44b8-8548-2922bb623d03" />
+
 *Rendered using NSFW [Gonzalomo](#foot-notes--qa--recommended-models) model.*
 
 As you can see, Qwen / Krea 2 perfectly understood what I wanted and created the requested overlay graphics by word, **even using CNN's real life logo**.
@@ -273,6 +274,7 @@ It *filled the gap* (overlay's extra graphics/text) with **gibberish** but that'
 You can also generate full sized graphics easily:
 
 <img width="1024" height="1536" alt="image" src="https://github.com/user-attachments/assets/d64b3136-321b-484f-af32-4efe02bae1ed" />
+
 *Rendered using NSFW [Sick Ollie](#foot-notes--qa--recommended-models) model.*
 
 If you're a movie fan or 40+ you'll get the poster instantly.  Zero challenge in rendering it... except for the word *enchantment*, **all models struggled** with that word, and they all rendered it "Enachantenent".
