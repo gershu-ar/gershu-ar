@@ -141,11 +141,11 @@
       "widgets_values": [
         1024,
         1024,
-        916433160335066,
+        916433160335070,
         "sickOllie_krea2_full_int8.safetensors",
-        14,
-        1.1,
-        "euler",
+        12,
+        1,
+        "euler_ancestral",
         "beta",
         "qwen_image_vae.safetensors",
         "qwen3vl_4b_fp8_scaled.safetensors"
@@ -153,11 +153,11 @@
       "widgets_values_named": {
         "width_1": 1024,
         "height_1": 1024,
-        "seed_1": 916433160335066,
+        "seed_1": 916433160335070,
         "unet_name_1": "sickOllie_krea2_full_int8.safetensors",
-        "steps": 14,
-        "cfg": 1.1,
-        "sampler_name": "euler",
+        "steps": 12,
+        "cfg": 1,
+        "sampler_name": "euler_ancestral",
         "scheduler": "beta",
         "vae_name": "qwen_image_vae.safetensors",
         "clip_name": "qwen3vl_4b_fp8_scaled.safetensors"
@@ -312,7 +312,7 @@
       ],
       "size": [
         313.9375,
-        82
+        88
       ],
       "flags": {},
       "order": 1,
@@ -322,10 +322,10 @@
       "title": "Friendly Reminder",
       "properties": {},
       "widgets_values": [
-        "Purist Qwen / Krea 2 t2i workflow v1.1\nSource: https://github.com/gershu-ar/"
+        "Purist Qwen / Krea 2 t2i workflow v1.2\nSource: https://github.com/gershu-ar/"
       ],
       "widgets_values_named": {
-        "text": "Purist Qwen / Krea 2 t2i workflow v1.1\nSource: https://github.com/gershu-ar/"
+        "text": "Purist Qwen / Krea 2 t2i workflow v1.2\nSource: https://github.com/gershu-ar/"
       },
       "color": "#432",
       "bgcolor": "#653"
@@ -617,7 +617,7 @@
             "flags": {
               "collapsed": false
             },
-            "order": 3,
+            "order": 1,
             "mode": 0,
             "inputs": [
               {
@@ -680,7 +680,7 @@
             "flags": {
               "collapsed": false
             },
-            "order": 2,
+            "order": 0,
             "mode": 0,
             "inputs": [
               {
@@ -802,7 +802,7 @@
             "flags": {
               "collapsed": false
             },
-            "order": 4,
+            "order": 2,
             "mode": 0,
             "inputs": [
               {
@@ -849,7 +849,7 @@
             "flags": {
               "collapsed": false
             },
-            "order": 5,
+            "order": 3,
             "mode": 0,
             "inputs": [
               {
@@ -907,7 +907,7 @@
             "flags": {
               "collapsed": false
             },
-            "order": 0,
+            "order": 4,
             "mode": 0,
             "inputs": [
               {
@@ -967,7 +967,7 @@
             "flags": {
               "collapsed": false
             },
-            "order": 1,
+            "order": 5,
             "mode": 0,
             "inputs": [
               {
@@ -1169,10 +1169,10 @@
     "VHS_MetadataImage": true,
     "VHS_KeepIntermediate": true,
     "ds": {
-      "scale": 0.693433494944156,
+      "scale": 0.7627768444385716,
       "offset": [
-        1573.0660578681327,
-        -273.41591247327386
+        1459.4338288750675,
+        -275.7182874862437
       ]
     }
   },
