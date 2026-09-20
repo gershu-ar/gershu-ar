@@ -1,22 +1,22 @@
 {
   "id": "f33b0093-4b05-4dac-a268-f294953fc154",
   "revision": 0,
-  "last_node_id": 89,
+  "last_node_id": 90,
   "last_link_id": 176,
   "nodes": [
     {
       "id": 29,
       "type": "SaveImage",
       "pos": [
-        55.050134505597896,
-        755.4451304998287
+        70.78212753539736,
+        671.5411676742317
       ],
       "size": [
-        530.546875,
-        589.828125
+        564.625,
+        678.96875
       ],
       "flags": {},
-      "order": 1,
+      "order": 2,
       "mode": 0,
       "inputs": [
         {
@@ -38,10 +38,10 @@
         "Node name for S&R": "SaveImage"
       },
       "widgets_values": [
-        "K2_"
+        "PureK2_"
       ],
       "widgets_values_named": {
-        "filename_prefix": "K2_"
+        "filename_prefix": "PureK2_"
       },
       "color": "#233",
       "bgcolor": "#355"
@@ -51,14 +51,14 @@
       "type": "b0e5ca93-2731-42b9-8e0a-d28ea851ff81",
       "pos": [
         -545.6808890095106,
-        470.6079907893672
+        406.3690192510196
       ],
       "size": [
-        559.03125,
-        877.375
+        576.0625,
+        941.609375
       ],
       "flags": {},
-      "order": 2,
+      "order": 3,
       "mode": 0,
       "inputs": [
         {
@@ -141,7 +141,7 @@
       "widgets_values": [
         1024,
         1024,
-        916433160335064,
+        916433160335066,
         "sickOllie_krea2_full_int8.safetensors",
         14,
         1.1,
@@ -153,7 +153,7 @@
       "widgets_values_named": {
         "width_1": 1024,
         "height_1": 1024,
-        "seed_1": 916433160335064,
+        "seed_1": 916433160335066,
         "unet_name_1": "sickOllie_krea2_full_int8.safetensors",
         "steps": 14,
         "cfg": 1.1,
@@ -167,8 +167,8 @@
       "id": 49,
       "type": "ResolutionSelector",
       "pos": [
-        60.10502143127121,
-        506.5241253842741
+        69.79900622667674,
+        407.6416415174773
       ],
       "size": [
         290.328125,
@@ -217,15 +217,15 @@
       "id": 81,
       "type": "CLIPTextEncode",
       "pos": [
-        -1158.7868408568904,
-        767.1060141999291
+        -1107.318047732727,
+        757.6029921143102
       ],
       "size": [
-        576.390625,
-        581.375
+        518.703125,
+        589.234375
       ],
       "flags": {},
-      "order": 3,
+      "order": 4,
       "mode": 0,
       "inputs": [
         {
@@ -262,15 +262,15 @@
       "id": 82,
       "type": "CLIPTextEncode",
       "pos": [
-        -1101.8350638826894,
-        505.467207311562
+        -1106.7620059907024,
+        499.4871903958312
       ],
       "size": [
-        527.765625,
-        205.3125
+        520.421875,
+        202.859375
       ],
       "flags": {},
-      "order": 4,
+      "order": 5,
       "mode": 0,
       "inputs": [
         {
@@ -288,7 +288,7 @@
           ]
         }
       ],
-      "title": "Negastive Prompt",
+      "title": "Negative Prompt",
       "properties": {
         "cnr_id": "comfy-core",
         "ver": "0.35.0",
@@ -302,6 +302,33 @@
       },
       "color": "#322",
       "bgcolor": "#533"
+    },
+    {
+      "id": 90,
+      "type": "Note",
+      "pos": [
+        322.3049827312622,
+        1392.2613926939753
+      ],
+      "size": [
+        313.9375,
+        82
+      ],
+      "flags": {},
+      "order": 1,
+      "mode": 0,
+      "inputs": [],
+      "outputs": [],
+      "title": "Friendly Reminder",
+      "properties": {},
+      "widgets_values": [
+        "Purist Qwen / Krea 2 t2i workflow v1.1\nSource: https://github.com/gershu-ar/"
+      ],
+      "widgets_values_named": {
+        "text": "Purist Qwen / Krea 2 t2i workflow v1.1\nSource: https://github.com/gershu-ar/"
+      },
+      "color": "#432",
+      "bgcolor": "#653"
     }
   ],
   "links": [
@@ -370,7 +397,7 @@
         "version": 1,
         "state": {
           "lastGroupId": 10,
-          "lastNodeId": 89,
+          "lastNodeId": 90,
           "lastLinkId": 176,
           "lastRerouteId": 0
         },
@@ -1142,10 +1169,10 @@
     "VHS_MetadataImage": true,
     "VHS_KeepIntermediate": true,
     "ds": {
-      "scale": 0.8390545288824263,
+      "scale": 0.693433494944156,
       "offset": [
-        1406.5783592199637,
-        -402.6413340380214
+        1573.0660578681327,
+        -273.41591247327386
       ]
     }
   },
