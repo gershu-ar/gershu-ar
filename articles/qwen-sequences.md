@@ -4,7 +4,7 @@
 **Working with NSFW & SFW models**  
 *For the Purist Prompter*  
 
-This guide was 97% human-written by a non-English language native, with 3% assistance from *Google Gemini 3.6-flash*—mostly for Markdown formatting.
+##### This guide was 97% human-written by a non-English language native (sorry for destroying your language), with 3% assistance from *Google Gemini 3.6-flash*—mostly for Markdown formatting assistance.
 
 🔞 `RATED R` — *Contains strong language*
 
@@ -42,7 +42,7 @@ Disclaimer: There are probably a ton of errors in this article.  Suggestions are
 **Prompt** → **Qwen** (encode) → **Krea** 2 (denoise) → VAE (decode)<br>
 Congratulations, you're all set for BOOTCAMP.
 
-👆 [Back to index](#the-big-old-ass-index)
+👆 [Back to index](#the-big-old-index)
 <br><br>
 ## Bootcamp
 
@@ -111,7 +111,7 @@ To sum up: If you're coming from SDXL you will notice that **Qwen/Krea 2 is a wh
 
 **Keep in mind these tips are not noticeable on small prompts but the richer the prompt gets, the more characters are part of it, that's when word precision becomes a must.**
 
-👆 [Back to index](#the-big-old-ass-index)
+👆 [Back to index](#the-big-old-index)
 <br><br>
 #### **PROMPTING ON QWEN**
 ##### Structure, structure, structure
@@ -182,7 +182,7 @@ Also pay attention how it ignores *ugly* and *fit*. That dude does not stand out
 
 Oh, Qwen, you cheeky, adorable bastard.
 
-👆 [Back to index](#the-big-old-ass-index)
+👆 [Back to index](#the-big-old-index)
 <br><br>
 ##### One -or a few- word to rule them all
 So, to recap: "**Woman standing with a bath robe**" will produce a woman with an open bath robe showing the underneath nude body. **Why is she nude**? Because the **default statistical prior** of a robe is not to be closed/buttoned. 
@@ -197,7 +197,7 @@ So, to recap: "**Woman standing with a bath robe**" will produce a woman with an
 
 And be descriptive about the color of the bikini too, Krea 2 will try to mantain the same bikini style too for coherence, even if you don't specify it.
 
-👆 [Back to index](#the-big-old-ass-index)
+👆 [Back to index](#the-big-old-index)
 <br><br>
 #### REMEMBER
 
@@ -221,7 +221,7 @@ SDXL used to ignore `// COMMENT` but Qwen will give it some interpretation based
 
 
 
-👆 [Back to index](#the-big-old-ass-index)
+👆 [Back to index](#the-big-old-index)
 <br><br>
 #### EVERY GREAT LIE HAS A LOT OF DETAIL
 
@@ -239,7 +239,7 @@ If your character is about to jump off a plane, add to the context: "The charact
 
 Keep in mind the software you're using and the cache's circuit/purges. Instant results might not be visible from one render to the other: it might take 5/6 renders to start seeing results and a settled prompt into the cache (at least on ComfyUI). The more renders you run, the more you will see how the produced render takes the exact shape as you prompted it.
 
-👆 [Back to index](#the-big-old-ass-index)
+👆 [Back to index](#the-big-old-index)
 <br><br>
 #### MARK TWAIN YOURSELF THRU QWEN
 One thing Qwen and Krea 2 are **EXCELLENT** at is text. **Wildly good at**.
@@ -313,7 +313,7 @@ Again: the wrong word, at the wrong place makes all the difference.
 
 
 
-👆 [Back to index](#the-big-old-ass-index)
+👆 [Back to index](#the-big-old-index)
 <br><br>
 ### NSWF VS SFW
 
@@ -336,7 +336,7 @@ Same goes for the negative prompting (below). Go for the detail about the clothi
 
 **Detail** -if coherent- **is what Qwen and Krea 2 feed about**.
 
-👆 [Back to index](#the-big-old-ass-index)
+👆 [Back to index](#the-big-old-index)
 <br><br>
 ### MELTING FACES, WATER DROPLETS AND ARTIFACTS
 Are you getting renders with faces melting like wax? Or excesive, unsolicited water droplets like the characters are sweating as a fake witness would do?
@@ -353,7 +353,7 @@ A very personal note on the matter:<br>
 I have experienced this while working on prompts near/on water, even if there's a "pool in the background".  For a reason, characters appear with a wet skin (not so much melting faces).  I have produced renders with visible clear wet skin that seem to get triggered by prompting the word "kissing", in the contextual understanding there's saliva involved in a kiss.  Not all models react the same, but I have seen this as a generality in all tested Krea 2 models.  Perhaps is the way the models are trained (they mostly all use the same base training models after all), so there's a chance this is an embedding being taken out of proportion or misunderstood that is just getting copied from model to model.  Maybe is Qwen creating the wrong embeddings under certain scenarios?
 
 
-👆 [Back to index](#the-big-old-ass-index)
+👆 [Back to index](#the-big-old-index)
 <br><br>
 ### DON'T BE SO NEGATIVE: TRY TO SEE THE LIGHT
 
@@ -375,7 +375,7 @@ I won't go deeper into lighting cause it's extremely complicated to prompt prope
 
 **Run the same prompt thru different models and compare results yourself.** **Most, if not all, Krea 2 models are excellent** since they mostly use the same training material, only they adapt lighting and other elements to produce a custom styled product determined by each modeler.  **They all look the same, but they are not.**
 
-👆 [Back to index](#the-big-old-ass-index)
+👆 [Back to index](#the-big-old-index)
 <br><br>
 ### CUT!
 Prompting for camera angles proves challening on any difussion model, also for the reason on how they have been trained, but **with precise prompting you can achieve practically any shot you can think of**.
@@ -414,14 +414,14 @@ For the time being, explore with these six camera examples:
 | **Extreme Detail Close-Up** | `CAMERA: Macro close-up shot, 85mm lens perspective, tight focus on facial features and eyes with the rest of the scene falling into a heavy blurred bokeh.` |
 
 It's suggested to use IA (Gemini, Copilot, ChatGPT, etc) to assist in creating prompts to render **very specific camera angles** views.<br><br>
-👆 [Back to index](#the-big-old-ass-index)
+👆 [Back to index](#the-big-old-index)
 <br><br>
 ### *NUTSHELLING* IT
 
 Doing brain surgery with a jackhammer: SDXL felt like that.
 Qwen/Krea 2 are closer to Star Wars: ahead of its time and to succeed just make sure the two proton torpedoes go into the two meters wide thermal exhaust port located in the station’s meridian trench. Remember: **detail**.
 <br><br>
-👆 [Back to index](#the-big-old-ass-index)
+👆 [Back to index](#the-big-old-index)
 
 ### FOOT NOTES / Q&A / RECOMMENDED MODELS
 
@@ -466,9 +466,12 @@ Yeah, I don't use them.
 On it. Will be adding tips and try to improve format.  I find markdown very unfriendly but hey, life is imperfect.
 
 **Thanks to**<br>
-GitHub for being weirdly awesome and not banning me after so many repetitive edits.  To all the people behind ComfyUI, model creators and coders that make the true miracle.
-<br><br>
+GitHub for being weirdly awesome, and not banning me after so many consecutive edits.<br>
+To all the people behind ComfyUI, model creators and coders that make the true miracle.
+<br>
 -- Gershu / gershu.ar<br><br>
-👆 [Back to index](#the-big-old-ass-index)
-<br><br>
-End of guide.<br>
+👆 [Back to index](#the-big-old-index)
+<br>
+End of guide.<br><br>
+[![CC BY 4.0](https://i.creativecommons.org/l/by/4.0/88x31.png)](http://creativecommons.org/licenses/by/4.0/)  
+This document is licensed under a [Creative Commons Attribution 4.0 International License](http://creativecommons.org/licenses/by/4.0/).
