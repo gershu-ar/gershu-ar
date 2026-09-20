@@ -93,11 +93,11 @@ Also, SDXL experiences something denominated *CLIP chunking* (aka *context windo
     Prompt Chunk 3
     [151-225]
 
-This meant the prompt was cut into pieces and then fed to the model.  If the chunks did not make sense separately the model was unforgiving on the results, thus, the longer the prompt, the less sense the output made.
+This means the prompt gets cut into pieces and then fed to the model.  If the chunks do not make sense separately the model is unforgiving about the results -> the longer the prompt, the less sense the output made.
 
-Yes, mods/nodes exist to tackle the issue to different degrees, but they require installation, certain level of technical knowledge and of course dedicating time to it: just for a prompt to make sense.   The good news is **it does not happen on Qwen / Krea 2**.  As you will read time and time again in this guide, Qwen and Krea 2 are more worried about a general sense than *mistakes*.  Hence also the importance of using a clean prompt.  If you make sense, Qwen and Krea 2 will make sense.
+Yes, mods/nodes exist to tackle the issue to different degrees, but they require installation, certain level of technical knowledge and of course dedicating time to it: just for a prompt to make sense.   The good news: **this does not happen on Qwen / Krea 2**.  As you will read time and time again in this guide, Qwen and Krea 2 overcome plenty of technical limitations SDXL experiences and all it cares is about clean instructions.  If you make sense, Qwen and Krea 2 will make sense.
 
-To sum up: If you're coming from SDXL you will notice that **Qwen/Krea 2 is a whole new ball game in prompting**. Takes a few days but the results are exponentially better, **Krea 2 has a lot of potential**.  You will not go back to SDXL.  Guaranteed.
+To sum up: If you're coming from SDXL you will notice that **Qwen/Krea 2 is a whole new ball game in prompting**. Takes a few days to catch up on the style but the results are exponentially better, **Krea 2 has a lot of potential**.  You will not go back to SDXL.  Guaranteed.
 
 **Keep in mind these tips are not noticeable on small prompts but the richer the prompt gets, the more characters are part of it, that's when word precision becomes a must.**
 
