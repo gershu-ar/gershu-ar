@@ -149,7 +149,7 @@ Let's prompt for a simple scene:
 
 Ouput:
 [![](https://github.com/gershu-ar/gershu-ar/blob/f38b44276cb19ce55d3e168fa9f2667890301ddc/articles/img/878310eda7fcc06262d6c2c7bd3a1530.png)](https://github.com/gershu-ar/gershu-ar/blob/f38b44276cb19ce55d3e168fa9f2667890301ddc/articles/img/878310eda7fcc06262d6c2c7bd3a1530.png)
-
+*Rendered using NSFW [FinePorn](#foot-notes--qa--recommended-models) model.*
 
 **EXAMPLE**<br>
 Slightly modifying the same scene by adding "Dog is setting paws on Man" (only changing the dog action), rest remains the same:
@@ -158,6 +158,7 @@ Slightly modifying the same scene by adding "Dog is setting paws on Man" (only c
     
 Output:
 [![](https://github.com/gershu-ar/gershu-ar/blob/f38b44276cb19ce55d3e168fa9f2667890301ddc/articles/img/5f38dbf7652fb661decd3cef2d09fd50.png)](https://github.com/gershu-ar/gershu-ar/blob/f38b44276cb19ce55d3e168fa9f2667890301ddc/articles/img/5f38dbf7652fb661decd3cef2d09fd50.png)
+*Rendered using NSFW [FinePorn](#foot-notes--qa--recommended-models) model.*
 
 **Qwen/Krea 2 did what I ask of them.**
 
@@ -242,6 +243,7 @@ So, if we implement two simple modifications to *action* from the example:
 **Produces exactly that**. The more you describe the medium (paper, sign, wall advertising, graph, etc.) the more realistic it will be:
 
 [![](https://github.com/gershu-ar/gershu-ar/blob/f38b44276cb19ce55d3e168fa9f2667890301ddc/articles/img/0bc8527e11b8cbf13a8c445e639a1d9e.png)](https://github.com/gershu-ar/gershu-ar/blob/f38b44276cb19ce55d3e168fa9f2667890301ddc/articles/img/0bc8527e11b8cbf13a8c445e639a1d9e.png)
+*Rendered using NSFW [FinePorn](#foot-notes--qa--recommended-models) model.*
 
 The shown example is crude and hasty at best, but illustrates simply how **easily you can add text** to any level of customization and simplicity or complexity you require.
 
@@ -262,8 +264,7 @@ Appending a new module to the sample prompt:
 The ouput:
 
 <img width="1448" height="1088" alt="image" src="https://github.com/user-attachments/assets/333a64fd-9fee-44b8-8548-2922bb623d03" />
-
-Rendered using NSFW Gonzalomo model (links at the guide end)
+*Rendered using NSFW [Gonzalomo](#foot-notes--qa--recommended-models) model.*
 
 As you can see, Qwen / Krea 2 perfectly understood what I wanted and created the requested overlay graphics by word, **even using CNN's real life logo**.
 
@@ -272,9 +273,7 @@ It *filled the gap* (overlay's extra graphics/text) with **gibberish** but that'
 You can also generate full sized graphics easily:
 
 <img width="1024" height="1536" alt="image" src="https://github.com/user-attachments/assets/d64b3136-321b-484f-af32-4efe02bae1ed" />
-
-
-Rendered using NSWF Sick Ollie (links at the guide end)
+*Rendered using NSFW [Sick Ollie](#foot-notes--qa--recommended-models) model.*
 
 If you're a movie fan or 40+ you'll get the poster instantly.  Zero challenge in rendering it... except for the word *enchantment*, **all models struggled** with that word, and they all rendered it "Enachantenent".
 
@@ -378,15 +377,19 @@ Qwen/Krea 2 are closer to Star Wars: ahead of its time and to succeed just make 
 
 ### FOOT NOTES / Q&A / RECOMMENDED MODELS
 
-**What Krea 2 models work as they should?**<br>
-Haven't tested that many, but these ones I found to be superb realistic models - in no order of preference:
-- [Moody Krea 2 Mix](https://civitai.red/models/2731187/weekend-3days-blue-buzz-purchase-3buzz-moody-krea-2-mix-uncensored?modelVersionId=3209007)
-- [CyberRealistic](https://civitai.red/models/2831028/cyberrealistic-krea-2)
-- [GonzaLomo](https://civitai.red/models/2761943/gonzalomo-krea-2)
-- [FinePorn](https://civitai.red/models/2762538/fineporn-v4-int8-or-nvfp4-or-bf16-or-fp8)
-- [Sick Ollie](https://civitai.red/models/2676616/sick-ollie)
+**What Krea 2 models deliver what they promise?**<br>
+Haven't tested that many, but these ones I found to be **superb realistic models** and amazing at creating full graphics:
 
-> A word of warning: Unchecked (uncensored) NSFW models **are** able to produce **illegal content**, thus communities like CivitAI are overrun by the kind of people who look for that kind of tools.  **A lot of Jeffrey Epsteins on CivitAI**.  Dangers of IA are very real, specially in the wrong hands.  **Use extreme caution when providing data such as creating a profile and/or sharing socials or even your own work**, it can all be reverse searched and you can easily fall victim to a stalker.  Avoid creating serious profiles and use the websites just to procure models, don't engage.
+| Model | Official Source | Mirrors | Recommendation |
+| :--- | :--- | :--- | :--- |
+| **GonzaLomo v4.0** | [🌐 Go (Civitai)](https://civitai.com/models/286469) | [🌐 Go (HF Mirror)](https://huggingface.co/Quiho/GonzaLomo_Krea_2_v4.0_checkpoint) | High character consistency & anatomical control; ideal for precise positioning. |
+| **CyberRealistic Krea 2 v2.0** | [🌐 Go (Cyberdelia)](https://cyberdelia.nl) • [🌐 Go (HF Repo)](https://huggingface.co/cyberdelia/CyberRealistic) • [🌐 Go (Civitai)](https://civitai.red/models/2831028/cyberrealistic-krea-2) | N/A | Best for photorealism, skin textures, and natural lighting without heavy stylized artifacts. |
+| **Moody Krea 2 Mix v7.0** | [🌐 Go (Civitai)](https://civitai.red/models/2731187/moody-krea-2-mix-uncensored-weekend-3days-blue-buzz-purchase-3buzz?modelVersionId=3209007) | [🌐 Go (HF FP8)](https://huggingface.co/EllaPriest45/Krea2_Checkpoints/blob/main/Moody%20Krea%202%20Mix%20(uncensored)%20FP8%20-%20Krea2.safetensors) | Great for cinematic lighting, atmospheric/darker aesthetics, and unconstrained composition. |
+| **FinePorn v4.0** | [🌐 Go (Civitai)](https://civitai.red/models/2762538/fineporn-v4-int8-or-nvfp4-or-bf16-or-fp8) | [🌐 Go (HF INT8)](https://huggingface.co/EllaPriest45/Krea2_Checkpoints/blob/main/FinePorn%20v4.0%20Turbo%20INT8%20-%20Krea2%20-%20this%20is%20an%20amateur%20photo%20taken%20from%20smartphone%2Cbad%20quality%20photo%2CThe%20lighting%20is%20clear%2Csoft%20diffused%2Cthe%20details%20are%20sharp%2Cand%20the%20feeling%20of%20the%20photo%20is%20casual%20and%20spontaneous.safetensors) | Specialized in explicit anatomy accuracy and raw amateur/smartphone aesthetic prompts. |
+| **Sick Ollie v1.0** | [🌐 Go (Civitai)](https://civitai.red/models/2676616/sick-ollie) | [🌐 Go (HF Repo)](https://huggingface.co/EllaPriest45/Krea2_Checkpoints) | Strong prompt adherence for unconventional poses and stylization with strict compliance. |
+
+
+> A word of warning: NSFW models **are** able to produce **illegal content**, thus communities like CivitAI are overrun by the kind of people who look for that kind of tools to produce that kind of content.  Avoid engaging, commenting and, above all, providing information on what you do, social networks, etc.  **A lot of Jeffrey Epsteins**, stalkers and twisted deviants are anxiously waiting for your data.  Dangers of IA are very real when in the wrong hands.  Exercise **caution** and don't engage.
 
 **"*What version should I download?*"**<br>
 Here's a simple Krea 2 quantization guide by popular GPU model:
