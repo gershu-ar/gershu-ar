@@ -58,7 +58,13 @@ Knowledge gathered and examples renderered on a local setup:  Windows 11 25H2, i
 
 Also, for your convenience, [you can find here](https://github.com/gershu-ar/gershu-ar/blob/main/articles/workflows/Purist%20Krea%202.json "you can get here") a **simple**, **purist Qwen / Krea 2 ComfyUI workflow** in case you feel like testing prompts along.  Just hit on the three dots and select _Download_, then open in ComfyUI.  
 
-The workflow has been *de-automatizated* (removed the LLM prompt enhancement and automatic negative creation) and *un-LoRAed* (no nodes for them), just two text boxes (positive and negative) and a few settings for model, CFG, steps and the-like.  We're going [Amish](https://amishamerica.com/do-amish-use-technology/) on this one.
+The workflow is based on the [official Comfy](https://comfy.org/workflows/11657ed32877-11657ed32877/ "official Comfy") `text 2 image` (t2) workflow, using *Nodes 2.0* style format.  We're going [Amish](https://amishamerica.com/do-amish-use-technology/) on this one:
+
+It has been *de-automatizated* (stripped the LLM prompt enhancement and automatic negative creation) and *un-LoRAed* : there're just two text boxes (**positive** and **negative** prompts), seed, model and image size selector (in *megapixels*), and Ksampler settings.  Back to the basics! *Utility nodes* are on the subgraph and out of the way.
+
+The workflow is arranged for live image previews and final saved/generated image view on a widescreen format.
+
+You can, of course, arrange the workflow as you please.  **That's the beauty of ComfyUI** ❤️
 
 <img width="1919" height="936" alt="image" src="https://github.com/user-attachments/assets/bda58961-f054-4ed6-9250-7c1878f444ab" />
 
