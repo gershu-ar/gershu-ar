@@ -8,9 +8,9 @@
 
 🔞 `RATED R` — *Contains strong language*
 
-<img width="1448" height="1088" alt="image" src="https://github.com/user-attachments/assets/6e55d223-1ae0-499e-a349-c1a7a6bcdb95" />
+[![](https://github.com/gershu-ar/gershu-ar/blob/main/articles/img/K2__01007_.png)](https://github.com/gershu-ar/gershu-ar/blob/main/articles/img/K2__01007_.png)
 
-*Rendered using Krea 2 NSFW model [FinePorn](#foot-notes--qa--recommended-models) on [ComfyUI](https://github.com/comfy-org/ComfyUI "ComfyUI") portable v0.36.0, revealing model's capacity to generate comic-like illustrations*<br>*Original PNG with workflow embeded for ComfyUI*
+*Rendered using Krea 2 NSFW model [FinePorn](#foot-notes--qa--recommended-models) on [ComfyUI](https://github.com/comfy-org/ComfyUI "ComfyUI") portable v0.36.0, revealing model's capacity to generate comic-like illustrations*<br>*Original PNG with workflow embeded*
 
 ------------
 ## THE BIG OLD INDEX
@@ -66,9 +66,9 @@ The workflow is arranged for live image previews and final saved/generated image
 
 You can, of course, arrange the workflow as you please.  **That's the beauty of ComfyUI** ❤️
 
-<img width="1919" height="936" alt="image" src="https://github.com/user-attachments/assets/bda58961-f054-4ed6-9250-7c1878f444ab" />
+<img width="1857" height="902" alt="image" src="https://github.com/user-attachments/assets/dcd54423-89ce-4a93-b421-a03db95fcf04" />
 
-*A Qwen / Krea 2 [purist ComfyUI workflow](https://github.com/gershu-ar/gershu-ar/blob/main/articles/workflows/Purist%20Krea%202.json) with generation preview, the rest of the nodes are comfortable set in a subgraph.*
+*A Qwen / Krea 2 [purist ComfyUI workflow](https://github.com/gershu-ar/gershu-ar/blob/main/articles/workflows/Purist%20Krea%202.json) with generation preview, the auxiliary nodes are comfortable set in a subgraph.*
 <br><br>
 
 ***NSFW .... wait...? Am I here to learn how to create porn?***
@@ -159,7 +159,7 @@ Let's prompt for a simple scene:
 
 Ouput:
 [![](https://github.com/gershu-ar/gershu-ar/blob/f38b44276cb19ce55d3e168fa9f2667890301ddc/articles/img/878310eda7fcc06262d6c2c7bd3a1530.png)](https://github.com/gershu-ar/gershu-ar/blob/f38b44276cb19ce55d3e168fa9f2667890301ddc/articles/img/878310eda7fcc06262d6c2c7bd3a1530.png)
-*Rendered using NSFW [FinePorn](#foot-notes--qa--recommended-models) model.*
+*Rendered using NSFW [FinePorn](#foot-notes--qa--recommended-models) model - Original PNG with workflow embeded*
 
 **EXAMPLE**<br>
 Slightly modifying the same scene by adding "Dog is setting paws on Man" (only changing the dog action), rest remains the same:
@@ -168,7 +168,7 @@ Slightly modifying the same scene by adding "Dog is setting paws on Man" (only c
     
 Output:
 [![](https://github.com/gershu-ar/gershu-ar/blob/f38b44276cb19ce55d3e168fa9f2667890301ddc/articles/img/5f38dbf7652fb661decd3cef2d09fd50.png)](https://github.com/gershu-ar/gershu-ar/blob/f38b44276cb19ce55d3e168fa9f2667890301ddc/articles/img/5f38dbf7652fb661decd3cef2d09fd50.png)
-*Rendered using NSFW [FinePorn](#foot-notes--qa--recommended-models) model.*
+*Rendered using NSFW [FinePorn](#foot-notes--qa--recommended-models) model - Original PNG with workflow embeded*
 
 **Qwen/Krea 2 did what I ask of them.**
 
@@ -253,7 +253,7 @@ So, if we implement two simple modifications to *action* from the example:
 **Produces exactly that**. The more you describe the medium (paper, sign, wall advertising, graph, etc.) the more realistic it will be:
 
 [![](https://github.com/gershu-ar/gershu-ar/blob/f38b44276cb19ce55d3e168fa9f2667890301ddc/articles/img/0bc8527e11b8cbf13a8c445e639a1d9e.png)](https://github.com/gershu-ar/gershu-ar/blob/f38b44276cb19ce55d3e168fa9f2667890301ddc/articles/img/0bc8527e11b8cbf13a8c445e639a1d9e.png)
-*Rendered using NSFW [FinePorn](#foot-notes--qa--recommended-models) model.*
+*Rendered using NSFW [FinePorn](#foot-notes--qa--recommended-models) model - Original PNG with workflow embeded*
 
 The shown example is crude and hasty at best, but illustrates simply how **easily you can add text** to any level of customization and simplicity or complexity you require.
 
@@ -273,9 +273,9 @@ Appending a new module to the sample prompt:
 
 The ouput:
 
-<img width="1448" height="1088" alt="image" src="https://github.com/user-attachments/assets/333a64fd-9fee-44b8-8548-2922bb623d03" />
+[![](https://github.com/gershu-ar/gershu-ar/blob/main/articles/img/K2__00896_.png)](https://github.com/gershu-ar/gershu-ar/blob/main/articles/img/K2__00896_.png)
 
-*Rendered using NSFW [Gonzalomo](#foot-notes--qa--recommended-models) model.*
+*Rendered using NSFW [Gonzalomo](#foot-notes--qa--recommended-models) model - Original PNG with workflow embeded*
 
 As you can see, Qwen / Krea 2 perfectly understood what I wanted and created the requested overlay graphics by word, **even using CNN's real life logo**.
 
@@ -283,17 +283,55 @@ It *filled the gap* (overlay's extra graphics/text) with **gibberish** but that'
 
 You can also generate full sized graphics easily:
 
-<img width="1024" height="1536" alt="image" src="https://github.com/user-attachments/assets/d64b3136-321b-484f-af32-4efe02bae1ed" />
+[![](https://github.com/gershu-ar/gershu-ar/blob/main/articles/img/K2__00902_.png)](https://github.com/gershu-ar/gershu-ar/blob/main/articles/img/K2__00902_.png)
+*Rendered using NSFW [Sick Ollie](#foot-notes--qa--recommended-models) model. - Original PNG file with workflow embeded.*
 
-*Rendered using NSFW [Sick Ollie](#foot-notes--qa--recommended-models) model.*
+If you're a movie fan or a +40 years old you'll recognize the poster style almost instantly.  Zero challenge in rendering it... except for the word *enchantment*, **all models struggled** with that word, and they all rendered it "Enachantenent".
 
-If you're a movie fan or 40+ you'll get the poster instantly.  Zero challenge in rendering it... except for the word *enchantment*, **all models struggled** with that word, and they all rendered it "Enachantenent".
+Here's the full prompt for the "Under the Sea Enchantment" dance poster:
 
-> The prompting for that image is too complex to be pasted here, but you can easily access it if you download and open the PNG file in your ComfyUI.  Workflow with prompting is embedded in the file.
 
-Since you can run into issues rendering long or complex words in Qwen / Krea 2, always keep in mind there's a way to fix it: no LoRAs, no pills, no diets but the *prompting finesse* way.
 
-In the shown example to make Qwen / Krea 2 render **enchantment** properly all I had to do is be **more specific**.
+    SUBJECT:
+    a hand-painted high school dance poster from the 1950s, displayed as the main subject of the image
+    
+    COMPOSITION:
+    the poster fills almost the entire frame, photographed straight-on, perfectly centered, no people, no surrounding room visible
+    
+    CAMERA:
+    front view, poster photography, medium format camera, sharp focus, highly legible typography
+    
+    LIGHTING:
+    even indoor lighting, soft illumination, no glare, no reflections, vivid colors
+    
+    POSTER DESIGN:
+    large vertical poster with a rich deep blue background, decorative hand-painted lettering, retro American school event aesthetic, playful typography, pastel pink lettering, mint green lettering, hand-drawn hearts, seaweed decorations, waves, underwater motifs, charming handmade appearance, authentic 1950s school art project
+    
+    MAIN TITLE:
+    "SATURDAY NIGHT DANCE"
+    
+    EVENT NAME:
+    Word "ENCHANTMENT" must be spelled exactly: E N C H A N T M E N T
+    
+    TAGLINE:
+    "BE THERE OR BE SQUARE!"
+    
+    TEXT STYLE:
+    all text is large, readable, centered, beautifully hand-painted, vintage sign-painter lettering, highly accurate typography
+    
+    COLOR PALETTE:
+    deep ocean blue, turquoise, mint green, coral pink, cream highlights
+    
+    STYLE:
+    1950s Americana, nostalgic, handmade poster art, school dance promotion, iconic retro design, graphic design masterpiece
+    
+    QUALITY:
+    perfect typography, flawless text rendering, poster design focus, graphic design showcase
+
+
+A word of caution: you can run into issues rendering long or complex words in Qwen / Krea 2.  Yet, always keep in mind there's a way to fix it: no LoRAs, no pills, no diets but the *prompting finesse* way.
+
+In the shown example to make Qwen / Krea 2 render **enchantment** properly all I had to do is to be **more specific**.
 
 The original prompt was:
 
@@ -305,13 +343,9 @@ The fix was:
     EVENT NAME:
     Word "ENCHANTMENT" must be spelled exactly: E N C H A N T M E N T
 
-And voilá.  A proper beautiful full sized graphic in seconds.  The absolute terror of every graphic designer.
+And voilá.  A proper beautiful full sized graphic in seconds.  **The absolute terror of every graphic designer**.
 
-As a side note, if I were to add "The" before "word"  ("*The word*..."), Qwen / Krea 2 would understand that I want "The" to be *announcing*/*presenting* the word **ENCHANTMENT**: that will render "The" above "**ENCHANTMENT**".  Go ahead and try both options, with and without "The" before "word" and you will notice it.
-
-Again: the wrong word, at the wrong place makes all the difference.
-
-
+> As a side note, if I were to add "The" before "word"  ("*The word*..."), Qwen / Krea 2 would understand that I want "The" to be *announcing*/*presenting* the word **ENCHANTMENT**: that will render "The" above "**ENCHANTMENT**".  Go ahead and try both options, with and without "The" before "word" and you will notice it.
 
 👆 [Back to index](#the-big-old-index)
 <br><br>
