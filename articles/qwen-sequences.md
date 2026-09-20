@@ -357,23 +357,57 @@ I have experienced this while working on prompts near/on water, even if there's 
 <br><br>
 ### DON'T BE SO NEGATIVE: TRY TO SEE THE LIGHT
 
-In ComfyUI's official Krea 2 t2i template the negative is automatically created based on the positive by a stranger process my brain was unable to decode and/or I simply don't care to find about. I didn't like this, so I separated the negative (clip text) to have full control. Do not overuse the negative but use it. Start with a base negative like:
 
-    avoid flash photography. avoid cold white lighting.  avoid studio lighting.
+The negative prompt, never understood, never appreciated and never used correctly has a purpose in our scenario since fighting difussion model's vices can be a tricky work.
+
+Do not overuse the negative prompt but **use it**.
+
+    avoid brunette hair
+
+Yes, it will tell the model not to create characters with brunette hair.  Useful negative if you're randomizing hair color in your prompt.
+
+If you're looking to create scenarios in low ISO/darkness, perhaps this would reinforce the positive lighting prompt:
+
+    avoid flash photography.  avoid cold white lighting.  avoid studio lighting.
     
-**Yes**, **use "avoid" inside the negative clip**, it is not a double negation but a **reinforced semantic distance**. **A double negative creates a stronger semantic push away from the concept**, the same way "**fully** wearing" emphasizes the be wearing something.
 
-A generalist negative prompt to get realistic, amateur looking renders, although diffusion models do not always make it easy when it comes to the lighting section. This happens on SDXL, Krea 2 and every other single encoder out there. LoRAs or no LoRAs (tried all options).
+It won't completely eliminate artificial or extra unrequested lightning -very model dependant-, but it will surely tell the model to behave.
 
-As with the nudes, this is also related on how models are trained: **the base pictures use maximum efficiency studio lightning to get 100% out the photographed character**. **It's only natural wanting to go back to the source material**, those inputs on which that model was trained on (this is why most models share the same faces/look-a-likes too).
+And **yes**, **use `avoid` inside the negative clip**, it is not a double negation but a **reinforced semantic distance**. **A double negative creates a stronger semantic push away from the concept**, the same way `fully wearing` emphasizes the *be* wearing something.
 
-As for the **lighting** issue itself, it's quite the **nightmare** if you want to work with nuances on dark/low light/moody scenarios. **Daylight scenarios are fairly easy, low-ISO's are a true challenge.**
+As for the **lighting** issue itself, it's quite the **nightmare** if you want to work with nuances on **dark/low light/moody** scenarios. **Daylight scenarios are fairly easy, low-ISO's are a true challenge.**
 
-I won't go deeper into lighting cause it's extremely complicated to prompt properly -for me at least- on the account other factors are taken into consideration by the models when receiving the embed; lighting embeds alone cannot always succeed. Prompting a camera angle can turn a useless lighting prompt into a masterpiece over a frame: models in general are very uncompliant to lighting on every shape, color and flavor.
+> Guide will be expanded to add advanced lighting setups.
 
-**Be aware all Krea 2 models handle lighting differently**.  I always suggest trying several models until you find the one that fits the job as the main model while keeping the rest as secondary.  Sometimes a specific shot can only be achieved with a specific model.  You will get to know each model's cons and pros the more use you use them.
+Simple prompting for high-ISO (daylight) scenarios can be:
 
-**Run the same prompt thru different models and compare results yourself.** **Most, if not all, Krea 2 models are excellent** since they mostly use the same training material, only they adapt lighting and other elements to produce a custom styled product determined by each modeler.  **They all look the same, but they are not.**
+| Style / Concept | Lighting Configuration (Prompt) |
+| :--- | :--- |
+| **Bright Window Diffusion** | `LIGHTING: Bright daytime interior flooded with soft natural daylight streaming through large window sheer curtains. Clean high-key ambient illumination with gentle highlight falloff, open shadow details, balanced high-ISO film grain, and crisp true-to-life skin tones without harsh sunlight.` |
+| **Direct Sunlight & Hard Contrast** | `LIGHTING: Intense direct midday sunlight pouring into the room, creating strong geometric light patches and high-contrast dark shadows. Vibrant exposure with natural lens flare, crisp highlights, visible ambient ISO grain, and dramatic warm light patterns across the subject.` |
+| **Overcast Soft Box Effect** | `LIGHTING: Bright daylight indoor scene lit by soft diffuse skylight from an overcast afternoon. Evenly distributed natural ambient light eliminating harsh shadows, smooth skin texture highlights, neutral color temperature, and clean photo-journalistic grain.` |
+| **Golden Hour Golden Glow** | `LIGHTING: Late afternoon golden hour natural light coming through side windows at a low angle. Warm amber directional illumination filling the room with a rich golden glow, soft elongated shadows, high-ISO ambient texture, and vivid natural contrast.` |
+
+If it's low-ISO shots we're talking about, then game changes.
+
+Positive `Lighting` embeds alone cannot always succeed.  Not all models are equally compliant with the prompt and those who do require very specific words.
+
+To understand how sensitive `Lighting` prompting gets, imagine that if you turn the camera (modifying `Camera` prompt module) from the front to the side of a character, you also need to adjust the `Lighting` prompt if you're to maintain the same light effect.  It can get tricky for specific lighting scenarios, but going back to the basics always gets the job done.
+
+Some examples for **low-ISO & ambient night lighting** prompting:
+
+| Estilo / Concepto | Configuración de Iluminación (Prompt) |
+| :--- | :--- |
+| **Corner Warmth & Soft Shadows**| `LIGHTING: Nighttime interior with no camera flash. The room is illuminated entirely by a single floor lamp with a fabric shade in the corner, casting a soft orange warm glow across the walls. Deep natural shadows in the unlit areas, with soft warm light gently falling on one side of her face and sweater. Authentic high-ISO low-light photography atmosphere with clean natural shadow falloff.` |
+| **Cozy Tungsten Ambience**| `LIGHTING: Dim night lighting with zero artificial flash. Ambient evening warm light originating from two muted table lamps and a floor lamp scattered in the background. The center of the room relies purely on this indirect tungsten illumination, creating soft highlights, rich dark corners, visible fine noise in the shadows, and a cozy warm-toned nighttime aesthetic.` |
+| **Off-Frame Amber Directional**| `LIGHTING: Available-light night indoor photo, shot strictly without flash. Soft directional amber lighting from a warm floor lamp situated just outside the camera frame. Strong contrast between gentle warm highlights on the subject and deep atmospheric shadows filling the rest of the dark living room.` |
+| **Moody Backlit Silhouette** | `LIGHTING: A dark room lit solely from behind by a warm ceiling lamp, creating a strong backlight rim effect. The faces are in deep shadow and partially underexposed, with no fill light or camera flash. The background behind has a soft warm glow while her silhouette and profile remain mostly dark and moody, ambient high-ISO grain.` |
+
+Different models will produce different outputs: there's no single, universal way to interpret lighting and Krea 2 models do not hide it.
+
+**Be aware all Krea 2 models handle lighting differently**.  Sometimes a specific lighting shot can only be achieved with a specific model.
+
+All models **look the same, but they are not.**
 
 👆 [Back to index](#the-big-old-index)
 <br><br>
@@ -453,7 +487,7 @@ Here's a simple Krea 2 quantization guide by popular GPU model:
 
 
 **Comply with the law**<br>
-If you're working with/on commercial productions keep in mind software might be *free*, but the **models are not**; yes, free to download and use, not to sell.  **Each model has its own copyright associated to it** so, technically speaking, all renders you create cannot be commercialized *as is*.   Read each creator and model card before downloading to understand where credits and royalties should go to in case you are commercializing the outputs generated with those models.
+If you're working on **commercial productions**, keep in mind that while software like ComfyUI is free, the models are not automatically free for commercial use. Yes, they may be free to download and run, but that doesn't mean you can sell the outputs. **Each model has its own license and copyright terms**, so technically speaking, **you can't commercialize your renders without checking first**. Always read the creator notes and model cards before downloading to understand the license terms, crediting requirements, or royalty obligations for commercial work.
 
 **"*But my workflow is smart*"**<br>
 Prompt enhancer, LLMs and the wonders of filtering the prompt by a light IA.
