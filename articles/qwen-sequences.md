@@ -8,9 +8,9 @@
 
 🔞 `RATED R` — *Contains strong language*
 
-[![](https://github.com/gershu-ar/gershu-ar/blob/1a76545fc4263706b4555df94f6163861354c7b3/articles/img/cover_qwen_krea2.jpg)](https://github.com/gershu-ar/gershu-ar/blob/1a76545fc4263706b4555df94f6163861354c7b3/articles/img/cover_qwen_krea2.jpg)
+<img width="1448" height="1088" alt="image" src="https://github.com/user-attachments/assets/6e55d223-1ae0-499e-a349-c1a7a6bcdb95" />
 
-Hastily generated using Krea 2 NSFW model [Sick Ollie](https://civitai.red/models/2676616/sick-ollie "Sick Ollie") on [ComfyUI](https://github.com/comfy-org/ComfyUI "ComfyUI") portable v0.36.0
+*Rendered using Krea 2 NSFW model [FinePorn](#foot-notes--qa--recommended-models) on [ComfyUI](https://github.com/comfy-org/ComfyUI "ComfyUI") portable v0.36.0, revealing model's capacity to generate comic-like illustrations*<br>*Original PNG with workflow embeded for ComfyUI*
 
 ------------
 ## THE BIG OLD INDEX
@@ -40,7 +40,7 @@ Disclaimer: There are probably a ton of errors in this article.  Suggestions are
 
 ## The 101
 **Prompt** → **Qwen** (encode) → **Krea** 2 (denoise) → VAE (decode)<br>
-Congratulations, you're all set for BOOTCAMP.
+Congratulations, you're all set for Bootcamp.
 
 👆 [Back to index](#the-big-old-index)
 <br><br>
@@ -58,7 +58,7 @@ Knowledge gathered and examples renderered on a local setup:  Windows 11 25H2, i
 
 Also, for your convenience, [you can find here](https://github.com/gershu-ar/gershu-ar/blob/main/articles/workflows/Purist%20Krea%202.json "you can get here") a **simple**, **purist Qwen / Krea 2 ComfyUI workflow** in case you feel like testing prompts along.  Just hit on the three dots and select _Download_, then open in ComfyUI.  
 
-The workflow is based on the [official Comfy](https://comfy.org/workflows/11657ed32877-11657ed32877/ "official Comfy") `text 2 image` (t2) workflow, using *Nodes 2.0* style format.  We're going [Amish](https://amishamerica.com/do-amish-use-technology/) on this one:
+The workflow is based on the [official Comfy](https://comfy.org/workflows/11657ed32877-11657ed32877/ "official Comfy") `text 2 image` (t2i) workflow, using *Nodes 2.0* style format.  We're going [Amish](https://amishamerica.com/do-amish-use-technology/) on this one:
 
 It has been *de-automatizated* (stripped the LLM prompt enhancement and automatic negative creation) and *un-LoRAed* : there're just two text boxes (**positive** and **negative** prompts), seed, model and image size selector (in *megapixels*), and Ksampler settings.  Back to the basics! *Utility nodes* are on the subgraph and out of the way.
 
