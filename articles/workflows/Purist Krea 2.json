@@ -2,18 +2,18 @@
   "id": "f33b0093-4b05-4dac-a268-f294953fc154",
   "revision": 0,
   "last_node_id": 89,
-  "last_link_id": 174,
+  "last_link_id": 176,
   "nodes": [
     {
       "id": 29,
       "type": "SaveImage",
       "pos": [
         55.050134505597896,
-        693.6873066225168
+        755.4451304998287
       ],
       "size": [
-        556.5625,
-        651.59375
+        530.546875,
+        589.828125
       ],
       "flags": {},
       "order": 1,
@@ -141,34 +141,34 @@
       "widgets_values": [
         1024,
         1024,
-        916433160334718,
+        916433160335064,
         "sickOllie_krea2_full_int8.safetensors",
-        12,
-        1,
-        "euler_ancestral",
-        "sgm_uniform",
+        14,
+        1.1,
+        "euler",
+        "beta",
         "qwen_image_vae.safetensors",
-        "krea2"
+        "qwen3vl_4b_fp8_scaled.safetensors"
       ],
       "widgets_values_named": {
         "width_1": 1024,
         "height_1": 1024,
-        "seed_1": 916433160334718,
+        "seed_1": 916433160335064,
         "unet_name_1": "sickOllie_krea2_full_int8.safetensors",
-        "steps": 12,
-        "cfg": 1,
-        "sampler_name": "euler_ancestral",
-        "scheduler": "sgm_uniform",
-        "vae_name_1": "qwen_image_vae.safetensors",
-        "type": "krea2"
+        "steps": 14,
+        "cfg": 1.1,
+        "sampler_name": "euler",
+        "scheduler": "beta",
+        "vae_name": "qwen_image_vae.safetensors",
+        "clip_name": "qwen3vl_4b_fp8_scaled.safetensors"
       }
     },
     {
       "id": 49,
       "type": "ResolutionSelector",
       "pos": [
-        53.60419786523846,
-        450.1836544786562
+        60.10502143127121,
+        506.5241253842741
       ],
       "size": [
         290.328125,
@@ -217,8 +217,8 @@
       "id": 81,
       "type": "CLIPTextEncode",
       "pos": [
-        -1144.8884375524879,
-        766.4944232954449
+        -1158.7868408568904,
+        767.1060141999291
       ],
       "size": [
         576.390625,
@@ -295,10 +295,10 @@
         "Node name for S&R": "CLIPTextEncode"
       },
       "widgets_values": [
-        "avoid flash photography.  avoid cold white lighting. avoid studio lighting."
+        "avoid flash photography.  avoid studio lighting. "
       ],
       "widgets_values_named": {
-        "text": "avoid flash photography.  avoid cold white lighting. avoid studio lighting."
+        "text": "avoid flash photography.  avoid studio lighting. "
       },
       "color": "#322",
       "bgcolor": "#533"
@@ -371,7 +371,7 @@
         "state": {
           "lastGroupId": 10,
           "lastNodeId": 89,
-          "lastLinkId": 174,
+          "lastLinkId": 176,
           "lastRerouteId": 0
         },
         "revision": 0,
@@ -523,11 +523,11 @@
             ]
           },
           {
-            "id": "9c6a2fd2-3573-455f-be54-1823e4cf33c5",
-            "name": "vae_name_1",
+            "id": "003fd04d-5325-45af-9245-e4f61b857b74",
+            "name": "vae_name",
             "type": "COMBO",
             "linkIds": [
-              173
+              175
             ],
             "pos": [
               -1909.6167349734783,
@@ -535,11 +535,11 @@
             ]
           },
           {
-            "id": "2931d293-2144-4f5d-8272-ae25c1e40655",
-            "name": "type",
+            "id": "2b60338b-082e-4e6b-b336-5105935781e0",
+            "name": "clip_name",
             "type": "COMBO",
             "linkIds": [
-              174
+              176
             ],
             "pos": [
               -1909.6167349734783,
@@ -884,13 +884,13 @@
             "mode": 0,
             "inputs": [
               {
-                "localized_name": "type",
-                "name": "type",
+                "localized_name": "clip_name",
+                "name": "clip_name",
                 "type": "COMBO",
                 "widget": {
-                  "name": "type"
+                  "name": "clip_name"
                 },
-                "link": 174
+                "link": 176
               }
             ],
             "outputs": [
@@ -950,7 +950,7 @@
                 "widget": {
                   "name": "vae_name"
                 },
-                "link": 173
+                "link": 175
               }
             ],
             "outputs": [
@@ -1114,7 +1114,7 @@
             "type": "CONDITIONING"
           },
           {
-            "id": 173,
+            "id": 175,
             "origin_id": -10,
             "origin_slot": 10,
             "target_id": 12,
@@ -1122,7 +1122,7 @@
             "type": "COMBO"
           },
           {
-            "id": 174,
+            "id": 176,
             "origin_id": -10,
             "origin_slot": 11,
             "target_id": 11,
@@ -1142,10 +1142,10 @@
     "VHS_MetadataImage": true,
     "VHS_KeepIntermediate": true,
     "ds": {
-      "scale": 0.9229599817706498,
+      "scale": 0.8390545288824263,
       "offset": [
-        1291.4025211482601,
-        -358.7775038563971
+        1406.5783592199637,
+        -402.6413340380214
       ]
     }
   },
