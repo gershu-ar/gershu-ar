@@ -243,7 +243,7 @@ Keep in mind the software you're using and the cache's circuit/purges. Instant r
 <br><br>
 #### MARK TWAIN YOURSELF THRU QWEN
 
-**TEXT**
+**TEXT**<br>
 One thing Qwen and Krea 2 are **EXCELLENT** at is text. **Wildly good at**.  On short text, that is.  Long text? That's a whole different chapter.
 
 Still, in between getting proper rendered text while working with SDXL and winning the lottery, winning the lottery is a sure thing.
@@ -261,18 +261,19 @@ The shown example is crude and hasty at best, but illustrates simply how **easil
 
 **HAND WRITTING**
 
-As for** handwritten text** -if used in extensive or specific amount- Dante's Hell is a kid's playground in comparison, short specific phrases work like instant noodles, on the other hand, long text requires patience and proper prompting.
+As for **handwritten text** -if used extensively or wanting a specific style- Dante's hell is a kid's playground in comparison: short specific phrases work like instant noodles, on the other hand, long text requires patience and proper prompting.
 
-As the guide insists upon itself time and time again: prompt and models are not all the same.  In the case of handwritting text testing found out interesting results are worth sharing and, surprisingly enough, creator's **NSWF Krea 2 models show to excel over the official Krea RAW and Turbo variants** in the tests I run (read below).
+As the guide insists upon itself time and time again: prompt and models are not all the same. 
 
-Visual human-like results require heavy prompting: the *prior* to handwritten text are perfect handwritten characters, aligned, with clean strokes, the *perfect idea of handwritting*.  Every day human writting is anything but perfect: people usually don't write aligned, they do it with characters varying in size, with different pressured applied on the paper, etc.  The good news it you can get realistically looking handwritting text if you prompt it correctly, just a heads up that is not an easy task. 
+All models in the guide were tested and the results are worth sharing: surprisingly enough, creator's **NSWF Krea 2 models demostrate to excel over the official Krea RAW and Turbo variants** in all the run tests.
 
-> Adding human-like handwritting text prompts is pending.
+Visual human-like handwriting results require heavy prompting: the *prior* to handwritten text are perfect handwritten characters, aligned, with clean strokes, the *perfect idea of handwriting*.  Every day human writing is anything but perfect: people usually don't write aligned, they do it with characters varying in size, with different pressured applied on the paper, etc.  The good news it you can get realistically looking handwriting text if you prompt it correctly, just a heads up that is not an easy task. 
 
-Again that is also model dependant: some models understand better than others what you want to achieve.
+> Adding true human-like handwriting text prompts is pending.
 
-For a simple handwritten note, you can throw the idea in clearly, paying special detail when need on complex or long words.  You will need several renders to get 100% perfect matching text and the used model plays heavily on the result:
+For a simple handwritten note, you can throw the idea in the prompt, paying special detail when need on complex or long words.  You will need several renders to get 100% perfect matching text.
 
+A prompt for a full note, "handwritten" style:
 
 
     [PAPER SCENE MODULE]
