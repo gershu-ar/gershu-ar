@@ -242,11 +242,13 @@ Keep in mind the software you're using and the cache's circuit/purges. Instant r
 👆 [Back to index](#the-big-old-index)
 <br><br>
 #### MARK TWAIN YOURSELF THRU QWEN
-One thing Qwen and Krea 2 are **EXCELLENT** at is text. **Wildly good at**.
 
-> In between getting proper rendered text while working with SDXL and winning the lottery, winning the lottery is a sure thing.
+**TEXT**
+One thing Qwen and Krea 2 are **EXCELLENT** at is text. **Wildly good at**.  On short text, that is.  Long text? That's a whole different chapter.
 
-So, if we implement two simple modifications to *action* from the example:
+Still, in between getting proper rendered text while working with SDXL and winning the lottery, winning the lottery is a sure thing.
+
+Let's start with a simple setup by implementing two simple prompt modifications to the *Action*  block:
 
     Action: Man is holding a professionally designed sign that reads "I love dogs and I'm a drunk".  Dog is standing next to Man staring at Man.  Dog has a small sign hanging from the beck that reads: "This cat is crazy".
 
@@ -257,11 +259,76 @@ So, if we implement two simple modifications to *action* from the example:
 
 The shown example is crude and hasty at best, but illustrates simply how **easily you can add text** to any level of customization and simplicity or complexity you require.
 
-As for handwritten text, keep in mind to get human-like results it requires heavy prompting: *the prior* to handwritten text are perfect handwritten characters, aligned, with clean strokes.  Human writting is not perfect, people usually don't write aligned on the paper, with characters varying in size, etc.  You can get realistically looking handwritting text if you prompt it correctly, just a heads up that is not an easy task. 
+**HAND WRITTING**
+
+As for** handwritten text** -if used in extensive or specific amount- Dante's Hell is a kid's playground in comparison, short specific phrases work like instant noodles, on the other hand, long text requires patience and proper prompting.
+
+As the guide insists upon itself time and time again: prompt and models are not all the same.  In the case of handwritting text testing found out interesting results are worth sharing and, surprisingly enough, creator's **NSWF Krea 2 models show to excel over the official Krea RAW and Turbo variants** in the tests I run (read below).
+
+Visual human-like results require heavy prompting: the *prior* to handwritten text are perfect handwritten characters, aligned, with clean strokes, the *perfect idea of handwritting*.  Every day human writting is anything but perfect: people usually don't write aligned, they do it with characters varying in size, with different pressured applied on the paper, etc.  The good news it you can get realistically looking handwritting text if you prompt it correctly, just a heads up that is not an easy task. 
+
+> Adding human-like handwritting text prompts is pending.
 
 Again that is also model dependant: some models understand better than others what you want to achieve.
 
-If you want more complex text or even **overlay graphics**, you can absolutely can by even creating them on the fly: Qwen / Krea 2 excel at it too, not as mathematicaly precise as Ideogram 3.0/4.0 and products, which has been designed to work with text in mind, but it certainly creates a commendable job with ease.
+For a simple handwritten note, you can throw the idea in clearly, paying special detail when need on complex or long words.  You will need several renders to get 100% perfect matching text and the used model plays heavily on the result:
+
+
+
+    [PAPER SCENE MODULE]
+    A single sheet of white paper lying on a wooden desk, photographed from above, realistic natural lighting, focus on the paper, clean composition, realistic paper texture, documentary-style photography.
+    
+    [HANDWRITING STYLE MODULE]
+    Casual handwritten text written with a black ballpoint pen, authentic human handwriting, slightly uneven character shapes, subtle stroke variations, minor baseline drift, natural spacing inconsistencies, readable but imperfect, not calligraphic, not typographic, not computer-generated looking.
+    
+    [TEXT CONTENT MODULE]
+    The paper starts as a note:
+    "Dear GitHub reader:"
+    Word "GitHub"  must be in blue and spelled exactly: G i t H u b
+    
+    The paper follows:
+    "Long texts can be an issue on diffusion models: don't blame on Qwen or CLIP ViT-L. It's just a matter of how the whole system is designed."
+    
+    Word "diffusion" must be in blue and spelled exactly: d i f f u s s i o n
+    Word "models" must be in green and spelled exactly: m o d e l s
+    Word "ViT-L" must be spelled exactly: V i T - L
+    
+    On another line:
+    "Handwriting you say? Well, here is official Krea 2's handwritting" with words "Krea 2's" in orange.
+    
+    Signing the document in red:
+    "George Washington" with a double underslash.
+    
+    [READABILITY MODULE]
+    Clearly visible text, legible handwriting, high text fidelity, easy to read, sharp focus on the writing.
+
+<br>
+
+*Produces a note dubiously signed by a Mr. Washington:*
+<br><br>
+
+[![](https://github.com/gershu-ar/gershu-ar/blob/main/articles/img/K2__00056_.png)](https://github.com/gershu-ar/gershu-ar/blob/main/articles/img/K2__00056_.png)
+*Rendered using NSFW [Gonzalomo v4.0](#foot-notes--qa--recommended-models) model - Original PNG with workflow embeded*
+
+Notice in the prompting the amount of stress some words required to be renderer appropriately.  
+
+Output size also matters: If your render requires extensive, precise text, keep the image output or on above `2 PM - 1256x1672 pixels` , that gives Ksampler more room to maneuver, more pixels and space to work with. 
+
+Despite the render was generated with NSWF [Gonzalomo v4.0](#foot-notes--qa--recommended-models) model, due credit goes to official Krea 2 in the understanding the base text training looks like undeniably related:
+
+[![](https://github.com/gershu-ar/gershu-ar/blob/main/articles/img/comparison.jpg)](https://github.com/gershu-ar/gershu-ar/blob/main/articles/img/comparison.jpg)
+*Left: Rendered using NSFW [Gonzalomo v4.0](#foot-notes--qa--recommended-models) model - Right: Hastily rendered using Official Krea 2 Turbo model*
+
+The tests run with all the models mentioned in the guide were equally satisfactory showing similar outputs with the same rendering mistakes on the same words, evidencing a relation to the same base training model/s.
+
+Even so, is worth to mention NSFW [Gonzalomo v4.0](#foot-notes--qa--recommended-models) model notably surpassed the official Krea 2 model on the same handwriting testing tasks, with NSFW [FinePorn v4.0](#foot-notes--qa--recommended-models) being particularly more detailed under certain scenarios.
+
+This adds to the positive understanding that retrained, repurposed models **not necessarily** neglect the other *elements in the universe*.  **Refinements on the models from the base versions are notorious and evident**; even more, trained NSFW models demonstrate remarkable flexibility and enormous generation capacities, superseding the base model of Krea 2 in every conceived SFW/NSFW scenario.
+
+
+**OVERLAY GRAPHICS**
+
+If you want more complex text or even **overlay graphics**, you can absolutely can by even creating them on the fly: Qwen / Krea 2 excel at it too, not as mathematicaly precise as Ideogram 3.0/4.0 which has been designed to work with text and coordinates in mind, but it certainly creates a commendable job with ease.
 
 > Remember: **there're no universal difussion models**.  Each model was trained for and is capable of something **different**.  Some excel at doing *this*, other's excel at doing *that*; read the model's card and the creators notes to understand what model you have and what it can and cannot do.  *Try them all!*, I say.  Then decide.
 
@@ -280,6 +347,8 @@ The ouput:
 As you can see, Qwen / Krea 2 perfectly understood what I wanted and created the requested overlay graphics by word, **even using CNN's real life logo**.
 
 It *filled the gap* (overlay's extra graphics/text) with **gibberish** but that's **partially my fault**: I did not fully specify all details the model was expecting to render the idea properly: model was trained with specific overlay graphics and I did not met the requisites.  **Usually news overlays exhibit a lot of extra information and I was short on my prompting**.  That can be solved by enhancing the prompt and/or creating prompts for very specific overlay graphics with very detailed instructions.
+
+**FULL SIZED GRAPHICS**
 
 You can also generate full sized graphics easily:
 
