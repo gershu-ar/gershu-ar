@@ -603,13 +603,15 @@ Yeah, I don't use them.
 **Updates**<br>
 On it. Will be adding tips and try to improve format.  I find markdown very unfriendly but hey, life is imperfect.
 
-**Thanks to**<br>
+**Thanks to / (C)**<br>
 GitHub for being weirdly awesome, and not banning me after so many consecutive edits.<br>
-To all the people behind ComfyUI, model creators and coders that make the true miracle.
-<br>
+To all the people behind ComfyUI, model creators and coders that make the true miracle.<br><br>
+Krea 2 is licensed under the Krea 2 Community License Agreement.
+<br><br>
 -- Gershu / gershu.ar<br><br>
 👆 [Back to index](#the-big-old-index)
 <br>
+
 End of guide.<br><br>
 [![CC BY 4.0](https://i.creativecommons.org/l/by/4.0/88x31.png)](http://creativecommons.org/licenses/by/4.0/)  
 This document is licensed under a [Creative Commons Attribution 4.0 International License](http://creativecommons.org/licenses/by/4.0/).
