@@ -39,7 +39,10 @@ Disclaimer: There are probably a ton of errors in this article.  Suggestions are
 <br>
 
 ## The 101
-**Prompt** → **Qwen** (encode) → **Krea** 2 (denoise) → VAE (decode)<br>
+
+[![](https://github.com/gershu-ar/gershu-ar/blob/main/articles/img/qwen_prompting_text2image_pipeline.png)](https://github.com/gershu-ar/gershu-ar/blob/main/articles/img/qwen_prompting_text2image_pipeline.png)
+*Generated with Copilot*
+
 Congratulations, you're all set for Bootcamp.
 
 👆 [Back to index](#the-big-old-index)
