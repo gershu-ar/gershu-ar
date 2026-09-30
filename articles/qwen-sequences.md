@@ -41,9 +41,47 @@ Disclaimer: There are probably a ton of errors in this article.  Suggestions are
 ## The 101
 
 [![](https://github.com/gershu-ar/gershu-ar/blob/main/articles/img/qwen_prompting_text2image_pipeline.png)](https://github.com/gershu-ar/gershu-ar/blob/main/articles/img/qwen_prompting_text2image_pipeline.png)
-*Generated with Copilot*
 
-Congratulations, you're all set for Bootcamp.
+<details>
+<summary>A pure Krea 2 text-2-image pipeline flow visualized - Generated with Copilot - Click here to view the prompt used</summary>
+-----------------------------------------------------------<br>
+
+Microsoft [Copilot](https://copilot.com/), with image generation option activated, automatic thinking mode.<br>
+Version unknown - Microsoft does not releases Copilot versioning.<br>
+-----------------------------------------------------------<br>
+Prompt:<br>
+-----------------------------------------------------------<br>
+"Based on the following text, I'd like for you to generate an instructive graphic for an article about prompting.  Don't go wild, don't use weird images or graphics.  Clean, classical, nicely adapted to GitHub's color palette.  Make it nice, not necessarily formal.
+
+'PROMPT<br>
+↓<br>
+TOKENIZATION<br>
+↓<br>
+QWEN / TEXT ENCODER<br>
+↓<br>
+TEXT REPRESENTATIONS<br>
+(embeddings / hidden states)<br>
+↓<br>
+CONDITIONING<br>
+↓<br>
+KREA-2<br>
+↓<br>
+DENOISING / SAMPLING<br>
+↓<br>
+LATENT<br>
+↓<br>
+VAE<br>
+↓<br>
+IMAGE'"
+
+Highling these three concepts of the list:
+- PROMPT
+- QWEN (do not highlight '/ TEXT ENCODER', only 'QWEN')
+- KREA-2<br>
+
+-----------------------------------------------------------<br></details>
+
+**Congratulations, you're all set for Bootcamp.**
 
 👆 [Back to index](#the-big-old-index)
 <br><br>
