@@ -11,7 +11,7 @@
 
 [![](https://github.com/gershu-ar/gershu-ar/blob/main/articles/img/K2__01007_.png)](https://github.com/gershu-ar/gershu-ar/blob/main/articles/img/K2__01007_.png)
 
-*Rendered using Krea 2 NSFW model [FinePorn](#foot-notes--qa--recommended-models) on [ComfyUI](https://github.com/comfy-org/ComfyUI "ComfyUI") portable v0.36.0, revealing model's capacity to generate comic-like illustrations*<br>*Original PNG with workflow embeded*
+*Rendered using Krea 2 NSFW model [FinePorn](#foot-notes--qa--recommended-models) on [ComfyUI](https://github.com/comfy-org/ComfyUI "ComfyUI") portable v0.38.0, revealing model's capacity to generate comic-like illustrations*<br>*Original PNG with workflow embeded*
 
 ------------
 ## THE BIG OLD INDEX
