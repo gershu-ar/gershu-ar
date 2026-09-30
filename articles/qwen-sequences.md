@@ -212,17 +212,84 @@ Output:
 [![](https://github.com/gershu-ar/gershu-ar/blob/f38b44276cb19ce55d3e168fa9f2667890301ddc/articles/img/5f38dbf7652fb661decd3cef2d09fd50.png)](https://github.com/gershu-ar/gershu-ar/blob/f38b44276cb19ce55d3e168fa9f2667890301ddc/articles/img/5f38dbf7652fb661decd3cef2d09fd50.png)
 *Rendered using NSFW [FinePorn](#foot-notes--qa--recommended-models) model - Original PNG with workflow embeded*
 
-**Qwen/Krea 2 did what I ask of them.**
-
 After contextualizing the scene by creating the embeds, it filled the gaps and presented the intention with accuracy, even repeating the same background and scenery. **It prioritized the big picture over small detail**, and this is where we need to come in.
 
-As you see on the examples both renders look **almost the same**. Liberties are visible. Since I did not specify about sneakers' colors, they're different. Grey for the t-shirt?, yes, but different shades of grays. The leash just "orange" is not detailed enough, needs refinement. Pants are not the same.
+As you see on the examples both renders look **almost the same**. Liberties are visible.  I did not give a description for the sneakers, or the grey tone on the shirt, or the pants.  Hardly any continuity based on a poor prompt description.
 
-Also pay attention how it ignores *ugly* and *fit*. That dude does not stand out: his human face is what is expected to be. See, *Ugly* by itself has no meaning, it needs to be described: *long nose, deformed cheeks*, whatever. Same for the *unfit*. What is *unfit*? Unless you describe it, *unfit* is a shallow concept free of meaning. *Unfit* can refer to several things not just to a body type description.
+Also pay attention how it "ignores" *ugly* and *fit*. That dude does not stand out: his human face is what is expected to be. See, *Ugly* by itself has no meaning, it needs to be described or at least contextualized: *long nose, deformed cheeks*, whatever. Same for the *unfit*. What is *unfit*? Unless you describe it, *unfit* is a shallow concept free of meaning. *Unfit* can refer to several things not just to a body type description.
 
-*Ugly*, *unfit*, ... like using *relaxed*. There's no universal explanation for what *relaxed* is supposed to be in any given situation unless there's a context to it.  If you want somebody with a natural pose and "relaxed", do so by exactly prompting it as such: "The person has a naturally distended body pose, being at ease, resting shoulders and arms, and a face expression of tranquility and calmness".
+**LET'S GO MEDIEVAL EXAMPLE**<br>
+
+In Qwen / Krea 2 you can -and should-  atomize the prompt to the level of detail you require.  *Going medieval* involves sacrifying full text coherence for pieces of information that, if ordered and tagged properly, does the job beautifully.  
+
+> Don't be confused about this method: It *feels* like SDXL but **it is not**.  You can extended yourself as much as you want on each block to achieve the level of detail you require.  Be poetic, the *block way*.
+
+Here's a simple example of 2 (two) characters interacting in an unlikely real-life scene:
+
+
+    [WOMAN]
+    65-years-old elderly woman.
+    
+    [TIGER]
+    Brown, unleashed.
+    
+    [WOMAN ATTIRE]
+    wearing sports pants, a t-shirt and sneakers.
+    
+    [TIGER ATTIRE]
+    Unleashed orange leash.
+    
+    [WOMAN ACTION]
+    Standing hugging TIGER.
+    
+    [TIGER ACTION]
+    Sitting, eating a watermelon on the floor, watermelon is flying around, watermelon pieces and juice on face, happy, leaning a paw on WOMAN to show appreciation.  
+    
+    [CAMERA]
+    Extreme low-angle shot positioned inches above floor level looking upward, wide-angle 28mm camera focal length, environmental full-body framing showing the complete figure against the room's height.
+    
+    [ENVIROMENT]
+    At a city park on a pathway.
+    
+    [LIGHTING]
+    Natural afternoon light, golden hour.
+    
+    [TEXTURES]
+    Realistic skin, realistic fur, realistic hairs.
+
+[![](https://github.com/gershu-ar/gershu-ar/blob/main/articles/img/K2__00289_.png)](https://github.com/gershu-ar/gershu-ar/blob/main/articles/img/K2__00289_.png)
+***"Oh, little Whiskers loves his watermelon"***<br>
+*Rendered using NSFW [FinePorn v5](#foot-notes--qa--recommended-models) model - Original PNG with workflow embeded*
+
+The pompt defined each character's form, clothing and action **separately** and **individually**, yet, **connected the action** on command:  She is hugging the tiger while the tiger is posing a paw on her as a sign of appreciation.
+
+This prompting method makes it also easier to define characters, scene, clothing, camera, etc. and adapt the situation fast without needing to write (or re-write) endless *prompting poetry* all getting lost because a word was out of place.   Qwen / Krea 2 love detail but they also understand the idea when you slice it.  Just like **tasty watermelon** 🍉
 
 Oh, Qwen, you cheeky, adorable bastard.
+
+
+***WAIT, ALL YOUR PROMPTS USE DIFFERENT METHODS***
+
+Yes.  There's no *universal way* on prompting on Qwen / Krea 2.
+What it matters on the end is for the prompt to **make sense**.
+
+    Subject: 45-years-old man.
+Is the same as:
+
+    [Subject]
+    45-years-old man.
+Or as:
+
+    [Subject] 45-years-old man.
+
+In fact:
+
+    The spaces...
+    
+    ... in between.
+Get ignored.
+
+Commas, dots, semicolons, they all mean the same *to a point*.  The *what to do* is separated by coherence and contextualization not so much on how you write it.  Of course, proper writing using comas to enumerate/describe and dots to end a sentence do give a **strict meaning**, telling Qwen / Krea 2 **exactly** what you want in a very clear sense. 
 
 👆 [Back to index](#the-big-old-index)
 <br><br>
