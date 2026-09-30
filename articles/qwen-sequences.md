@@ -1,12 +1,13 @@
 # 🎨 Qwen / Krea 2 on ComfyUI
 ### *The Totally Unrequested Prompting Guide*
 ---
-**Working with NSFW & SFW models**  
+**Working with NSFW & SFW models**<br>
 *For the Purist Prompter*  
 
-##### This guide was 97% human-written by a non-English language native (sorry for destroying your language), with 3% assistance from *Google Gemini 3.6-flash*—mostly for Markdown formatting assistance.
+🔞 `RATED R` — *Contains **strong language** - This article DOES NOT contain adult images nor sexual representations*
 
-🔞 `RATED R` — *Contains strong language*
+##### This guide was 97% human-written by a non-English language native (sorry for destroying your language), with 3% AI assistance (Gemini + Copilot), mostly on markdown adherence and some graphics.  It is updated regularely.
+
 
 [![](https://github.com/gershu-ar/gershu-ar/blob/main/articles/img/K2__01007_.png)](https://github.com/gershu-ar/gershu-ar/blob/main/articles/img/K2__01007_.png)
 
@@ -116,7 +117,7 @@ You can, of course, arrange the workflow as you please.  **That's the beauty of 
 
 | No  | Yes |
 | ------------ | ------------ |
-| Don't be confused: NSFW models render perfectly dressed scenarios and I consider them excellent at rendering dressed people precisely because clothing is not enforced by the model and I get to choose what and how clothing is being worn.  On SFW models there's the possibility of ruining certaing clothing or even a pose on the account of avoiding showing nudity or the posibility of nudity.  | If you want to, you can.  |
+| Don't be confused: NSFW models render perfectly dressed scenarios and I consider them excellent at rendering dressed people precisely because clothing is not enforced by the model and I get to choose what and how clothing is being worn.  On SFW models there's the possibility of ruining certain clothing or even a pose on the account of avoiding showing nudity or the possibility of showing nudity.  | If you want to, you can.  |
 
 **This guide is about Qwen / Krea 2 prompting engineering**, *not for determining the use you give to these tools*.  That, amigo, is entirely up to **you**.
 
@@ -466,7 +467,7 @@ You need to render a character wearing a shirt. But even as you prompt the word 
 
 This is not about Qwen so much as the NSFW model: a SFW model should avoid that from the base.
 
-"But my NSFW renders dressed people to me--", yeah, I get it. **Characters are not drawn nude by default, yet they do when the scene context plays in.** Some prompts tend to sex and nudity to a point that getting people naked is the obvious so in fact dressing them is the contrary. Creating context to fight the context in a way.
+"But my NSFW renders dressed people to me--", yeah, I get it. **Characters are not drawn nude by default, yet they do when the scene context plays in.** Some prompts tend to sex and  to a point that getting people naked is the obvious so in fact dressing them is the contrary. Creating context to fight the context in a way.
 
 If I'm placing a man and a woman on a bed, and the action involves *caressing*, *kissing*, with an i*ntimate environment *and* low-key dim warm lighting* with a *fireplace* on the back chances are Qwen/Krea 2 will interpret that as a *clothes off scenario*. There's a sexualized context going on and will try to get one or both characters as dispossessed of clothing as possible. If clothes are not specified or the clothing is easily/highly removable (boxers, bras, bikini bottom,...) Qwen/Krea 2 go for it: I know I would ;)
 
@@ -605,19 +606,20 @@ Qwen/Krea 2 are closer to Star Wars: ahead of its time and to succeed just make 
 ### FOOT NOTES / Q&A / RECOMMENDED MODELS
 
 **What Krea 2 models deliver what they promise?**<br>
-Haven't tested that many, but these ones I found to be **superb realistic models** and amazing at creating full graphics:
+Haven't tested thoroughly that many, but these ones absolutely get the job done:
 
 | Model | Official Source | Mirrors | Recommendation |
 | :--- | :--- | :--- | :--- |
-| **CyberRealistic Krea 2 v2.0** | 🌐 [Go (Cyberdelia)](https://cyberdelia.nl) • 🌐 [Go (HF Repo)](https://huggingface.co/cyberdelia/CyberRealistic) • 🌐 [Go (Civitai)](https://civitai.red/models/2831028/cyberrealistic-krea-2) | N/A | Premier fine-tune for photorealism, lifelike skin textures, sub-surface scattering, and natural lighting without stylized artifacts. |
-| **FinePorn v4.0** | 🌐 [Go (Civitai)](https://civitai.red/models/2762538/fineporn-v4-int8-or-nvfp4-or-bf16-or-fp8) | 🌐 [Go (HF INT8)](https://huggingface.co/EllaPriest45/Krea2_Checkpoints/blob/main/FinePorn%20v4.0%20Turbo%20INT8%20-%20Krea2%20-%20this%20is%20an%20amateur%20photo%20taken%20from%20smartphone%2Cbad%20quality%20photo%2CThe%20lighting%20is%20clear%2Csoft%20diffused%2Cthe%20details%20are%20sharp%2Cand%20the%20feeling%20of%20the%20photo%20is%20casual%20and%20spontaneous.safetensors) | Specialized in explicit anatomical accuracy and replicating raw, unpolished casual/smartphone photographic styles. |
-| **GonzaLomo v4.0** | 🌐 [Go (Civitai)](https://civitai.com/models/286469) | 🌐 [Go (HF Mirror)](https://huggingface.co/Quiho/GonzaLomo_Krea_2_v4.0_checkpoint) | High character consistency and anatomical control; ideal for multi-subject composition and precise spatial positioning. |
+| **CyberRealistic Krea 2 v2.0 ⭐** | 🌐 [Go (Cyberdelia)](https://cyberdelia.nl) • 🌐 [Go (HF Repo)](https://huggingface.co/cyberdelia/CyberRealistic) • 🌐 [Go (Civitai)](https://civitai.red/models/2831028/cyberrealistic-krea-2) | N/A | Premier fine-tune for photorealism, lifelike skin textures, sub-surface scattering, and natural lighting without stylized artifacts. |
+| **FinePorn v4 ⭐** | 🌐 [Go (Civitai)](https://civitai.red/models/2762538/fineporn-v4-int8-or-nvfp4-or-bf16-or-fp8) | 🌐 [Go (HF INT8)](https://huggingface.co/EllaPriest45/Krea2_Checkpoints/blob/main/FinePorn%20v4.0%20Turbo%20INT8%20-%20Krea2%20-%20this%20is%20an%20amateur%20photo%20taken%20from%20smartphone%2Cbad%20quality%20photo%2CThe%20lighting%20is%20clear%2Csoft%20diffused%2Cthe%20details%20are%20sharp%2Cand%20the%20feeling%20of%20the%20photo%20is%20casual%20and%20spontaneous.safetensors) | Specialized in explicit anatomical accuracy and replicating raw, unpolished casual/smartphone photographic styles. |
+| **FinePorn v5 ⭐** | 🌐 [Go (Civitai)](https://civitai.red/models/2762538/fineporn-v5-int8fp8) | N/A | Updated iteration offering improved architectural adherence, higher precision quantizations (INT8/FP8), and refined handling of intricate details and raw camera aesthetics. |
+| **GonzaLomo v4.0 ⭐** | 🌐 [Go (Civitai)](https://civitai.com/models/286469) | 🌐 [Go (HF Mirror)](https://huggingface.co/Quiho/GonzaLomo_Krea_2_v4.0_checkpoint) | High character consistency and anatomical control; ideal for multi-subject composition and precise spatial positioning. |
 | **Krea 2 RAW** (Base/official checkpoint) | 🌐 [Go (HF Repo)](https://huggingface.co/krea/Krea-2-Raw) | 🌐 [Go (Civitai)](https://civitai.red/models/2732654/krea-2-raw) | Base full-precision model. Delivers peak detail depth, maximum prompt adherence, and full aesthetic flexibility for standard sampling (20–50 steps). |
 | **Krea 2 Turbo** (Base/official checkpoint) | 🌐 [Go (HF Repo)](https://huggingface.co/krea/Krea-2-Turbo) | 🌐 [Go (Civitai)](https://civitai.red/models/2732656/krea-2-turbo) | Distilled low-step variant optimized for speed. Best for real-time rendering, fast prototyping, and high-throughput workflows (4–8 steps). |
 | **Moody Krea 2 Mix v7.0** | 🌐 [Go (Civitai)](https://civitai.red/models/2731187/moody-krea-2-mix-uncensored-weekend-3days-blue-buzz-purchase-3buzz?modelVersionId=3209007) | 🌐 [Go (HF FP8)](https://huggingface.co/EllaPriest45/Krea2_Checkpoints/blob/main/Moody%20Krea%202%20Mix%20(uncensored)%20FP8%20-%20Krea2.safetensors) | Ideal for dramatic cinematic lighting, atmospheric/dark aesthetics, high-contrast shadows, and unconstrained creative prompts. |
-| **Sick Ollie v1.0** | 🌐 [Go (Civitai)](https://civitai.red/models/2676616/sick-ollie) | N/A| Strong prompt adherence for stylized art, unconventional body mechanics, and niche concept execution. |
+| **Sick Ollie v1.0 ⭐** | 🌐 [Go (Civitai)](https://civitai.red/models/2676616/sick-ollie) | N/A| Strong prompt adherence for stylized art, unconventional body mechanics, and niche concept execution. |
 
-By alphabetic order.
+On alphabetic order.
 
 > A word of warning: NSFW models **are** able to produce **illegal content**, thus communities like CivitAI are overrun by the kind of people who look for that kind of tools to produce that kind of content.  Avoid engaging, commenting and, above all, providing information on what you do, social networks, etc.  **A lot of Jeffrey Epsteins**, stalkers and twisted deviants are anxiously waiting for your data.  Dangers of IA are very real when in the wrong hands.  Exercise **caution** and don't engage.
 
