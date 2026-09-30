@@ -178,7 +178,7 @@ Here's a crude explanation of a sample prompt:
     
     Textures: Skins, fabrics, liquids, etc.
 
-Make your prompts **modular**, so they're easy to modify and even easier to add and remove exceptional/eventual elements and do not worry about the order: Qwen creates embeds from text creating a context, **Krea 2 does not care the order of those embeddings**, as long as they all make sense.  In SDXL the prompt order was extremely important since it layered from the embeddings, in Qwen / Krea 2 what is important is the entire context, not the order you present it.
+Make your prompts in **modular blocks**, so they're easy to modify and even easier to add and remove exceptional/eventual elements and do not worry about the order: Qwen creates embeds from text, forming a context that gets conditioned and sent to Krea 2.  Don't worry so much about the order of your blocks in your prompt as long as they all make sense pieced together.  In SDXL the prompt order was extremely important since it **layered** the final product upon the order you requested it.  On Qwen / Krea 2 what is important is the entire context, not the order you present it.
 
 
 
@@ -212,11 +212,11 @@ Output:
 [![](https://github.com/gershu-ar/gershu-ar/blob/f38b44276cb19ce55d3e168fa9f2667890301ddc/articles/img/5f38dbf7652fb661decd3cef2d09fd50.png)](https://github.com/gershu-ar/gershu-ar/blob/f38b44276cb19ce55d3e168fa9f2667890301ddc/articles/img/5f38dbf7652fb661decd3cef2d09fd50.png)
 *Rendered using NSFW [FinePorn](#foot-notes--qa--recommended-models) model - Original PNG with workflow embeded*
 
-After contextualizing the scene by creating the embeds, it filled the gaps and presented the intention with accuracy, even repeating the same background and scenery. **It prioritized the big picture over small detail**, and this is where we need to come in.
+After contextualizing the scene, it filled the gaps and presented the intention with accuracy, even repeating the (kind of the same) same background and general scenery.  **Priorizing the big picture over small details**, and this is where we/you need to come in.
 
-As you see on the examples both renders look **almost the same**. Liberties are visible.  I did not give a description for the sneakers, or the grey tone on the shirt, or the pants.  Hardly any continuity based on a poor prompt description.
+As you see on the examples both renders look **almost the same**. Liberties are visible.  The reason: I did not give a description for the sneakers, or the grey tone on the shirt, or the pants.  Hardly any continuity based on a poor prompt description.
 
-Also pay attention how it "ignores" *ugly* and *fit*. That dude does not stand out: his human face is what is expected to be. See, *Ugly* by itself has no meaning, it needs to be described or at least contextualized: *long nose, deformed cheeks*, whatever. Same for the *unfit*. What is *unfit*? Unless you describe it, *unfit* is a shallow concept free of meaning. *Unfit* can refer to several things not just to a body type description.
+Also pay attention how it gets confued on *ugly* and *fit*. That dude does not stand out: his human face is what is expected to be. See, *Ugly* by itself has no meaning, it needs to be described or at least contextualized: *long nose, deformed cheeks*, whatever. Same for the *unfit*. What is *unfit*? Unless you describe it, *unfit* is a shallow concept free of meaning. *Unfit* can refer to several things not just to a body type description.
 
 **LET'S GO MEDIEVAL EXAMPLE**<br>
 
