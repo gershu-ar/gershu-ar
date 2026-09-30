@@ -11,7 +11,7 @@
 
 [![](https://github.com/gershu-ar/gershu-ar/blob/main/articles/img/K2__01007_.png)](https://github.com/gershu-ar/gershu-ar/blob/main/articles/img/K2__01007_.png)
 
-*Rendered using Krea 2 NSFW model [FinePorn](#foot-notes--qa--recommended-models) on [ComfyUI](https://github.com/comfy-org/ComfyUI "ComfyUI") portable v0.38.0, revealing model's capacity to generate comic-like illustrations*<br>*Original PNG with workflow embeded*
+*Rendered using Krea 2 NSFW model [FinePorn](#foot-notes--qa--recommended-models) on [ComfyUI](https://github.com/comfy-org/ComfyUI "ComfyUI") portable v0.36.0, revealing model's capacity to generate comic-like illustrations*<br>*Original PNG with workflow embeded*
 
 ------------
 ## THE BIG OLD INDEX
@@ -90,7 +90,7 @@ Highling these three concepts of the list:
 
 Welcome!
 
-My **tool of choice is** **[ComfyUI portable](https://github.com/Comfy-Org/ComfyUI/)** (v0.36.0 as of SEP/2026).
+My **tool of choice is** **[ComfyUI portable](https://github.com/Comfy-Org/ComfyUI/)** (v0.38.0 as of SEP/2026).
 
 [Utilized models](#foot-notes--qa--recommended-models "Used models") vary but the Qwen3-VL-4B FP8 Scaled *Text Encoder* and the Qwen *Image VAE* remained in place for all the examples generated in this guide.
 
