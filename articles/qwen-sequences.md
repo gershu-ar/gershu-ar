@@ -690,7 +690,7 @@ It's suggested to use IA (Gemini, Copilot, ChatGPT, etc) to assist in creating p
 
 ### A NOT SO SHORT WORD ABOUT CLASSIFIER-FREE GUIDANCE (CFG)
 
-> While this article is about prompt engineering, I'd like to take a short detour into `` and the important role it plays when rendering with Krea 2.
+> While this article is about prompt engineering, I'd like to take a short detour into `CFG` and the important role it plays when rendering with Krea 2.
 
 Put simply, `` ([**C**lassifier-**F**ree **G**uidance](https://arxiv.org/abs/2207.12598)) is a technique used to **steer sampling toward or away** from a **conditioning** signal (a text prompt in our case). It's about emphasis and direction, not about freedom or creativity.
 
