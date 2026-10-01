@@ -6,12 +6,16 @@
 
 🔞 `RATED R` — *Contains **strong language** - This article DOES NOT contain adult images nor sexual representations*
 
+
+
 ##### This guide was 97% human-written by a non-English language native (sorry for destroying your language), with 3% AI assistance (Gemini + Copilot), mostly on markdown adherence and some graphics.  It is updated regularely.
 
+> Notice: This is NOT the final version. This guide is being fact-checked, expanded and corrected one chapter at the time. You fill find errors / imprecisions until the process is completed.  I appreciate the patience, this is the work of an enthusiast, not an expert.
 
 [![](https://github.com/gershu-ar/gershu-ar/blob/main/articles/img/K2__01007_.png)](https://github.com/gershu-ar/gershu-ar/blob/main/articles/img/K2__01007_.png)
 
-*Rendered using Krea 2 NSFW model [FinePorn](#foot-notes--qa--recommended-models) on [ComfyUI](https://github.com/comfy-org/ComfyUI "ComfyUI") portable v0.36.0, revealing model's capacity to generate comic-like illustrations*<br>*Original PNG with workflow embeded*
+*Rendered using Krea 2 NSFW model [FinePorn](#foot-notes--qa--recommended-models) on [ComfyUI](https://github.com/comfy-org/ComfyUI "ComfyUI") portable v0.36.0, revealing model's capacity to generate comic-like illustrations*<br>*Original PNG with workflow embedded*
+
 
 ------------
 ## THE BIG OLD INDEX
@@ -28,8 +32,9 @@
 4. [Melting faces, water droplets and artifacts](#melting-faces-water-droplets-and-artifacts)<br>
 5. [Don'T be so Negative: try to see the Light](#dont-be-so-negative-try-to-see-the-light)<br>
 6. [Cut!](#cut)<br>
-7. [*Nutshelling* it](#nutshelling-it)<br>
-8. [Foot notes / Q&A / Recommended models](#foot-notes--qa--recommended-models)
+7. [A not so short word about the Classifier-Free Guidance (CFG)](#a-not-so-short-word-about-the-classifier-free-guidance-cfg)<br>
+8. [*Nutshelling* it](#nutshelling-it)<br>
+9. [Foot notes / Q&A / Recommended models](#foot-notes--qa--recommended-models)
 
 ------------
 Disclaimer: There are probably a ton of errors in this article.  Suggestions are always welcome, drop me a line!
@@ -201,7 +206,7 @@ Let's prompt for a simple scene:
 
 Ouput:
 [![](https://github.com/gershu-ar/gershu-ar/blob/f38b44276cb19ce55d3e168fa9f2667890301ddc/articles/img/878310eda7fcc06262d6c2c7bd3a1530.png)](https://github.com/gershu-ar/gershu-ar/blob/f38b44276cb19ce55d3e168fa9f2667890301ddc/articles/img/878310eda7fcc06262d6c2c7bd3a1530.png)
-*Rendered using NSFW [FinePorn](#foot-notes--qa--recommended-models) model - Original PNG with workflow embeded*
+*Rendered using NSFW [FinePorn](#foot-notes--qa--recommended-models) model - Original PNG with workflow embedded*
 
 **EXAMPLE**<br>
 Slightly modifying the same scene by adding "Dog is setting paws on Man" (only changing the dog action), rest remains the same:
@@ -210,7 +215,7 @@ Slightly modifying the same scene by adding "Dog is setting paws on Man" (only c
     
 Output:
 [![](https://github.com/gershu-ar/gershu-ar/blob/f38b44276cb19ce55d3e168fa9f2667890301ddc/articles/img/5f38dbf7652fb661decd3cef2d09fd50.png)](https://github.com/gershu-ar/gershu-ar/blob/f38b44276cb19ce55d3e168fa9f2667890301ddc/articles/img/5f38dbf7652fb661decd3cef2d09fd50.png)
-*Rendered using NSFW [FinePorn](#foot-notes--qa--recommended-models) model - Original PNG with workflow embeded*
+*Rendered using NSFW [FinePorn](#foot-notes--qa--recommended-models) model - Original PNG with workflow embedded*
 
 After contextualizing the scene, it filled the gaps and presented the intention with accuracy, even repeating the (kind of the same) same background and general scenery.  **Priorizing the big picture over small details**, and this is where we/you need to come in.
 
@@ -229,37 +234,47 @@ Here's a simple example of 2 (two) characters interacting in an unlikely real-li
 
     [WOMAN]
     65-years-old elderly woman.
+    [/WOMAN]
     
     [TIGER]
     Brown, unleashed.
+    [/TIGER]
     
     [WOMAN ATTIRE]
     wearing sports pants, a t-shirt and sneakers.
+    [/WOMAN ATTIRE]
     
     [TIGER ATTIRE]
     Unleashed orange leash.
+    [/TIGER ATTIRE]
     
     [WOMAN ACTION]
     Standing hugging TIGER.
+    [/WOMAN ACTION]
     
     [TIGER ACTION]
     Sitting, eating a watermelon on the floor, watermelon is flying around, watermelon pieces and juice on face, happy, leaning a paw on WOMAN to show appreciation.  
+    [/TIGER ACTION]
     
     [CAMERA]
     Extreme low-angle shot positioned inches above floor level looking upward, wide-angle 28mm camera focal length, environmental full-body framing showing the complete figure against the room's height.
+    [/CAMERA]
     
     [ENVIROMENT]
     At a city park on a pathway.
+    [/ENVIROMENT]
     
     [LIGHTING]
     Natural afternoon light, golden hour.
+    [/LIGHTING]
     
     [TEXTURES]
     Realistic skin, realistic fur, realistic hairs.
+    [/TEXTURES]
 
 [![](https://github.com/gershu-ar/gershu-ar/blob/main/articles/img/K2__00289_.png)](https://github.com/gershu-ar/gershu-ar/blob/main/articles/img/K2__00289_.png)
 ***"Oh, little Whiskers loves his watermelon"***<br>
-*Rendered using NSFW [FinePorn v5](#foot-notes--qa--recommended-models) model - Original PNG with workflow embeded*
+*Rendered using NSFW [FinePorn v5](#foot-notes--qa--recommended-models) model - Original PNG with workflow embedded*
 
 The pompt defined each character's form, clothing and action **separately** and **individually**, yet, **connected the action** on command:  She is hugging the tiger while the tiger is posing a paw on her as a sign of appreciation.
 
@@ -290,6 +305,12 @@ In fact:
 Get ignored.
 
 Commas, dots, semicolons, they all mean the same *to a point*.  The *what to do* is separated by coherence and contextualization not so much on how you write it.  Of course, proper writing using comas to enumerate/describe and dots to end a sentence do give a **strict meaning**, telling Qwen / Krea 2 **exactly** what you want in a very clear sense. 
+
+Also, be sure to close the tag to be **extra clear** where your instruction starts and ends:
+
+    [TEXTURES]
+    Realistic skin.
+    [/TEXTURES]
 
 👆 [Back to index](#the-big-old-index)
 <br><br>
@@ -364,7 +385,7 @@ Let's start with a simple setup by implementing two simple prompt modifications 
 **Produces exactly that**. The more you describe the medium (paper, sign, wall advertising, graph, etc.) the more realistic it will be:
 
 [![](https://github.com/gershu-ar/gershu-ar/blob/f38b44276cb19ce55d3e168fa9f2667890301ddc/articles/img/0bc8527e11b8cbf13a8c445e639a1d9e.png)](https://github.com/gershu-ar/gershu-ar/blob/f38b44276cb19ce55d3e168fa9f2667890301ddc/articles/img/0bc8527e11b8cbf13a8c445e639a1d9e.png)
-*Rendered using NSFW [FinePorn](#foot-notes--qa--recommended-models) model - Original PNG with workflow embeded*
+*Rendered using NSFW [FinePorn](#foot-notes--qa--recommended-models) model - Original PNG with workflow embedded*
 
 The shown example is crude and hasty at best, but illustrates simply how **easily you can add text** to any level of customization and simplicity or complexity you require.
 
@@ -418,7 +439,7 @@ A prompt for a full note, "handwritten" style:
 <br><br>
 
 [![](https://github.com/gershu-ar/gershu-ar/blob/main/articles/img/K2__00056_.png)](https://github.com/gershu-ar/gershu-ar/blob/main/articles/img/K2__00056_.png)
-*Rendered using NSFW [Gonzalomo v4.0](#foot-notes--qa--recommended-models) model - Original PNG with workflow embeded*
+*Rendered using NSFW [Gonzalomo v4.0](#foot-notes--qa--recommended-models) model - Original PNG with workflow embedded*
 
 Notice in the prompting the amount of stress some words required to be renderer appropriately.  
 
@@ -452,7 +473,7 @@ The ouput:
 
 [![](https://github.com/gershu-ar/gershu-ar/blob/main/articles/img/K2__00896_.png)](https://github.com/gershu-ar/gershu-ar/blob/main/articles/img/K2__00896_.png)
 
-*Rendered using NSFW [Gonzalomo](#foot-notes--qa--recommended-models) model - Original PNG with workflow embeded*
+*Rendered using NSFW [Gonzalomo](#foot-notes--qa--recommended-models) model - Original PNG with workflow embedded*
 
 As you can see, Qwen / Krea 2 perfectly understood what I wanted and created the requested overlay graphics by word, **even using CNN's real life logo**.
 
@@ -463,7 +484,7 @@ It *filled the gap* (overlay's extra graphics/text) with **gibberish** but that'
 You can also generate full sized graphics easily:
 
 [![](https://github.com/gershu-ar/gershu-ar/blob/main/articles/img/K2__00902_.png)](https://github.com/gershu-ar/gershu-ar/blob/main/articles/img/K2__00902_.png)
-*Rendered using NSFW [Sick Ollie](#foot-notes--qa--recommended-models) model. - Original PNG file with workflow embeded.*
+*Rendered using NSFW [Sick Ollie](#foot-notes--qa--recommended-models) model. - Original PNG file with workflow embedded.*
 
 If you're a movie fan or a +40 years old you'll recognize the poster style almost instantly.  Zero challenge in rendering it... except for the word *enchantment*, **all models struggled** with that word, and they all rendered it "Enachantenent".
 
@@ -663,10 +684,104 @@ For the time being, explore with these six camera examples:
 It's suggested to use IA (Gemini, Copilot, ChatGPT, etc) to assist in creating prompts to render **very specific camera angles** views.<br><br>
 👆 [Back to index](#the-big-old-index)
 <br><br>
+
+
+
+
+### A NOT SO SHORT WORD ABOUT CLASSIFIER-FREE GUIDANCE ()
+
+> While this article is about prompt engineering, I'd like to take a short detour into `` and the important role it plays when rendering with Krea 2.
+
+Put simply, `` ([**C**lassifier-**F**ree **G**uidance](https://arxiv.org/abs/2207.12598)) is a technique used to **steer sampling toward or away** from a **conditioning** signal (a text prompt in our case). It's about emphasis and direction, not about freedom or creativity.
+
+`CFG` **does not** equal or behave like `Temperature` does in LLMs, although you wouldn't be wrong to see them as conceptually similar. Mathematically speaking, however, `CFG` and `Temperature` work differently.
+
+> You can set `CFG` directly in ComfyUI, while some other UIs use preset or automatic `CFG` levels, taking away some control over an important part of the creation process.
+
+Since the `CFG` setting doesn't tell the model *how much it should imagine*, but rather **how strongly the conditioning should influence its prediction**, you may have noticed something peculiar while working with Qwen / Krea 2: rendering times *go nuts*, easily doubling or even tripling iteration times. `2s/it` can suddenly become `4s/it`, only to get an end result that looks almost as if the `CFG` needle had never moved from its `1.0` base setting.
+
+With SDXL, changes in `CFG` can have a dramatic impact on the resulting image, even at relatively low values depending on the checkpoint and sampling method in use. With Krea 2, however, small changes around its `1.0` base tend to produce a much more conservative response: the emphasis is there, but the result often remains surprisingly balanced... while taking considerably longer to render.
+
+But... why? Let's break it down.
+
+With `CFG` set to `1.0`, Krea 2's DiT (Diffusion Transformer) uses the conditioning to make a **single prediction** at each `Step`.
+
+When `CFG` moves away from that `1.0` base (`<0.9` / `>1.1`), a **second prediction** enters the equation: now you have a **conditional prediction** (the one extrapolated from your prompt) and an **unconditional prediction** (extrapolated from the same noisy latent, but without the positive-prompt conditioning, typically using an empty/null prompt as its conditioning).
+
+At `CFG = 1.0`, the unconditional prediction cancels out:
+
+$$\epsilon_{\text{CFG}} = \epsilon_{\text{uncond}} + 1 \cdot (\epsilon_{\text{cond}} - \epsilon_{\text{uncond}}) = \epsilon_{\text{cond}}$$
+
+So the result lands exactly on the conditional prediction.
+
+Once `CFG` moves away from `1.0`:
+
+$$\epsilon_{\text{CFG}} = \epsilon_{\text{uncond}} + \mathrm{CFG} \cdot (\epsilon_{\text{cond}} - \epsilon_{\text{uncond}})$$
+
+the difference between both predictions starts contributing to the result according to the `CFG` scale.
+
+`CFG` controls how far you move the prediction along the direction defined by the conditioning. It does not give the model *more* or *less freedom*: it determines how strongly the generation is pushed along that direction.
+
+A higher `CFG` (`>1.0`) does not mean *more prompt*. Instead, it amplifies the difference between what the model predicts with and without conditioning, extrapolating the result beyond the conditioned prediction along that direction.
+
+That difference does not mean *more* or *less* creativity. It is simply a direction in prediction space, determined by the conditioning.
+
+Push that extrapolation too far, however, and things can start to break. Oversized features, *burnt* visuals, overexposure, saturated colors and other artifacts are not necessarily *artistic liberties*: they can simply be the consequence of pushing the prediction too far along the guidance direction.
+
+**More guidance is not necessarily better guidance.**
+
+To sum up, adjusting `CFG` involves a trade-off between **sample quality** and **diversity**.
+
+$$\mathrm{Result} = A + \mathrm{CFG} \times (B - A)$$
+
+- **A — Unconditional prediction ($\epsilon_{\text{uncond}}$)**  
+  *"What would the model do without these instructions?"*
+
+- **B — Conditional prediction ($\epsilon_{\text{cond}}$)**  
+  *"What would the model do while taking my instructions into account?"*
+
+- **(B − A) — Guidance direction**  
+  *"What changes in the prediction because of my instructions?"*
+
+- **CFG — Guidance scale**  
+  Controls how far the prediction is pushed along that direction.
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 ### *NUTSHELLING* IT
 
 Doing brain surgery with a jackhammer: SDXL felt like that.
-Qwen/Krea 2 are closer to Star Wars: ahead of its time and to succeed just make sure the two proton torpedoes go into the two meters wide thermal exhaust port located in the station’s meridian trench. Remember: **detail**.
+Qwen/Krea 2 are closer to Star Wars: ahead of its time and to succeed just make sure the two proton torpedoes go into the two meters wide thermal exhaust port located in the station’s meridian trench.<br>Remember: **detail** + **[the proper set of tools](https://github.com/Comfy-Org/ComfyUI)** beat Empires.<br>Beam me up, Scotty.
+
+[![](https://github.com/gershu-ar/gershu-ar/blob/main/articles/img/NutshellingIt_K2__00358_.png)](https://github.com/gershu-ar/gershu-ar/blob/main/articles/img/NutshellingIt_K2__00358_.png)
+
+*Rendered using NSFW [FinePorn V4](#foot-notes--qa--recommended-models) model - Original PNG with workflow embedded*
+
+
+
+
+
 <br><br>
 👆 [Back to index](#the-big-old-index)
 
