@@ -14,7 +14,7 @@
 
 [![](https://github.com/gershu-ar/gershu-ar/blob/main/articles/img/K2__01007_.png)](https://github.com/gershu-ar/gershu-ar/blob/main/articles/img/K2__01007_.png)
 
-*Rendered using Krea 2 NSFW model [FinePorn](#foot-notes--qa--recommended-models) on [ComfyUI](https://github.com/comfy-org/ComfyUI "ComfyUI") portable v0.36.0, revealing model's capacity to generate comic-like illustrations*<br>*Original PNG with workflow embedded*
+*Rendered using Krea 2 NSFW [FinePorn](#foot-notes--qa--recommended-models) checkpoint on [ComfyUI](https://github.com/comfy-org/ComfyUI "ComfyUI") portable v0.36.0, revealing model's capacity to generate comic-like illustrations*<br>*Original PNG with workflow embedded*
 
 
 ------------
@@ -206,7 +206,7 @@ Let's prompt for a simple scene:
 
 Ouput:
 [![](https://github.com/gershu-ar/gershu-ar/blob/f38b44276cb19ce55d3e168fa9f2667890301ddc/articles/img/878310eda7fcc06262d6c2c7bd3a1530.png)](https://github.com/gershu-ar/gershu-ar/blob/f38b44276cb19ce55d3e168fa9f2667890301ddc/articles/img/878310eda7fcc06262d6c2c7bd3a1530.png)
-*Rendered using NSFW [FinePorn](#foot-notes--qa--recommended-models) model - Original PNG with workflow embedded*
+*Rendered using NSFW [FinePorn](#foot-notes--qa--recommended-models) checkpoint - Original PNG with workflow embedded*
 
 **EXAMPLE**<br>
 Slightly modifying the same scene by adding "Dog is setting paws on Man" (only changing the dog action), rest remains the same:
@@ -274,7 +274,7 @@ Here's a simple example of 2 (two) characters interacting in an unlikely real-li
 
 [![](https://github.com/gershu-ar/gershu-ar/blob/main/articles/img/K2__00289_.png)](https://github.com/gershu-ar/gershu-ar/blob/main/articles/img/K2__00289_.png)
 ***"Oh, little Whiskers loves his watermelon"***<br>
-*Rendered using NSFW [FinePorn v5](#foot-notes--qa--recommended-models) model - Original PNG with workflow embedded*
+*Rendered using NSFW [FinePorn v5](#foot-notes--qa--recommended-models) checkpoint - Original PNG with workflow embedded*
 
 The pompt defined each character's form, clothing and action **separately** and **individually**, yet, **connected the action** on command:  She is hugging the tiger while the tiger is posing a paw on her as a sign of appreciation.
 
@@ -385,7 +385,7 @@ Let's start with a simple setup by implementing two simple prompt modifications 
 **Produces exactly that**. The more you describe the medium (paper, sign, wall advertising, graph, etc.) the more realistic it will be:
 
 [![](https://github.com/gershu-ar/gershu-ar/blob/f38b44276cb19ce55d3e168fa9f2667890301ddc/articles/img/0bc8527e11b8cbf13a8c445e639a1d9e.png)](https://github.com/gershu-ar/gershu-ar/blob/f38b44276cb19ce55d3e168fa9f2667890301ddc/articles/img/0bc8527e11b8cbf13a8c445e639a1d9e.png)
-*Rendered using NSFW [FinePorn](#foot-notes--qa--recommended-models) model - Original PNG with workflow embedded*
+*Rendered using NSFW [FinePorn](#foot-notes--qa--recommended-models) checkpoint - Original PNG with workflow embedded*
 
 The shown example is crude and hasty at best, but illustrates simply how **easily you can add text** to any level of customization and simplicity or complexity you require.
 
@@ -439,7 +439,7 @@ A prompt for a full note, "handwritten" style:
 <br><br>
 
 [![](https://github.com/gershu-ar/gershu-ar/blob/main/articles/img/K2__00056_.png)](https://github.com/gershu-ar/gershu-ar/blob/main/articles/img/K2__00056_.png)
-*Rendered using NSFW [Gonzalomo v4.0](#foot-notes--qa--recommended-models) model - Original PNG with workflow embedded*
+*Rendered using NSFW [Gonzalomo v4.0](#foot-notes--qa--recommended-models) checkpoint - Original PNG with workflow embedded*
 
 Notice in the prompting the amount of stress some words required to be renderer appropriately.  
 
@@ -448,7 +448,7 @@ Output size also matters: If your render requires extensive, precise text, keep 
 Despite the render was generated with NSWF [Gonzalomo v4.0](#foot-notes--qa--recommended-models) model, due credit goes to official Krea 2 in the understanding the base text training looks like undeniably related:
 
 [![](https://github.com/gershu-ar/gershu-ar/blob/main/articles/img/comparison.jpg)](https://github.com/gershu-ar/gershu-ar/blob/main/articles/img/comparison.jpg)
-*Left: Rendered using NSFW [Gonzalomo v4.0](#foot-notes--qa--recommended-models) model - Right: Hastily rendered using Official Krea 2 Turbo model*
+*Left: Rendered using NSFW [Gonzalomo v4.0](#foot-notes--qa--recommended-models) checkpoint - Right: Hastily rendered using Official Krea 2 Turbo model*
 
 The tests run with all the models mentioned in the guide were equally satisfactory showing similar outputs with the same rendering mistakes on the same words, evidencing a relation to the same base training model/s.
 
@@ -473,7 +473,7 @@ The ouput:
 
 [![](https://github.com/gershu-ar/gershu-ar/blob/main/articles/img/K2__00896_.png)](https://github.com/gershu-ar/gershu-ar/blob/main/articles/img/K2__00896_.png)
 
-*Rendered using NSFW [Gonzalomo](#foot-notes--qa--recommended-models) model - Original PNG with workflow embedded*
+*Rendered using NSFW [Gonzalomo](#foot-notes--qa--recommended-models) checkpoint - Original PNG with workflow embedded*
 
 As you can see, Qwen / Krea 2 perfectly understood what I wanted and created the requested overlay graphics by word, **even using CNN's real life logo**.
 
@@ -484,7 +484,7 @@ It *filled the gap* (overlay's extra graphics/text) with **gibberish** but that'
 You can also generate full sized graphics easily:
 
 [![](https://github.com/gershu-ar/gershu-ar/blob/main/articles/img/K2__00902_.png)](https://github.com/gershu-ar/gershu-ar/blob/main/articles/img/K2__00902_.png)
-*Rendered using NSFW [Sick Ollie](#foot-notes--qa--recommended-models) model. - Original PNG file with workflow embedded.*
+*Rendered using NSFW [Sick Ollie](#foot-notes--qa--recommended-models) checkpoint. - Original PNG file with workflow embedded.*
 
 If you're a movie fan or a +40 years old you'll recognize the poster style almost instantly.  Zero challenge in rendering it... except for the word *enchantment*, **all models struggled** with that word, and they all rendered it "Enachantenent".
 
@@ -772,11 +772,11 @@ $$\mathrm{Result} = A + \mathrm{CFG} \times (B - A)$$
 ### *NUTSHELLING* IT
 
 SDXL felt like doing brain surgery with a jackhammer.
-Qwen / Krea 2 are closer to Star Wars: ahead of its time and to succeed just make sure the **two proton torpedoes** go **into the two meters wide thermal exhaust port located in the station’s meridian trench**.<br>Remember: **detail** + **[the proper set of tools](https://github.com/Comfy-Org/ComfyUI)** beat Empires.<br><br>Beam me up, Scotty.
+Qwen / Krea 2 are closer to Star Wars: ahead of its time and to succeed just make sure the **two proton torpedoes** go **into the two meters wide thermal exhaust port located in the station’s meridian trench**.<br><br>Remember: **Detail** + **the proper set of tools** beat Empires.<br><br>Beam me up, Scotty.
 
-[![](https://github.com/gershu-ar/gershu-ar/blob/main/articles/img/NutshellingIt_K2__00358_.png)](https://github.com/gershu-ar/gershu-ar/blob/main/articles/img/NutshellingIt_K2__00358_.png)
+[![](https://github.com/gershu-ar/gershu-ar/blob/main/articles/img/NutshellingIt_V2_K2__00361_.png)](https://github.com/gershu-ar/gershu-ar/blob/main/articles/img/NutshellingIt_V2_K2__00361_.png)
 
-*Rendered using NSFW [FinePorn V4](#foot-notes--qa--recommended-models) model - Original PNG with workflow embedded*
+*Rendered using NSFW [FinePorn V4](#foot-notes--qa--recommended-models) checkpoint - Original PNG with workflow embedded*
 
 
 
