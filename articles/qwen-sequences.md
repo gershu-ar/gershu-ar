@@ -688,7 +688,7 @@ It's suggested to use IA (Gemini, Copilot, ChatGPT, etc) to assist in creating p
 
 
 
-### A NOT SO SHORT WORD ABOUT CLASSIFIER-FREE GUIDANCE ()
+### A NOT SO SHORT WORD ABOUT CLASSIFIER-FREE GUIDANCE (CFG)
 
 > While this article is about prompt engineering, I'd like to take a short detour into `` and the important role it plays when rendering with Krea 2.
 
@@ -771,8 +771,8 @@ $$\mathrm{Result} = A + \mathrm{CFG} \times (B - A)$$
 
 ### *NUTSHELLING* IT
 
-Doing brain surgery with a jackhammer: SDXL felt like that.
-Qwen/Krea 2 are closer to Star Wars: ahead of its time and to succeed just make sure the two proton torpedoes go into the two meters wide thermal exhaust port located in the station’s meridian trench.<br>Remember: **detail** + **[the proper set of tools](https://github.com/Comfy-Org/ComfyUI)** beat Empires.<br>Beam me up, Scotty.
+SDXL felt like doing brain surgery with a jackhammer.
+Qwen / Krea 2 are closer to Star Wars: ahead of its time and to succeed just make sure the **two proton torpedoes** go **into the two meters wide thermal exhaust port located in the station’s meridian trench**.<br>Remember: **detail** + **[the proper set of tools](https://github.com/Comfy-Org/ComfyUI)** beat Empires.<br><br>Beam me up, Scotty.
 
 [![](https://github.com/gershu-ar/gershu-ar/blob/main/articles/img/NutshellingIt_K2__00358_.png)](https://github.com/gershu-ar/gershu-ar/blob/main/articles/img/NutshellingIt_K2__00358_.png)
 
