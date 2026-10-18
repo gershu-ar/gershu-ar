@@ -1,10 +1,10 @@
 # 🎨 Qwen / Krea 2 on ComfyUI
 ### *The Totally Unrequested Prompting Guide*
 ---
-**Working with NSFW & SFW models**<br>
-*For the Purist Prompter*  
+**Prompting and rendering with NSFW & SFW model Krea 2 checkpoints**<br>
+`text 2 image` *for the purist prompter*  
 
-🔞 `RATED R` — *Contains **strong language** - This article DOES NOT contain adult images nor sexual representations*
+🔞 `RATED PG18` — *Might contain **mild language** - This article DOES NOT contain adult images nor sexual representations*
 
 
 
@@ -32,7 +32,7 @@
 4. [Melting faces, water droplets and artifacts](#melting-faces-water-droplets-and-artifacts)<br>
 5. [Don'T be so Negative: try to see the Light](#dont-be-so-negative-try-to-see-the-light)<br>
 6. [Cut!](#cut)<br>
-7. [A not so short word about the Classifier-Free Guidance (CFG)](#a-not-so-short-word-about-the-classifier-free-guidance-cfg)<br>
+7. [A not so short word about the Classifier-Free Guidance (CFG)](#a-not-so-short-word-about-classifier-free-guidance-cfg)<br>
 8. [*Nutshelling* it](#nutshelling-it)<br>
 9. [Foot notes / Q&A / Recommended models](#foot-notes--qa--recommended-models)
 
@@ -87,7 +87,11 @@ Highling these three concepts of the list:
 
 -----------------------------------------------------------<br></details>
 
-**Congratulations, you're all set for Bootcamp.**
+The **prompting** is not the beginning nor the end, but a journey in between software and hardware with hardworking people behind it all coding what is the stagging point for your idea to become true.
+
+Consider **your prompting as the first of an eight step program to bring to reality a representation of what is only in your head**.  Machines cannot read minds (yet) and human language is complex, imperfect and grossly inefficient.  In the understanding the same math that takes shape from your words is the one used to *fill in the gaps*, the poetry of numbers can only be out shadowed by the harmony of meaning in so many precise words. 
+
+That is what this guide aims to.  Having said that, you're all set for Bootcamp!
 
 👆 [Back to index](#the-big-old-index)
 <br><br>
@@ -95,9 +99,9 @@ Highling these three concepts of the list:
 
 Welcome!
 
-My **tool of choice is** **[ComfyUI portable](https://github.com/Comfy-Org/ComfyUI/)** (v0.38.0 as of SEP/2026).
+My **tool of choice is** **[ComfyUI portable](https://github.com/Comfy-Org/ComfyUI/)** (v0.42.0 as of OCT/2026).
 
-[Utilized models](#foot-notes--qa--recommended-models "Used models") vary but the Qwen3-VL-4B FP8 Scaled *Text Encoder* and the Qwen *Image VAE* remained in place for all the examples generated in this guide.
+[Utilized models](#foot-notes--qa--recommended-models "Used models") vary but the Qwen3-VL-4B FP8 Scaled *Text Encoder* and the Qwen *Image VAE* remained in place for almost all the examples generated in this guide.  
 
 Knowledge gathered and examples renderered on a local setup:  Windows 11 25H2, iCore Ultra 7 265K, 64 GB RAM (DDR5) with an NVIDIA RTX 3090 (24 GB VRAM, Studio Driver 616.92) as the powerhouse being able to handle `bf16` quantization but using  `int8` models because it simply **fliiiies** on Ampere architecture, leaving a massive overhead of free VRAM for the Text Encoder and whatever else I require.  Output quality is perfect for my needs and artifacts are neglegible to none.
 
