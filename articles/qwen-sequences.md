@@ -835,15 +835,24 @@ Yeah, I don't use them.
 **Updates**<br>
 On it. Will be adding tips and try to improve format.  I find markdown very unfriendly but hey, life is imperfect.
 
-**Thanks to / (C)**<br>
-GitHub for being weirdly awesome, and not banning me after so many consecutive edits.<br>
-To all the people behind ComfyUI, model creators and coders that make the true miracle.<br><br>
-Krea 2 is licensed under the Krea 2 Community License Agreement.
-<br><br>
--- Gershu / gershu.ar<br><br>
-👆 [Back to index](#the-big-old-index)
-<br>
+**Thanks to...**<br>
+🧡 [Krea](https://www.krea.ai "Krea") for creating an **amazing** model checkpoint and sharing it with the world in the true spirit of open collaboration.<br>
+💛 All the people behind Comfy, from who created it to those who stay on the edge to keep it growing into a world-class tool.<br>
+💜 Creators who produce derivative models and the thousands of coders out there that make the miracle come true.<br>
+💚 GitHub for being weirdly awesome.<br><br>
 
-End of guide.<br><br>
+
+👆 [Back to index](#the-big-old-index)
+
+-----
+
+*[The Totally Unrequested Prompting Guide](https://github.com/gershu-ar/gershu-ar/edit/main/articles/qwen-sequences.md) for Qwen / Krea 2 on ComfyUI* was created and is maintained by [gershu](https://gershu.ar).<br>
+
+-----
+
+Krea 2 is licensed under the Krea 2 Community License Agreement.  For more information, visit [https://krea.ai/krea-2-licensing](https://krea.ai/krea-2-licensing).
+
+-----
+
 [![CC BY 4.0](https://i.creativecommons.org/l/by/4.0/88x31.png)](http://creativecommons.org/licenses/by/4.0/)  
 This document is licensed under a [Creative Commons Attribution 4.0 International License](http://creativecommons.org/licenses/by/4.0/).
