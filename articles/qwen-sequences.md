@@ -1,14 +1,14 @@
 # 🎨 Qwen / Krea 2 on ComfyUI
 ### *The Totally Unrequested Prompting Guide*
 ---
-**Prompting and rendering with NSFW & SFW model Krea 2 checkpoints**<br>
+**Prompting and rendering with NSFW & SFW Krea 2 model checkpoints**<br>
 `text 2 image` *for the purist prompter*  
 
-🔞 `RATED PG18` — *Might contain **mild language** - This article DOES NOT contain adult images nor sexual representations*
+⚙️ `RATED PG16` — *Contains **mild language** - This article DOES NOT contain adult images nor sexual representations*
 
 
 
-##### This guide was 97% human-written by a non-English language native (sorry for destroying your language), with 3% AI assistance (Gemini + Copilot), mostly on markdown adherence and some graphics.  It is updated regularely.
+##### This guide is being 97% human-written by a non-English language native (sorry for destroying your language), with 3% AI assistance (Gemini + Copilot), mostly on markdown adherence and some graphics.  It is updated regularely.
 
 > Notice: This is NOT the final version. This guide is being fact-checked, expanded and corrected one chapter at the time. You fill find errors / imprecisions until the process is completed.  I appreciate the patience, this is the work of an enthusiast, not an expert.
 
@@ -101,9 +101,9 @@ That is what this guide aims to.  Having said that, you're all set for Bootcamp!
 
 Welcome!
 
-My **tool of choice is** **[ComfyUI portable](https://github.com/Comfy-Org/ComfyUI/)** (v0.42.0 as of OCT/2026).
+My **tool of choice is** **[ComfyUI portable](https://github.com/Comfy-Org/ComfyUI/)** (v0.43.0 as of OCT/2026).
 
-[Utilized models](#foot-notes--qa--recommended-models "Used models") vary but the Qwen3-VL-4B FP8 Scaled *Text Encoder* and the Qwen *Image VAE* remained in place for almost all the examples generated in this guide.  
+[Utilized models](#foot-notes--qa--recommended-models "Used models") vary but the Qwen3-VL-4B FP8 Scaled *Text Encoder* and the Qwen *Image VAE* remained in place for almost all the examples generated in this guide.
 
 Knowledge gathered and examples renderered on a local setup:  Windows 11 25H2, iCore Ultra 7 265K, 64 GB RAM (DDR5) with an NVIDIA RTX 3090 (24 GB VRAM, Studio Driver 616.92) as the powerhouse being able to handle `bf16` quantization but using  `int8` models because it simply **fliiiies** on Ampere architecture, leaving a massive overhead of free VRAM for the Text Encoder and whatever else I require.  Output quality is perfect for my needs and artifacts are neglegible to none.
 
@@ -728,7 +728,7 @@ Nothing in this guide will work properly without adequate framing and pixel arra
 
 If you are familiar with printing, latent size works much like the concept of `DPI` / `PPI` (`dots per inch` / `pixels per inch`). Finer density means a crisper print. Yet, again, only to an extent.
 
-**So, beware**: There is a **precise setting where perfection is achieved**, in rendering and in printing: *under-rendering* and *over-rendering* are real and very common. Higher does not necessarily mean better: it all depends on your eye and the final destination of the render. **Test low, master high**.
+**So, beware**: There is a **precise setting where perfection is achieved**, in rendering and in printing: *under-rendering* and *over-rendering* are real and very common. Higher does not necessarily mean better: it all depends on your eye and the final destination for the render. **Test low, master high**.
 
 Oh, and the often-overlooked **aspect ratio**: in practice, it is even more critical than latent size because it defines the **boundaries** of your canvas.
 
@@ -808,28 +808,6 @@ $$\mathrm{Result} = A + \mathrm{CFG} \times (B - A)$$
   Controls how far the prediction is pushed along that direction.
 
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 ### *NUTSHELLING* IT
 
 SDXL felt like doing brain surgery with a jackhammer.
@@ -838,10 +816,6 @@ Qwen / Krea 2 are closer to Star Wars: ahead of its time and to succeed just mak
 [![](https://github.com/gershu-ar/gershu-ar/blob/main/articles/img/NutshellingIt_V2_K2__00361_.png)](https://github.com/gershu-ar/gershu-ar/blob/main/articles/img/NutshellingIt_V2_K2__00361_.png)
 
 *Rendered using NSFW [FinePorn V4](#foot-notes--qa--recommended-models) checkpoint - Original PNG with workflow embedded*
-
-
-
-
 
 <br><br>
 👆 [Back to index](#the-big-old-index)
@@ -878,16 +852,8 @@ Here's a simple Krea 2 quantization guide by popular GPU model:
 
 > **Note:** Running Krea 2 also requires loading an additional Text Encoder (such as *Qwen3-VL-4B*) and the VAE. If you are using an **8 GB VRAM** card, it is recommended to generate at base resolutions like 1024x1024 or 1536x1536 before upscaling.
 
-
 **Comply with the law**<br>
-If you're working on **commercial productions**, keep in mind that while software like ComfyUI is free, the models are not automatically free for commercial use. Yes, they may be free to download and run, but that doesn't mean you can sell the outputs. **Each model has its own license and copyright terms**, so technically speaking, **you can't commercialize your renders without checking first**. Always read the creator notes and model cards before downloading to understand the license terms, crediting requirements, or royalty obligations for commercial work.
-
-**"*But my workflow is smart*"**<br>
-Prompt enhancer, LLMs and the wonders of filtering the prompt by a light IA.
-My opinion: If I'm to direct the orquestra remove middle management from it. I want to hear and control the instruments. These tips are meant for the **purist prompter**.
-
-**LoRAs**<br>
-Yeah, I don't use them. 
+If you're working on **commercial productions**, keep in mind that while software like ComfyUI is free, the models are not automatically free for commercial use. Yes, they may be free to download and run, but that doesn't mean you can sell the outputs. **Each model has its own license and copyright terms**, so technically speaking, **you can't commercialize your renders without checking first**. Always read the creator notes and model cards before downloading to understand the license terms, crediting requirements, or royalty obligations for commercial work.  Also, keep anyone under 18 years old out of all this: don't render them nor allow them to access these tools unless strictly adult supervised and for lawful purposes.
 
 **Updates**<br>
 On it. Will be adding tips and try to improve format.  I find markdown very unfriendly but hey, life is imperfect.
