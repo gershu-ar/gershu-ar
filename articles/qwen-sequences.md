@@ -26,6 +26,7 @@
 2.2.1. [Structure, structure, structure](#structure-structure-structure)<br>
 2.2.2. [One -or a few- word to rule them all](#one--or-a-few--word-to-rule-them-all)<br>
 2.3. [Remember](#remember)<br>
+2.3.1. [Faceoff](#faceoff)<br>
 2.4. [Every great lie has a lot of detail](#every-great-lie-has-a-lot-of-detail)<br>
 2.5. [Mark Twain yourself thru Qwen](#mark-twain-yourself-thru-qwen)<br>
 3. [NSWF vs SFW](#nswf-vs-sfw)<br>
@@ -334,6 +335,7 @@ And be descriptive about the color of the bikini too, Krea 2 will try to mantain
 
 👆 [Back to index](#the-big-old-index)
 <br><br>
+
 #### REMEMBER
 
 You're not in Kansas anymore, Dorothy: **This is NOT SDXL.**
@@ -353,6 +355,31 @@ Don't.  There is not even..
 ... on Qwen.
 
 SDXL used to ignore `// COMMENT` but Qwen will give it some interpretation based on context and create an embedding **confusing the model**.  
+<br><br>
+👆 [Back to index](#the-big-old-index)
+<br><br>
+#### FACEOFF
+
+Qwen / Krea 2 bond behind the principle of **mode bias / aesthetic convergence**.  A sort of *conditioning continuation in between seeds* bluntly put if you will.
+
+**Render after render you're getting the same face on a character**.  And you feel **frustrated**.  Well, again: **this is not SDXL**.  And the answer is quite simple: **you're not prompting for face features or the context that face is set in**.  If you skip / avoid / become too generalistic, for coherence purposes, you will always get (about) the same exact face.
+
+**There is no random face setting or magical prompt to achieve it.**
+
+[Krea 2](https://www.krea.ai/blog/krea-2-technical-report) uses `Supervised Finetuning` and `RL with aesthetic reward models in post-training alignment`.  If there is no face prompt the diffusion backbone falls back to the reward model's highest-scoring facial distribution.
+
+**Model resolves ambiguity with a safe prototype**, a standardized face that repeats itself for the sake of a safe prediction *on what comes next*.  Feels *dull* at first if you're coming from SDXL, but **amazingly flexible** once you understand how to prompt properly.
+
+Can you generate a new random face on each render? **Yes**, but you have to guide the model by prompt and / or using the `Krea 2 Style Reference` node, already packed with Comfy.
+
+Also, **disable / avoid using LLM** or prompt enhancer/s, you could trigger the LLM to force generate the same face (to achieve the purpose of aesthetic convergence), overriding even the style you visually referenced the model with.
+
+"*If it's not going to change, why mess with it*?" would be the philosophy (works great with an ex too).
+
+The same technical principe also applies for clothing, scenery and everything else you're not specifically prompting in detail.  Naming an item/character renders it, how detailed it becomes depends on how well you can describe it.  Model will try to mantain visual composure and relatable aesthetic of all the elements (layers) that don't require to change since the previous prompt unless specifically told to do so.
+
+
+
 
 
 
