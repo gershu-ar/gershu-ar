@@ -32,9 +32,10 @@
 4. [Melting faces, water droplets and artifacts](#melting-faces-water-droplets-and-artifacts)<br>
 5. [Don'T be so Negative: try to see the Light](#dont-be-so-negative-try-to-see-the-light)<br>
 6. [Cut!](#cut)<br>
-7. [A not so short word about the Classifier-Free Guidance (CFG)](#a-not-so-short-word-about-classifier-free-guidance-cfg)<br>
-8. [*Nutshelling* it](#nutshelling-it)<br>
-9. [Foot notes / Q&A / Recommended models](#foot-notes--qa--recommended-models)
+7. [Size **does** matter — and so does aspect ratio](#size-does-matter--and-so-does-aspect-ratio)<br>
+8. [A not so short word about the Classifier-Free Guidance (CFG)](#a-not-so-short-word-about-classifier-free-guidance-cfg)<br>
+9. [*Nutshelling* it](#nutshelling-it)<br>
+10. [Foot notes / Q&A / Recommended models](#foot-notes--qa--recommended-models)
 
 ------------
 Disclaimer: There are probably a ton of errors in this article.  Suggestions are always welcome, drop me a line!
@@ -690,11 +691,40 @@ It's suggested to use IA (Gemini, Copilot, ChatGPT, etc) to assist in creating p
 <br><br>
 
 
+### SIZE **DOES** MATTER — AND SO DOES ASPECT RATIO
+
+> While this article is about prompt engineering, I'd like to take a short detour into two very important elements closely linked to prompting: the latent size and ratio.
+
+Nothing in this guide will work properly without adequate framing and pixel arrangement: you specify the `what`, but the `how` is driven by two key settings: the **latent (image) size** and, most importantly, the **aspect ratio**.
+
+**The latent (image) size**, measured and pre-set in megapixels in Krea 2 for convenience, **defines the level of resolution (so to speak)**. It marks the difference between blurry background faces and fully resolved ones, or rendering subtle details like natural teeth discoloration, freckles, sparks, and whatever else requires *detail*. This *detail* **doesn't mean adding extra elements to the scene**, but rendering what is already there with much finer clarity when zoomed in. The larger the latent size, the longer the render time, and the more refined the final output. Up to a point.
+
+If you are familiar with printing, latent size works much like the concept of `DPI` / `PPI` (`dots per inch` / `pixels per inch`). Finer density means a crisper print. Yet, again, only to an extent.
+
+**So, beware**: There is a **precise setting where perfection is achieved**, in rendering and in printing: *under-rendering* and *over-rendering* are real and very common. Higher does not necessarily mean better: it all depends on your eye and the final destination of the render. **Test low, master high**.
+
+Oh, and the often-overlooked **aspect ratio**: in practice, it is even more critical than latent size because it defines the **boundaries** of your canvas.
+
+If you prompt for five (5) people within a vertical 9:16 ▯ ratio, Krea 2 will struggle to squeeze them into the frame, often forcing weird postures, overlapping bodies, or cutting people out entirely.
+
+A widescreen (16:9 ▭) format is far better suited to line them up with room to spare, though you might initially get a waist-up shot unless you explicitly prompt for a full-body camera angle.
+
+It also works the other way around: if you prompt for just two (2) characters in an ultra-wide frame with a wide lens, high chances are Krea 2 will generate duplicate or extra characters just to fill the empty space. While solid positive and negative prompting can help prevent this, picking the right aspect ratio from the start gives the model the natural boundaries it needs.
+
+| To sum up |
+| :--- |
+| Qwen and Krea 2 try hard to fit everything you ask for, but **they are not magicians**: **give your prompt room to breathe**. Before generating, imagine your shot as if you had to *frame it and cut it from a real-life scene*. Be economical with your canvas to save time and get cleaner results. |
+
+If in doubt, a **1:1 square ratio** is a solid, neutral baseline to test; most workflows also include quick presets tailored to whatever platform or medium you are targeting.
+
+<br><br>
+👆 [Back to index](#the-big-old-index)
+<br><br>
 
 
 ### A NOT SO SHORT WORD ABOUT CLASSIFIER-FREE GUIDANCE (CFG)
 
-> While this article is about prompt engineering, I'd like to take a short detour into `CFG` and the important role it plays when rendering with Krea 2.
+> Keeping on the detour, `CFG` is very much worth a word too.
 
 Put simply, `CFG` ([**C**lassifier-**F**ree **G**uidance](https://arxiv.org/abs/2207.12598)) is a technique used to **steer sampling toward or away** from a **conditioning** signal (a text prompt in our case). It's about emphasis and direction, not about freedom or creativity.
 
@@ -796,7 +826,7 @@ Haven't tested thoroughly that many, but these ones absolutely get the job done:
 
 | Model | Official Source | Mirrors | Recommendation |
 | :--- | :--- | :--- | :--- |
-| **CyberRealistic Krea 2 v2.0 ⭐** | 🌐 [Go (Cyberdelia)](https://cyberdelia.nl) • 🌐 [Go (HF Repo)](https://huggingface.co/cyberdelia/CyberRealistic) • 🌐 [Go (Civitai)](https://civitai.red/models/2831028/cyberrealistic-krea-2) | N/A | Premier fine-tune for photorealism, lifelike skin textures, sub-surface scattering, and natural lighting without stylized artifacts. |
+| **CyberRealistic Krea 2 v4.0 ⭐** | 🌐 [Go (Cyberdelia)](https://cyberdelia.nl) • 🌐 [Go (HF Repo)](https://huggingface.co/cyberdelia/CyberRealistic) | N/A | Premier fine-tune for photorealism, lifelike skin textures, sub-surface scattering, and natural lighting without stylized artifacts. |
 | **FinePorn v4 ⭐** | 🌐 [Go (Civitai)](https://civitai.red/models/2762538/fineporn-v4-int8-or-nvfp4-or-bf16-or-fp8) | 🌐 [Go (HF INT8)](https://huggingface.co/EllaPriest45/Krea2_Checkpoints/blob/main/FinePorn%20v4.0%20Turbo%20INT8%20-%20Krea2%20-%20this%20is%20an%20amateur%20photo%20taken%20from%20smartphone%2Cbad%20quality%20photo%2CThe%20lighting%20is%20clear%2Csoft%20diffused%2Cthe%20details%20are%20sharp%2Cand%20the%20feeling%20of%20the%20photo%20is%20casual%20and%20spontaneous.safetensors) | Specialized in explicit anatomical accuracy and replicating raw, unpolished casual/smartphone photographic styles. |
 | **FinePorn v5 ⭐** | 🌐 [Go (Civitai)](https://civitai.red/models/2762538/fineporn-v5-int8fp8) | N/A | Updated iteration offering improved architectural adherence, higher precision quantizations (INT8/FP8), and refined handling of intricate details and raw camera aesthetics. |
 | **GonzaLomo v4.0 ⭐** | 🌐 [Go (Civitai)](https://civitai.com/models/286469) | 🌐 [Go (HF Mirror)](https://huggingface.co/Quiho/GonzaLomo_Krea_2_v4.0_checkpoint) | High character consistency and anatomical control; ideal for multi-subject composition and precise spatial positioning. |
