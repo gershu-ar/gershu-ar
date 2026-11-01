@@ -8,7 +8,7 @@
 
 
 
-##### This guide is being 97% human-written by a non-English language native (sorry for destroying your language), with 3% AI assistance (Gemini + Copilot), mostly on markdown adherence and some graphics.  It is updated regularely.
+##### This guide is being 97% human-written by a non-English language native (sorry for destroying your language), with 3% AI assistance (Gemini + Copilot), mostly on markdown adherence, one graphic and English spell check.  It is updated regularely.
 
 > Notice: This is NOT the final version. This guide is being fact-checked, expanded and corrected one chapter at the time. You fill find errors / imprecisions until the process is completed.  I appreciate the patience, this is the work of an enthusiast, not an expert.
 
@@ -665,7 +665,7 @@ To understand how sensitive `Lighting` prompting gets, imagine that if you turn 
 
 Some examples for **low-ISO & ambient night lighting** prompting:
 
-| Estilo / Concepto | Configuración de Iluminación (Prompt) |
+| Style / Concept | Lighting Configuration (Prompt) |
 | :--- | :--- |
 | **Corner Warmth & Soft Shadows**| `LIGHTING: Nighttime interior with no camera flash. The room is illuminated entirely by a single floor lamp with a fabric shade in the corner, casting a soft orange warm glow across the walls. Deep natural shadows in the unlit areas, with soft warm light gently falling on one side of her face and sweater. Authentic high-ISO low-light photography atmosphere with clean natural shadow falloff.` |
 | **Cozy Tungsten Ambience**| `LIGHTING: Dim night lighting with zero artificial flash. Ambient evening warm light originating from two muted table lamps and a floor lamp scattered in the background. The center of the room relies purely on this indirect tungsten illumination, creating soft highlights, rich dark corners, visible fine noise in the shadows, and a cozy warm-toned nighttime aesthetic.` |
@@ -899,7 +899,7 @@ Here's a simple Krea 2 quantization guide by popular GPU model:
 If you're working on **commercial productions**, keep in mind that while software like ComfyUI is free, the models are not automatically free for commercial use. Yes, they may be free to download and run, but that doesn't mean you can sell the outputs. **Each model has its own license and copyright terms**, so technically speaking, **you can't commercialize your renders without checking first**. Always read the creator notes and model cards before downloading to understand the license terms, crediting requirements, or royalty obligations for commercial work.  Also, keep anyone under 18 years old out of all this: don't render them nor allow them to access these tools unless strictly adult supervised and for lawful purposes.
 
 **Updates**<br>
-On it. Will be adding tips and try to improve format.  I find markdown very unfriendly but hey, life is imperfect.
+On it. Will be adding tips and try to improve format.  ~~I find markdown very unfriendly but hey, life is imperfect.~~  I became a slave to Markdown.
 
 **Thanks to...**<br>
 🧡 [Krea](https://www.krea.ai "Krea") for creating an **amazing** model checkpoint and sharing it with the world in the true spirit of open collaboration.<br>
