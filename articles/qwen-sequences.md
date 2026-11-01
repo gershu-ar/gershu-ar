@@ -24,7 +24,7 @@
 2.1. [QWEN/Krea 2 vs SDXL](#qwenkrea-2-vs-sdxl)<br>
 2.2. [Prompting on Qwen](#prompting-on-qwen)<br>
 2.2.1. [Structure, structure, structure](#structure-structure-structure)<br>
-2.2.2. [One -or a few- word to rule them all](#one--or-a-few--word-to-rule-them-all)<br>
+2.2.2. [One -or a few- words to rule them all](#one-or-a-few-words-to-rule-them-all)<br>
 2.3. [Remember](#remember)<br>
 2.3.1. [Faceoff](#faceoff)<br>
 2.4. [Every great lie has a lot of detail](#every-great-lie-has-a-lot-of-detail)<br>
@@ -33,7 +33,7 @@
 4. [Melting faces, water droplets and artifacts](#melting-faces-water-droplets-and-artifacts)<br>
 5. [Don'T be so Negative: try to see the Light](#dont-be-so-negative-try-to-see-the-light)<br>
 6. [Cut!](#cut)<br>
-6.1. [Parenthesis: No shoes, no admittance](#Parenthesis-no-shoes-no-admittance)<br>
+6.1. [Parenthesis: No shoes, no admittance](#parenthesis-no-shoes-no-admittance)<br>
 7. [Size **does** matter — and so does aspect ratio](#size-does-matter--and-so-does-aspect-ratio)<br>
 8. [A not so short word about the Classifier-Free Guidance (CFG)](#a-not-so-short-word-about-classifier-free-guidance-cfg)<br>
 9. [*Nutshelling* it](#nutshelling-it)<br>
@@ -104,7 +104,7 @@ Welcome!
 
 My **tool of choice is** **[ComfyUI portable](https://github.com/Comfy-Org/ComfyUI/)** (v0.43.0 as of OCT/2026).
 
-[Utilized models](#foot-notes--qa--recommended-models "Used models") vary but the Qwen3-VL-4B FP8 Scaled *Text Encoder* and the Qwen *Image VAE* remained in place for almost all the examples generated in this guide.
+For almost all the examples presented in this guide I worked with [several models](#foot-notes--qa--recommended-models "Used models") and used a few ([A](https://huggingface.co/Winnougan/Krea-2-Base-Turbo-NVFP4-FP8-INT8/blob/main/Text%20Encoder/qwen3vl_4b_uncensored_int8_convrot.safetensors) and [B](https://huggingface.co/DreamFast/Qwen3-VL-4b-Heretic-ComfyUI)) Qwen3-VL-4B `INT8` Convrot *Text Encoders* with the default Qwen *Image VAE*.
 
 Knowledge gathered and examples renderered on a local setup:  Windows 11 25H2, iCore Ultra 7 265K, 64 GB RAM (DDR5) with an NVIDIA RTX 3090 (24 GB VRAM, Studio Driver 616.92) as the powerhouse being able to handle `bf16` quantization but using  `int8` models because it simply **fliiiies** on Ampere architecture, leaving a massive overhead of free VRAM for the Text Encoder and whatever else I require.  Output quality is perfect for my needs and artifacts are neglegible to none.
 
@@ -168,7 +168,7 @@ To sum up: If you're coming from SDXL you will notice that **Qwen/Krea 2 is a wh
 👆 [Back to index](#the-big-old-index)
 <br><br>
 #### **PROMPTING ON QWEN**
-##### Structure, structure, structure
+#### Structure, structure, structure
 
 Qwen interprets and generates embeddings in natural language.  The limitations of SDXL were obvious  is not present here: every word counts, every sentence has a meaning and *poetry* is not corny but what makes a fantastic output.
 
@@ -323,18 +323,45 @@ Also, be sure to close the tag to be **extra clear** where your instruction star
 
 👆 [Back to index](#the-big-old-index)
 <br><br>
-##### One -or a few- word to rule them all
-So, to recap: "**Woman standing with a bath robe**" will produce a woman with an open bath robe showing the underneath nude body. **Why is she nude**? Because the **default statistical prior** of a robe is not to be closed/buttoned. 
+#### ONE (OR A FEW) WORDS TO RULE THEM ALL
 
-"**Long pants are seen over the floor**" will render a pair of perfectly positioned pants. **Why**? Because that's the **default statistical prior of the pants**: straight, perfectly in order, shape and position for the camera, as if presented for sale or in a drawer. *The perfect image of the pants* vs the image of realistic the pants.
+While working with *NSFW* models, prompting for a `Woman standing wearing a bath robe` will mostly render a woman standing wearing an **open** bath robe showing the body underneath as nude. **Why is she nude?** Because the **default statistical prior** of a robe is not to be closed/belted. This does not happen with the official Krea 2 model or models deemed *SFW* (clothed). *SFW* models enforce clothing by default based on the context.
 
-**Be detailed**. Qwen is expecting the *closed* for the bath robe and *messy* scenario for the pants for a realistic output.  For Qwen that distinction is everything and so is for you: the pants, or robe or whatever you're prompting, will maintain coherence in between renders.
+Weighing between using *SFW* (forced clothing on models) and *NSFW* (fully unconstrained models) goes well beyond the clothing issue. As some examples show in this guide, some distilled/creator *NSFW* models excel over base Krea 2 models in many regards. Not conditioning the characters from the base regarding clothing makes *NSFW* checkpoints truly free from any *creative pollution*.
 
-**Beware: *a single misplaced word can ruin your entire scene*.**
+Moving on: `Long pants are seen on the floor` will render a pair of perfectly positioned pants, neatly laid out. **Why?** Because that's the **default statistical prior of the pants**: fully extended clothing, as if presented *for sale* or neatly folded. Add `messy`, `wrinkled`, or any other adjective that unquestionably conditions Krea 2 to produce a realistic pair of pants *that somebody threw on the floor*.
 
-"Wearing summer clothes" might give you somebody on a bathing suit, but chances are you will get a naked person. **Why**? Because "summer clothes" is not an item, is a **group of items**, a generic term Qwen does not properly understand.  Maybe if there's a "beach" or a "summer" word on the rest of the prompt you might get somebody wearing a bathing short because there is context but avoid it: describe the bathing suit: "Bikini top and bikini bottom" are not the same as just "Bikini". "Bikini" alone refers to the bottom, not to a bikini set (bottom and top).
+To get results on the spot, make sure to anchor the item to the character in the action to create a context that ends up making sense of how those pants should be presented.
 
-And be descriptive about the color of the bikini too, Krea 2 will try to mantain the same bikini style too for coherence, even if you don't specify it.
+For example:
+
+    [CHARACTER_ACTION]
+    ...
+    Just undressed and threw pants on the floor, pants are seen on the floor.
+    [/CHARACTER_ACTION]
+
+Will render the pants right underneath the character.
+
+Even more:
+
+    [CHARACTER_ACTION]
+    ...
+    Just undressed and threw pants on the floor, pants are seen on the floor behind the character.
+    [/CHARACTER_ACTION]
+
+Yes. It will render the pants visibly behind the character; all I did was change the spot where the pants are. A few simple words locate the item where you need without the need to alter its description or purpose, all within the context you're setting.
+
+Conditioning (prompt) links the concepts of `undressing` and `throwing` in the same action for the math to produce a pair of pants that look like somebody casually threw them there. If you want to be specific about *how* the pants lie on the ground, you also can; in fact, Qwen and Krea 2 want you to.
+
+**Be detailed**. Qwen is expecting `closed` or `belted` for the bath robe and a more *messy* prompting scenario for the pants to achieve a realistic output. For Qwen that distinction is everything, and so it is for you: the pants, robe, or whatever you're prompting will maintain coherence between renders.
+
+`Wearing summer clothes` is a general term and might confuse an *NSFW* model, ignoring the condition due to lack of context. **Why?** Because `summer clothes` is not exactly *an item*, it is a **group of items**, a generic term Qwen might not properly contextualize or Krea 2 take into consideration if the rest of the prompt does not give context to the clothing.
+
+The same happens with `bikini` and two (or more) pieces of clothing as an outfit. `bikini` alone might be interpreted as the bikini bottom only, ignoring (not rendering) the bikini top. To be extra clear, make sure to prompt for `bikini top and bikini bottom`.
+
+Also be descriptive about the color, fabric, and style of the clothing: Krea 2 will try to maintain the same style of clothing for coherence between renders, but chances are the clothing color/pattern will be wildly random unless specified.
+
+How the characters are wearing the clothing is also taken very much into consideration and plays a very important role. `blue, plain t-shirt lifted` or `black suit pants pulled down` will achieve exactly that: a piece of clothing in a specific state.
 
 👆 [Back to index](#the-big-old-index)
 <br><br>
