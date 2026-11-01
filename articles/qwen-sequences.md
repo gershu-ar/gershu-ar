@@ -190,9 +190,11 @@ Here's a crude explanation of a sample prompt:
     
     Textures: Skins, fabrics, liquids, etc.
 
-Make your prompts in **modular blocks**, so they're easy to modify and even easier to add and remove exceptional/eventual elements and do not worry about the order: Qwen creates embeds from text, forming a context that gets conditioned and sent to Krea 2.  Don't worry so much about the order of your blocks in your prompt as long as they all make sense pieced together.  In SDXL the prompt order was extremely important since it **layered** the final product upon the order you requested it.  On Qwen / Krea 2 what is important is the entire context, not the order you present it.
+Structure your prompts into modular blocks so they're easy to tweak, making it seamless to add or strip out situational elements while respecting the hierarchy.
 
+**Qwen generates embeddings from your text to build a context that conditions Krea 2 in a precise sequence**. It's not strictly about what gets drawn first or last, but about how each descriptive layer connects to the next in the final composition.
 
+Characters or focal subjects are typically prompted first because the whole scene revolves around them; you're establishing them as the anchor while laying down the baseline conditioning for the *mathematical mess*  that ultimately resolves into an incredible image.
 
 **EXAMPLE**<br>
 Let's prompt for a simple scene:
