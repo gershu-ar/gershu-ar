@@ -33,6 +33,7 @@
 4. [Melting faces, water droplets and artifacts](#melting-faces-water-droplets-and-artifacts)<br>
 5. [Don'T be so Negative: try to see the Light](#dont-be-so-negative-try-to-see-the-light)<br>
 6. [Cut!](#cut)<br>
+6.1. [Parenthesis: No shoes, no admittance](#parenthesis-no-shoes-no-admittance)<br>
 7. [Size **does** matter — and so does aspect ratio](#size-does-matter--and-so-does-aspect-ratio)<br>
 8. [A not so short word about the Classifier-Free Guidance (CFG)](#a-not-so-short-word-about-classifier-free-guidance-cfg)<br>
 9. [*Nutshelling* it](#nutshelling-it)<br>
@@ -713,9 +714,49 @@ For the time being, explore with these six camera examples:
 | **Over-the-Shoulder / Dutch Angle** | `CAMERA: Medium close-up shot over the shoulder, camera positioned at a subtle Dutch angle (tilted frame), 50mm portrait lens perspective, tight framing from the chest up.` |
 | **Extreme Detail Close-Up** | `CAMERA: Macro close-up shot, 85mm lens perspective, tight focus on facial features and eyes with the rest of the scene falling into a heavy blurred bokeh.` |
 
-It's suggested to use IA (Gemini, Copilot, ChatGPT, etc) to assist in creating prompts to render **very specific camera angles** views.<br><br>
+It's suggested to use IA (Gemini, Copilot, ChatGPT, etc) to assist in creating prompts to render **very specific camera angles** views.
+<br><br>
 👆 [Back to index](#the-big-old-index)
 <br><br>
+
+### PARENTHESIS: NO SHOES, NO ADMITTANCE
+
+Yes, the fancy party you attended denied you access because you didn’t read the invitation properly: *casual sport* does not include *surfer* attire.
+
+Both Krea 2 and SDXL (like any other diffusion model) will take you for a ride depending on what you ask for: **are you prompting for a character portrait render (waist-up)? Then do not prompt shoes or any specific waist-down item.**
+
+Krea 2 will do the thinkable and the **unthinkable** to squeeze them into your render. The character will end up raising a foot (to show off the shoe) or adopting an awkward pose to bring those requested kicks into frame: *sitting down*, *squatting*, *kneeling*, etc.
+
+Even if you emphasize the word `standing` in the pose description, **Krea 2 will make sure those shoes are there.** The subject's composition conditioning supersedes vague or contradictory posture conditioning, especially if the character description comes before the posture prompt. Conditioning follows a specific hierarchy, much like layers in a Photoshop file.
+
+**The exact opposite happens too:** you prompt for a full-body shot (head to toe), but you keep getting a portrait every single time. You even reinforce the framing inside your `[CAMERA]` block to make it crystal clear:
+
+    [CAMERA]
+    ...
+    Wide framing with generous headroom and visible floor space, subject is framed completely within the surrounding environment with ample distance between camera and subject.
+    [/CAMERA]
+
+Yet all you get is a waist-up render of a half-baked idea.
+
+Chances are, in that scenario, **you completely forgot about shoes, socks, or any lower-body anchor that gives the model a reason to render below the belt. **
+
+The fix inside your prompt is simple:
+
+    [FOOTWEAR]
+    Bare feet.
+    [/FOOTWEAR]
+
+Or simply append `bare feet` directly to your character description in the relevant block.  `Bare feet` is just an example, of course.
+
+Doing this gives Krea 2 an explicit instruction to draw the legs and feet. **The model now has a creative, semantic reason to render the entire body that goes well beyond camera framing alone; it gives the rest of the body a purpose to exist in the scene.**
+
+Remember: a single word (or two, in this case) does have Qwen-sequences.
+
+
+<br><br>
+👆 [Back to index](#the-big-old-index)
+<br><br>
+
 
 
 ### SIZE **DOES** MATTER — AND SO DOES ASPECT RATIO
