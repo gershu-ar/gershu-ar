@@ -33,7 +33,7 @@
 4. [Melting faces, water droplets and artifacts](#melting-faces-water-droplets-and-artifacts)<br>
 5. [Don'T be so Negative: try to see the Light](#dont-be-so-negative-try-to-see-the-light)<br>
 6. [Cut!](#cut)<br>
-6.1. [thesis: No shoes, no admittance](#thesis-no-shoes-no-admittance)<br>
+6.1. [Parenthesis: No shoes, no admittance](#Parenthesis-no-shoes-no-admittance)<br>
 7. [Size **does** matter — and so does aspect ratio](#size-does-matter--and-so-does-aspect-ratio)<br>
 8. [A not so short word about the Classifier-Free Guidance (CFG)](#a-not-so-short-word-about-classifier-free-guidance-cfg)<br>
 9. [*Nutshelling* it](#nutshelling-it)<br>
