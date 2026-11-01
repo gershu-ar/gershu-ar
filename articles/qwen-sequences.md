@@ -33,7 +33,7 @@
 4. [Melting faces, water droplets and artifacts](#melting-faces-water-droplets-and-artifacts)<br>
 5. [Don'T be so Negative: try to see the Light](#dont-be-so-negative-try-to-see-the-light)<br>
 6. [Cut!](#cut)<br>
-6.1. [Parenthesis: No shoes, no admittance](#parenthesis-no-shoes-no-admittance)<br>
+6.1. [thesis: No shoes, no admittance](#thesis-no-shoes-no-admittance)<br>
 7. [Size **does** matter — and so does aspect ratio](#size-does-matter--and-so-does-aspect-ratio)<br>
 8. [A not so short word about the Classifier-Free Guidance (CFG)](#a-not-so-short-word-about-classifier-free-guidance-cfg)<br>
 9. [*Nutshelling* it](#nutshelling-it)<br>
@@ -738,7 +738,7 @@ Even if you emphasize the word `standing` in the pose description, **Krea 2 will
 
 Yet all you get is a waist-up render of a half-baked idea.
 
-Chances are, in that scenario, **you completely forgot about shoes, socks, or any lower-body anchor that gives the model a reason to render below the belt. **
+Chances are, in that scenario, **you completely forgot about shoes, socks, or any lower-body anchor that gives the model a reason to render below the belt.**
 
 The fix inside your prompt is simple:
 
@@ -750,7 +750,7 @@ Or simply append `bare feet` directly to your character description in the relev
 
 Doing this gives Krea 2 an explicit instruction to draw the legs and feet. **The model now has a creative, semantic reason to render the entire body that goes well beyond camera framing alone; it gives the rest of the body a purpose to exist in the scene.**
 
-Remember: a single word (or two, in this case) does have Qwen-sequences.
+As the guide insists: A single word (or two, in this case) does have Qwen-sequences 👣
 
 
 <br><br>
