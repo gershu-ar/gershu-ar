@@ -907,9 +907,7 @@ Haven't tested thoroughly that many, but these ones absolutely get the job done:
 | **Moody Krea 2 Mix v7.0** | 🌐 [Go (Civitai)](https://civitai.red/models/2731187/moody-krea-2-mix-uncensored-weekend-3days-blue-buzz-purchase-3buzz?modelVersionId=3209007) | N/A | Ideal for dramatic cinematic lighting, atmospheric/dark aesthetics, high-contrast shadows, and unconstrained creative prompts. |
 | **Sick Ollie v1.0 ⭐** | 🌐 [Go (Civitai)](https://civitai.red/models/2676616/sick-ollie) | N/A| Strong prompt adherence for stylized art, unconventional body mechanics, and niche concept execution. |
 
-On alphabetic order.
-
-> A word of warning: NSFW models **are** able to produce **illegal content**, thus communities like CivitAI are overrun by the kind of people who look for that kind of tools to produce that kind of content.  Avoid engaging, commenting and, above all, providing information on what you do, social networks, etc.  **A lot of Jeffrey Epsteins**, stalkers and twisted deviants are anxiously waiting for your data.  Dangers of IA are very real when in the wrong hands.  Exercise **caution** and don't engage.
+By alphabetical/versioning order.
 
 **"*What version should I download?*"**<br>
 Here's a simple Krea 2 quantization guide by popular GPU model:
@@ -927,7 +925,7 @@ Here's a simple Krea 2 quantization guide by popular GPU model:
 If you're working on **commercial productions**, keep in mind that while software like ComfyUI is free, the models are not automatically free for commercial use. Yes, they may be free to download and run, but that doesn't mean you can sell the outputs. **Each model has its own license and copyright terms**, so technically speaking, **you can't commercialize your renders without checking first**. Always read the creator notes and model cards before downloading to understand the license terms, crediting requirements, or royalty obligations for commercial work.  Also, keep anyone under 18 years old out of all this: don't render them nor allow them to access these tools unless strictly adult supervised and for lawful purposes.
 
 **Updates**<br>
-On it. Will be adding tips and try to improve format.  ~~I find markdown very unfriendly but hey, life is imperfect.~~  I became a slave to Markdown.
+On it.  Checking, adding content and improving format constantly.  ~~I find markdown very unfriendly but hey, life is imperfect.~~  I became a slave to Markdown.
 
 **Thanks to...**<br>
 🧡 [Krea](https://www.krea.ai "Krea") for creating an **amazing** model checkpoint and sharing it with the world in the true spirit of open collaboration.<br>
