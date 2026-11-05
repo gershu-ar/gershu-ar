@@ -839,6 +839,8 @@ If in doubt, a **1:1 square ratio** is a solid, neutral baseline to test; most w
 
 > Keeping on the detour, `CFG` is very much worth a word too.
 
+> **Note:** None of this applies to **Krea 2 Turbo models**. Because Turbo variants are guidance-distilled, diversity is already tuned to a minimal, predictable baseline unless explicitly conditioned otherwise by your prompt. Sticking strictly to a `CFG` of `1.0` and dropping the negative pipeline altogether is the absolute rule for these models.
+
 Put simply, `CFG` ([**C**lassifier-**F**ree **G**uidance](https://arxiv.org/abs/2207.12598)) is a technique used to **steer sampling toward or away** from a **conditioning** signal (a text prompt in our case). It's about emphasis and direction, not about freedom or creativity.
 
 `CFG` **does not** equal or behave like `Temperature` does in LLMs, although you wouldn't be wrong to see them as conceptually similar. Mathematically speaking, however, `CFG` and `Temperature` work differently.
@@ -941,7 +943,7 @@ Here's a simple Krea 2 quantization guide by popular GPU model:
 
 **Comply with the law**<br>
 💰 If you're working on **commercial productions**, keep in mind that while software like ComfyUI is free, the models are not automatically free for commercial use. Yes, they may be free to download and run, but that doesn't mean you can sell the outputs. **Each model has its own license and copyright terms**, so technically speaking, **you can't commercialize your renders without checking first**. Always read the creator notes and model cards before downloading to understand the license terms, crediting requirements, or royalty obligations for commercial work.<br>
-🔞 Keep anyone under 18 years of age out and away from all this unless strictly supervised by an adult and with a lawful purpose.
+🔞 Keep anyone under 18 years of age out and away from all this unless strictly adult supervised and for lawful purposes.
 
 **Updates**<br>
 On it.  Checking, adding content and improving format constantly.  ~~I find markdown very unfriendly but hey, life is imperfect.~~  I became a slave to Markdown.
