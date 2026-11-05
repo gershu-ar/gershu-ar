@@ -4,7 +4,7 @@
 **Prompting and rendering with NSFW & SFW Krea 2 model checkpoints**<br>
 `text 2 image` *for the purist prompter*  
 
-⚙️ `RATED PG16` — *Contains **mild language** - This article DOES NOT contain adult images nor sexual representations*
+⚙️ `RATED PG16` — *Contains **mild language** - This article DOES NOT contain adult images nor sexual references of any kind*
 
 
 
@@ -102,23 +102,31 @@ That is what this guide aims to.  Having said that, you're all set for Bootcamp!
 
 Welcome!
 
-My **tool of choice is** **[ComfyUI portable](https://github.com/Comfy-Org/ComfyUI/)** (v0.43.0 as of OCT/2026).
+My tool of choice is the mighty **[ComfyUI portable](https://github.com/Comfy-Org/ComfyUI/)** (v0.44.0 as of NOV/2026).
 
 For almost all the examples presented in this guide I worked with [several models](#foot-notes--qa--recommended-models "Used models") and used a few ([A](https://huggingface.co/Winnougan/Krea-2-Base-Turbo-NVFP4-FP8-INT8/blob/main/Text%20Encoder/qwen3vl_4b_uncensored_int8_convrot.safetensors) and [B](https://huggingface.co/DreamFast/Qwen3-VL-4b-Heretic-ComfyUI)) Qwen3-VL-4B `INT8` Convrot *Text Encoders* with the default Qwen *Image VAE*.
 
-Knowledge gathered and examples renderered on a local setup:  Windows 11 25H2, iCore Ultra 7 265K, 64 GB RAM (DDR5) with an NVIDIA RTX 3090 (24 GB VRAM, Studio Driver 616.92) as the powerhouse being able to handle `bf16` quantization but using  `int8` models because it simply **fliiiies** on Ampere architecture, leaving a massive overhead of free VRAM for the Text Encoder and whatever else I require.  Output quality is perfect for my needs and artifacts are neglegible to none.
+Knowledge gathered and examples rendered on a local setup:  Windows 11 25H2, iCore Ultra 7 265K, 64 GB RAM (DDR5) with an NVIDIA RTX 3090 (24 GB VRAM, Studio Drivers) as the powerhouse being able to handle `bf16` quantization but choosing to use `int8` models simply because they **fly** on Ampere architecture leaving a massive overhead of free VRAM for the Text Encoder and whatever else I require.  Output quality is perfect for my needs and artifacts are negligible to none.
 
-> `bf16`, `int8`, `nf4`... at the [very end](#foot-notes--qa--recommended-models "very end") of this guide the appropiate quantization model for your GPU is suggested.
 
-Also, for your convenience, [you can find here](https://github.com/gershu-ar/gershu-ar/blob/main/articles/workflows/Purist%20Krea%202.json "you can get here") a **simple**, **purist Qwen / Krea 2 ComfyUI workflow** in case you feel like testing prompts along.  Just hit on the three dots and select _Download_, then open in ComfyUI.  
+> `bf16`, `int8`, `nf4`, ... at the [very end](#foot-notes--qa--recommended-models "very end") of this guide the appropriate quantization model for your GPU/s is suggested.
 
-The workflow is based on the [official Comfy](https://comfy.org/workflows/11657ed32877-11657ed32877/ "official Comfy") `text 2 image` (t2i) workflow, using *Nodes 2.0* style format.  We're going [Amish](https://amishamerica.com/do-amish-use-technology/) on this one:
 
-It has been *de-automatizated* (stripped the LLM prompt enhancement and automatic negative creation) and *un-LoRAed* : there're just two text boxes (**positive** and **negative** prompts), seed, model and image size selector (in *megapixels*), and Ksampler settings.  Back to the basics! *Utility nodes* are on the subgraph and out of the way.
+Also, for your convenience, [you can get here](https://github.com/gershu-ar/gershu-ar/blob/main/articles/workflows/Purist%20Krea%202.json "you can get here") a **simple, purist Qwen / Krea 2 ComfyUI workflow** in case you feel like testing prompts as you read along. Just hit the three dots, select _Download_, and drag the `.json` file straight into your ComfyUI canvas.
 
-The workflow is arranged for live image previews and final saved/generated image view on a widescreen format.
+The workflow is based on the [official Comfy](https://comfy.org/workflows/11657ed32877-11657ed32877/ "official Comfy") `text 2 image` (t2i) workflow, using *Nodes 2.0* format. We're going [Amish](https://amishamerica.com/do-amish-use-technology/) on this one:
 
-You can, of course, arrange the workflow as you please.  **That's the beauty of ComfyUI** ❤️
+It has been *de-automated* (stripped of LLM prompt enhancements and automatic negative conditioning) and *un-LoRAed*: there is just one **positive** prompt box, seed control, model selection, a latent (image) size selector (in *megapixels*), and KSampler settings. Back to basics! *Utility nodes* are tucked inside the subgraph and out of the way.
+
+**Wait** ✋. No **negative prompt**? Nope. In Krea 2, negative prompting is nullified by design.
+
+Krea 2 was conceived as an aesthetic model: it takes the minimal amount of artistic liberties based on a minimalistic nature to fill in the blanks by receiving a fully contextualized scene from Qwen, but neither will deviate from your instructions nor randomize results. If there's something you don't want, simply don't prompt for it or prompt for the direct opposite.
+
+Turbo model variants (the ones used and referenced throughout this guide) are *guidance-distilled*; the conditioning alignment behavior comes already *pre-cooked*. That is also the [reason](a-not-so-short-word-about-classifier-free-guidance-cfg "reason") why the `CFG` in Krea 2 shouldn't deviate from `1.0`.
+
+Back to the workflow, the provided arrangement is set for live image previews (unless you disabled them on your ComfyUI) and final saved/generated image view to work on a widescreen format.
+
+You can, of course, arrange the workflow as you please. **That's the beauty of ComfyUI** ❤️
 
 <img width="1857" height="902" alt="image" src="https://github.com/user-attachments/assets/dcd54423-89ce-4a93-b421-a03db95fcf04" />
 
@@ -628,8 +636,6 @@ Since prompting is everything, go for something like ***fully** wearing a XXX*. 
 - **fully** wearing bra and bottom underwear
 - etc.
 
-Same goes for the negative prompting (below). Go for the detail about the clothing, the room, the face, the body, the light, camera, everything.
-
 **Detail** -if coherent- **is what Qwen and Krea 2 feed about**.
 
 👆 [Back to index](#the-big-old-index)
@@ -653,27 +659,34 @@ I have experienced this while working on prompts near/on water, even if there's 
 <br><br>
 ### DON'T BE SO NEGATIVE: TRY TO SEE THE LIGHT
 
+The objective of this guide was self-learning by reading straight from the sources. *RTFM* -as it is colloquially known- and oh boy, **Krea 2 truly deserves it**.  All my own *SDXL vices* weighed heavily on understanding that this was something entirely new, not just *more of the same*.
 
-The negative prompt, never understood, never appreciated and never used correctly has a purpose in our scenario since fighting difussion model's vices can be a tricky work.
+As briefly referenced at the beginning, **there is no negative prompting in Krea 2**. The text encoder doesn't distinguish *the good* from *the bad* and *the ugly*, it simply visualizes whatever concept you put in front of it.
 
-Do not overuse the negative prompt but **use it**.
+You might as well define the Qwen / Krea 2 pairing as a *happy bunch* only looking forward to the *positive* things in life.
 
-    avoid brunette hair
+Phrases like:
 
-Yes, it will tell the model not to create characters with brunette hair.  Useful negative if you're randomizing hair color in your prompt.
+    no blur, no extra limbs, ugly
 
-If you're looking to create scenarios in low ISO/darkness, perhaps this would reinforce the positive lighting prompt:
+...mean nothing to either Qwen or Krea 2.
 
-    avoid flash photography.  avoid cold white lighting.  avoid studio lighting.
-    
+**Negative prompting works by describing the desired opposite directly inside the positive prompt**:
 
-It won't completely eliminate artificial or extra unrequested lightning -very model dependant-, but it will surely tell the model to behave.
+    sharp focus, clean studio photography, natural anatomical proportions
 
-And **yes**, **use `avoid` inside the negative clip**, it is not a double negation but a **reinforced semantic distance**. **A double negative creates a stronger semantic push away from the concept**, the same way `fully wearing` emphasizes the *be* wearing something.
+Qwen will contextualize the `sharp focus` conditioning because **it makes semantic sense**: *You want a crisp, sharp image, hence: no blur*.
 
+The same prompt engineering principle applies to lighting, wardrobe, hair color, and everything else. *Randomness* is not the word of the day; *precision* is. Random results need to be deliberately prompted, while anything you don't want to see simply shouldn't be mentioned.  Yes, the link in between prompting and the final result is that strict and that is exactly -at least for me-, the beauty of Krea 2: I get to control almost every single element in the render.
+
+You can still appeal to **some degree of scripted or deliberate randomness**, but the outcome will depend on how Qwen interprets your intent and how faithfully Krea 2 renders it:
+
+    [Subject] is sitting on a blue, red, or green sofa.
+
+It *could*, *would*, or *should* pick a single color for the couch, but don't be surprised if you end up with a three-colored sofa, or cushions mismatched across all three hues.
 As for the **lighting** issue itself, it's quite the **nightmare** if you want to work with nuances on **dark/low light/moody** scenarios. **Daylight scenarios are fairly easy, low-ISO's are a true challenge.**
 
-> Guide will be expanded to add advanced lighting setups.
+> 🚧 Guide will be expanded to add more advanced lighting prompting.
 
 Simple prompting for high-ISO (daylight) scenarios can be:
 
@@ -921,8 +934,11 @@ Here's a simple Krea 2 quantization guide by popular GPU model:
 
 > **Note:** Running Krea 2 also requires loading an additional Text Encoder (such as *Qwen3-VL-4B*) and the VAE. If you are using an **8 GB VRAM** card, it is recommended to generate at base resolutions like 1024x1024 or 1536x1536 before upscaling.
 
+🔧 **Tools** | For a higher degree of certainty about VRAM requeriments, quantizations and suggested setups, the [Qwen-Image-2.1 VRAM Calculator](https://modelvram.com/qwen-image-2-1-vram-calculator/ "Qwen-Image-2.1 VRAM Calculator") does a fine job.  There're calculators por LLMs, MiniMax H3 and many other goodies.  If looking for a local, portable, fast option, with an absolute precision based on actual or simulated hardware, [llmfit](https://github.com/AlexsJones/llmfit "llmfit") can do the task effortesly.
+
 **Comply with the law**<br>
-If you're working on **commercial productions**, keep in mind that while software like ComfyUI is free, the models are not automatically free for commercial use. Yes, they may be free to download and run, but that doesn't mean you can sell the outputs. **Each model has its own license and copyright terms**, so technically speaking, **you can't commercialize your renders without checking first**. Always read the creator notes and model cards before downloading to understand the license terms, crediting requirements, or royalty obligations for commercial work.  Also, keep anyone under 18 years old out of all this: don't render them nor allow them to access these tools unless strictly adult supervised and for lawful purposes.
+💰 If you're working on **commercial productions**, keep in mind that while software like ComfyUI is free, the models are not automatically free for commercial use. Yes, they may be free to download and run, but that doesn't mean you can sell the outputs. **Each model has its own license and copyright terms**, so technically speaking, **you can't commercialize your renders without checking first**. Always read the creator notes and model cards before downloading to understand the license terms, crediting requirements, or royalty obligations for commercial work.<br>
+🔞 Keep anyone under 18 years of age out and away from all this unless strictly supervised by an adult and with a lawful purpose.
 
 **Updates**<br>
 On it.  Checking, adding content and improving format constantly.  ~~I find markdown very unfriendly but hey, life is imperfect.~~  I became a slave to Markdown.
@@ -938,7 +954,7 @@ On it.  Checking, adding content and improving format constantly.  ~~I find mark
 
 -----
 
-*[The Totally Unrequested Prompting Guide](https://github.com/gershu-ar/gershu-ar/edit/main/articles/qwen-sequences.md) for Qwen / Krea 2 on ComfyUI* was created and is maintained by [gershu](https://gershu.ar).<br>
+*[The Totally Unrequested Prompting Guide](https://github.com/gershu-ar/gershu-ar/blob/main/articles/qwen-sequences.md) for Qwen / Krea 2 on ComfyUI* was created and is maintained by [gershu](https://gershu.ar).<br>
 
 -----
 
