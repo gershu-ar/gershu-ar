@@ -128,7 +128,7 @@ Back to the workflow, the provided arrangement is set for live image previews (u
 
 You can, of course, arrange the workflow as you please. **That's the beauty of ComfyUI** ❤️
 
-<img width="1857" height="902" alt="image" src="https://github.com/user-attachments/assets/dcd54423-89ce-4a93-b421-a03db95fcf04" />
+<img width="1919" height="904" alt="image" src="https://github.com/user-attachments/assets/e9d50649-fc10-4e65-9d2d-06ab7c23b5d8" />
 
 *A Qwen / Krea 2 [purist ComfyUI workflow](https://github.com/gershu-ar/gershu-ar/blob/main/articles/workflows/Purist%20Krea%202.json) with generation preview, the auxiliary nodes are comfortable set in a subgraph.*
 <br><br>
