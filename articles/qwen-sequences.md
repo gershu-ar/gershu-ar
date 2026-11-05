@@ -116,7 +116,7 @@ Also, for your convenience, [you can get here](https://github.com/gershu-ar/gers
 
 The workflow is based on the [official Comfy](https://comfy.org/workflows/11657ed32877-11657ed32877/ "official Comfy") `text 2 image` (t2i) workflow, using *Nodes 2.0* format. We're going [Amish](https://amishamerica.com/do-amish-use-technology/) on this one:
 
-It has been *de-automated* (stripped of LLM prompt enhancements and automatic negative conditioning) and *un-LoRAed*: there is just one **positive** prompt box, seed control, model selection, a latent (image) size selector (in *megapixels*), and KSampler settings. Back to basics! *Utility nodes* are tucked inside the subgraph and out of the way.
+It has been *de-automated* (stripped of LLM prompt enhancements) and *un-LoRAed*: there is just one **positive** prompt box, seed control, model selection, a latent (image) size selector (in *megapixels*), and KSampler settings. Back to basics! *Utility nodes* are tucked inside the subgraph and out of the way.
 
 **Wait** ✋. No **negative prompt**? Nope. In Krea 2, negative prompting is nullified by design.
 
@@ -677,13 +677,16 @@ Phrases like:
 
 Qwen will contextualize the `sharp focus` conditioning because **it makes semantic sense**: *You want a crisp, sharp image, hence: no blur*.
 
-The same prompt engineering principle applies to lighting, wardrobe, hair color, and everything else. *Randomness* is not the word of the day; *precision* is. Random results need to be deliberately prompted, while anything you don't want to see simply shouldn't be mentioned.  Yes, the link in between prompting and the final result is that strict and that is exactly -at least for me-, the beauty of Krea 2: I get to control almost every single element in the render.
+The same prompt engineering principle applies to lighting, wardrobe, hair color, and everything else. *Randomness* is not the word of the day; *precision* is. Random results need to be deliberately prompted, while anything you don't want to see simply shouldn't be mentioned.
+
+Yes, the link in between prompting and the final result is **that** strict.  You get to control mostly every single element on the render with just a few, precise words in clearly structured and defined short/long text blocks on a single prompt.
 
 You can still appeal to **some degree of scripted or deliberate randomness**, but the outcome will depend on how Qwen interprets your intent and how faithfully Krea 2 renders it:
 
     [Subject] is sitting on a blue, red, or green sofa.
 
 It *could*, *would*, or *should* pick a single color for the couch, but don't be surprised if you end up with a three-colored sofa, or cushions mismatched across all three hues.
+
 As for the **lighting** issue itself, it's quite the **nightmare** if you want to work with nuances on **dark/low light/moody** scenarios. **Daylight scenarios are fairly easy, low-ISO's are a true challenge.**
 
 > 🚧 Guide will be expanded to add more advanced lighting prompting.
