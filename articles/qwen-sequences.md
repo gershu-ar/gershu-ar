@@ -374,7 +374,7 @@ In fact:
 
 Get ignored.
 
-Oh, and iff you use blocks, make sure them **close it** to be **extra clear** where your instruction ends:
+Oh, and when using blocks, just to be **extra clear**, signal `/` the end instruction accordingly:
 
     [TEXTURES]
     Realistic skin.
