@@ -237,11 +237,11 @@ After contextualizing the scene, Krea 2 *filled the blanks* and presented the si
 
 On the examples both renders look **almost the same**. Liberties are visible.  The reason: I did not give a specific description for the sneakers, or the grey tone on the shirt, or the pants.  Hardly any continuity based on a poor, vague prompt description.
 
-Krea 2 algo doesn't quite *goes for it* with `ugly` and `fit`.  Dude does *not stand out*: his human face is what is expected to be.  The reason: `ugly` by itself has no real meaning, it needs to be described or at least contextualized: `long nose, deformed cheeks`, whatever. Same for the `unfit`. What is `unfit`? Unless you describe it, `unfit` is a shallow concept free of meaning. `Unfit` can refer to a person no being able to drive a car.  Not much there.  Context does not help either: I'm not prompting about beauty or aesthetics being involved.
+Krea 2 also doesn't quite play ball with the `ugly` and the `fit`.  Dude does *not stand out*: his human face is what is expected to be.  The reason: `ugly` by itself has no real meaning, it needs to be described or at least contextualized: `long nose, deformed cheeks`, whatever. Same goes for the `unfit`. What is `unfit`? Unless you describe it, `unfit` is a shallow concept free of meaning. `Unfit` can refer to a person no being able to drive a car.  Not much there.  Context does not help either: I'm not prompting about beauty or aesthetics being involved as part of the action or focus.
 
 **HOW TO PROPERLY PROMPT ON KREA 2 FOR BEST RESULTS**<br>
 
-In Qwen / Krea 2 you can—and should—*atomize* the prompt to the exact level of detail required by the scene. The prompt blocks individually build a global context. The sum is greater than the size of its individual parts.
+In Qwen / Krea 2 you can —and should— *atomize* the prompt to the exact level of detail required by the scene. The prompt blocks individually build a global context. The sum is greater than the size of its individual parts.
 
 Making those parts detailed makes the final sum even bigger, both mathematically and contextually. That is the cornerstone of Krea 2.
 
