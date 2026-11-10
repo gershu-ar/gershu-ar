@@ -176,13 +176,12 @@ To sum up: If you're coming from SDXL you will notice that **Qwen/Krea 2 is a wh
 👆 [Back to index](#the-big-old-index)
 <br><br>
 #### **PROMPTING ON QWEN**
-#### Structure, structure, structure
+Structure, structure, structure.
+Qwen interprets and generates embeddings in natural language.  The limitations of SDXL are not present here: every word counts, every sentence has a meaning and *poetry* is not corny but what makes a fantastic output.
 
-Qwen interprets and generates embeddings in natural language.  The limitations of SDXL were obvious  is not present here: every word counts, every sentence has a meaning and *poetry* is not corny but what makes a fantastic output.
+A suggested prompting technique involves **separating the prompt in categories**, specially for complex scenes with multiple characters, actions and moods.
 
-A suggested prompting technique involves **separating the prompt in categories**, specially for complex scenes with multiple characters.
-
-Here's a crude explanation of a sample prompt:
+Here's a crude explanation of a **sample prompt**:
 
     Subject details: Uniquely name and describe each character on the scene.
     
@@ -205,7 +204,7 @@ Structure your prompts into modular blocks so they're easy to tweak, making it s
 Characters or focal subjects are typically prompted first because the whole scene revolves around them; you're establishing them as the anchor while laying down the baseline conditioning for the *mathematical mess*  that ultimately resolves into an incredible image.
 
 **EXAMPLE**<br>
-Let's prompt for a simple scene:
+Now let's prompt for a simple scene:
 
     Subject details: A man, 45-years-old middle-aged, unfit, ugly. A dog, brown.
     
@@ -226,7 +225,7 @@ Ouput:
 *Rendered using NSFW [FinePorn](#foot-notes--qa--recommended-models) checkpoint - Original PNG with workflow embedded*
 
 **EXAMPLE**<br>
-Slightly modifying the same scene by adding "Dog is setting paws on Man" (only changing the dog action), rest remains the same:
+Slightly modifying the same scene by adding `Dog is setting paws on Man` (only changing the dog action), rest remains the same:
 
     Action: Man is walking Dog on the pathway. Dog is setting paws on Man.
     
@@ -234,23 +233,26 @@ Output:
 [![](https://github.com/gershu-ar/gershu-ar/blob/f38b44276cb19ce55d3e168fa9f2667890301ddc/articles/img/5f38dbf7652fb661decd3cef2d09fd50.png)](https://github.com/gershu-ar/gershu-ar/blob/f38b44276cb19ce55d3e168fa9f2667890301ddc/articles/img/5f38dbf7652fb661decd3cef2d09fd50.png)
 *Rendered using NSFW [FinePorn](#foot-notes--qa--recommended-models) model - Original PNG with workflow embedded*
 
-After contextualizing the scene, it filled the gaps and presented the intention with accuracy, even repeating the (kind of the same) same background and general scenery.  **Priorizing the big picture over small details**, and this is where we/you need to come in.
+After contextualizing the scene, Krea 2 *filled the blanks* and presented the situation with accuracy, even repeating the (kind of the same) same background and general scenery.  **Prioritizing the big picture over small details**, and this is where you come in.  The details.
 
-As you see on the examples both renders look **almost the same**. Liberties are visible.  The reason: I did not give a description for the sneakers, or the grey tone on the shirt, or the pants.  Hardly any continuity based on a poor prompt description.
+On the examples both renders look **almost the same**. Liberties are visible.  The reason: I did not give a specific description for the sneakers, or the grey tone on the shirt, or the pants.  Hardly any continuity based on a poor, vague prompt description.
 
-Also pay attention how it gets confued on *ugly* and *fit*. That dude does not stand out: his human face is what is expected to be. See, *Ugly* by itself has no meaning, it needs to be described or at least contextualized: *long nose, deformed cheeks*, whatever. Same for the *unfit*. What is *unfit*? Unless you describe it, *unfit* is a shallow concept free of meaning. *Unfit* can refer to several things not just to a body type description.
+Krea 2 algo doesn't quite *goes for it* with `ugly` and `fit`.  Dude does *not stand out*: his human face is what is expected to be.  The reason: `ugly` by itself has no real meaning, it needs to be described or at least contextualized: `long nose, deformed cheeks`, whatever. Same for the `unfit`. What is `unfit`? Unless you describe it, `unfit` is a shallow concept free of meaning. `Unfit` can refer to a person no being able to drive a car.  Not much there.  Context does not help either: I'm not prompting about beauty or aesthetics being involved.
 
-**LET'S GO MEDIEVAL EXAMPLE**<br>
+**HOW TO PROPERLY PROMPT ON KREA 2 FOR BEST RESULTS**<br>
 
-In Qwen / Krea 2 you can -and should-  atomize the prompt to the level of detail you require.  *Going medieval* involves sacrifying full text coherence for pieces of information that, if ordered and tagged properly, does the job beautifully.  
+In Qwen / Krea 2 you can—and should—*atomize* the prompt to the exact level of detail required by the scene. The prompt blocks individually build a global context. The sum is greater than the size of its individual parts.
 
-> Don't be confused about this method: It *feels* like SDXL but **it is not**.  You can extended yourself as much as you want on each block to achieve the level of detail you require.  Be poetic, the *block way*.
+Making those parts detailed makes the final sum even bigger, both mathematically and contextually. That is the cornerstone of Krea 2.
+
+In a way, it's sacrificing full-length text for smaller pieces of information that, if ordered and tagged properly, do the job beautifully. Chewing food before digesting it works in nature, and the exact same applies here.
+
+By creating micro-contexts, you shape the macro-context: the story that Qwen tells Krea. And you link them to be crystal clear on how all those blocks relate.
 
 Here's a simple example of 2 (two) characters interacting in an unlikely real-life scene:
 
-
     [WOMAN]
-    65-years-old elderly woman.
+    65-year-old elderly woman.
     [/WOMAN]
     
     [TIGER]
@@ -266,44 +268,92 @@ Here's a simple example of 2 (two) characters interacting in an unlikely real-li
     [/TIGER ATTIRE]
     
     [WOMAN ACTION]
-    Standing hugging TIGER.
+    Standing, hugging TIGER.
     [/WOMAN ACTION]
     
     [TIGER ACTION]
-    Sitting, eating a watermelon on the floor, watermelon is flying around, watermelon pieces and juice on face, happy, leaning a paw on WOMAN to show appreciation.  
+    Sitting, eating a watermelon on the floor, watermelon is flying around, watermelon pieces and juice on face, happy, resting a paw on WOMAN to show appreciation.  
     [/TIGER ACTION]
     
     [CAMERA]
     Extreme low-angle shot positioned inches above floor level looking upward, wide-angle 28mm camera focal length, environmental full-body framing showing the complete figure against the room's height.
     [/CAMERA]
     
-    [ENVIROMENT]
+    [ENVIRONMENT]
     At a city park on a pathway.
-    [/ENVIROMENT]
+    [/ENVIRONMENT]
     
     [LIGHTING]
     Natural afternoon light, golden hour.
     [/LIGHTING]
     
     [TEXTURES]
-    Realistic skin, realistic fur, realistic hairs.
+    Realistic skin, realistic fur, realistic hair.
     [/TEXTURES]
 
 [![](https://github.com/gershu-ar/gershu-ar/blob/main/articles/img/K2__00289_.png)](https://github.com/gershu-ar/gershu-ar/blob/main/articles/img/K2__00289_.png)
 ***"Oh, little Whiskers loves his watermelon"***<br>
 *Rendered using NSFW [FinePorn v5](#foot-notes--qa--recommended-models) checkpoint - Original PNG with workflow embedded*
 
-The pompt defined each character's form, clothing and action **separately** and **individually**, yet, **connected the action** on command:  She is hugging the tiger while the tiger is posing a paw on her as a sign of appreciation.
+The prompt defined each character's form, clothing, and action **separately** and **individually**, yet **connected the actions** inside the prompt: She is hugging the tiger while the tiger is resting a paw on her as a sign of appreciation.
 
-This prompting method makes it also easier to define characters, scene, clothing, camera, etc. and adapt the situation fast without needing to write (or re-write) endless *prompting poetry* all getting lost because a word was out of place.   Qwen / Krea 2 love detail but they also understand the idea when you slice it.  Just like **tasty watermelon** 🍉
+This prompting method also makes it easier to define characters, scene, clothing, camera, etc., and adapt the situation fast without needing to write (or rewrite) endless *prompting poetry*, only for everything to get lost because a single word was out of place. Qwen / Krea 2 love detail, but they also understand the idea much better when you slice it up. Just like **tasty watermelon** 🍉
 
-Oh, Qwen, you cheeky, adorable bastard.
+And `MOOD` enters the guide.
 
+Note: `MOOD` is only one well-known, easy-to-use block among the many you can freely create to clearly declare and link items within your own prompt.
 
-***WAIT, ALL YOUR PROMPTS USE DIFFERENT METHODS***
+If we were to add a specific prompt for:
 
-Yes.  There's no *universal way* on prompting on Qwen / Krea 2.
-What it matters on the end is for the prompt to **make sense**.
+    [WOMAN ACTION_MOOD]
+    Happy because TIGER is eating watermelon, a bit tired from walking in the park, with a sore left wrist
+    [/WOMAN ACTION_MOOD]
+
+or just:
+
+    [WOMAN_MOOD]
+    Happy because TIGER is eating watermelon, a bit tired from walking in the park, with a sore left wrist
+    [/WOMAN_MOOD]
+    
+
+We could very easily work with nuances, both at a general level and across specific instances.  
+
+This tells Krea 2 how she is to be depicted, linked specifically to `WOMAN` so there's no question about what it attaches to. In the granny and tiger prompting example, a `[WOMAN_MOOD]` could very well be:
+
+    [WOMAN_ACTION_MOOD]
+    Happy because TIGER is eating watermelon, a bit tired from walking in the park, with a sore left wrist
+    [/WOMAN_ACTION_MOOD]
+
+This makes it easy to set anything from a general scene mood down to a specific character's emotions when performing a given action:
+
+`[CHARACTER_A_MOOD]`  
+`[CHARACTER_A_ACTION_MOOD]`  
+`[MOOD]`  
+`[BACKGROUND_CHARACTERS_MOOD]`  
+etc.
+
+As long as it **makes sense** and links directly to instances in the prompt itself, Qwen will take that into consideration while building the conditioning. 
+
+Whether something *is* or *isn't* there is Krea 2's way of telling you to go back to the prompt.
+
+Text that **effectively** communicates physical characteristics, setting, and action should also include explicit references to what's often overlooked: **60 to 70%** of **overall human communication** happens through *gestures*, *expressions*, *gazes*, and *postures*. If you're prompting human characters, don't deprive them (us) of what they (we) are.
+
+**Do rich prompts increase the chances of messing it all up?**  
+Absolutely **YES**.
+
+Your prompt is the WHAT. The model is the DO.
+
+*WHAT you want* can easily collide with *WHAT you told it to DO*. A single rogue word or sentence can spawn extra characters, trigger jarring camera shifts between renders, change the lighting, twist bodies, generate faces completely out of tune with the action, and so forth. Qwen tries to make sense of it and Krea 2 tries to *draw* it, **even when in doubt**: the resulting *freak show* is entirely up to you, buddy.
+
+> A suggestion to *catch an idea*: start with a free-flowing draft; Windows Notepad works wonderfully for quickly getting thoughts down. Creativity doesn't ring the bell all the time, so when it knocks, answer the door. Once the draft of your idea is done, don't be afraid to use LLMs to help you expand it, clean it up, and format it so it can be fed directly into the positive prompt.  
+
+**And a word of warning**: Most LLMs do not fully understand how to prompt for Qwen / Krea 2. Their training revolves around Stable Diffusion, mostly tied to SD/SDXL paradigms. Krea goes in a completely different direction. Copilot (ChatGPT 5.6 Sol) and Gemini (Gemini 3.8-thinking) defaults tilt toward SDXL prompting, though they can handle Krea once instructed to build a single positive prompt while ignoring vague, generalized SDXL-style tag stuffing. As of now, you still have to steer flagship LLMs with explicit system instructions or a recurring `AGENTS.md` for them to do their job properly. I haven't tested Gemini 4 Argon yet, but *the fruit rarely falls far from the tree*; it'll be interesting to test once the paywall drops.
+
+> As for local LLMs, they're usually outdated and trained on data older than Krea 2 itself; "Test and see", as they say. If you find an open-weights model that properly understands Krea 2 prompting out of the box, [let me know](https://github.com/gershu-ar/gershu-ar/discussions "let me know").
+
+Even so, there's no *universal way* for prompting on Qwen / Krea 2 and what it really matters is for the prompt to **make sense**.
+
+Prompt can be short and on the spot or extensive and dedicated.  Beauty of Krea 2 is how is able to handle complexity with the same ease as a casual request.
 
     Subject: 45-years-old man.
 Is the same as:
@@ -312,22 +362,25 @@ Is the same as:
     45-years-old man.
 Or as:
 
-    [Subject] 45-years-old man.
+    [SUBJECT]
+	45-years-old man.
+	[/SUBJECT]
 
 In fact:
 
     The spaces...
     
     ... in between.
+
 Get ignored.
 
-Commas, dots, semicolons, they all mean the same *to a point*.  The *what to do* is separated by coherence and contextualization not so much on how you write it.  Of course, proper writing using comas to enumerate/describe and dots to end a sentence do give a **strict meaning**, telling Qwen / Krea 2 **exactly** what you want in a very clear sense. 
-
-Also, be sure to close the tag to be **extra clear** where your instruction starts and ends:
+Oh, and iff you use blocks, make sure them **close it** to be **extra clear** where your instruction ends:
 
     [TEXTURES]
     Realistic skin.
     [/TEXTURES]
+
+
 
 👆 [Back to index](#the-big-old-index)
 <br><br>
